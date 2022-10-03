@@ -2,6 +2,7 @@ baseURL: ""
 languageCode: en-us
 title: HUGO-demo
 theme: showcase
+draft: false
 
 
 menu:
