@@ -2,62 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HUGO-demo</title>
-    <link>http://example.org/</link>
+    <link>https://MaikeyR.github.io/hugo-demo/</link>
     <description>Recent content on HUGO-demo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://MaikeyR.github.io/hugo-demo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projectm</title>
+      <link>https://MaikeyR.github.io/hugo-demo/projectm/</link>
+      <pubDate>Thu, 24 Nov 2022 11:33:13 +0100</pubDate>
+      
+      <guid>https://MaikeyR.github.io/hugo-demo/projectm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Project1</title>
-      <link>http://example.org/business/project1/</link>
+      <link>https://MaikeyR.github.io/hugo-demo/business/project1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/business/project1/</guid>
+      <guid>https://MaikeyR.github.io/hugo-demo/business/project1/</guid>
       <description>project 1 aergfbduifgbiodfguheiufgheoigbeuorgybeuiorgbeuygrb
 asdgfurhfuehertert </description>
     </item>
     
     <item>
       <title>Project1</title>
-      <link>http://example.org/project1/</link>
+      <link>https://MaikeyR.github.io/hugo-demo/project1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/project1/</guid>
+      <guid>https://MaikeyR.github.io/hugo-demo/project1/</guid>
       <description>project1</description>
     </item>
     
     <item>
       <title>Project2</title>
-      <link>http://example.org/design/project2/</link>
+      <link>https://MaikeyR.github.io/hugo-demo/design/project2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/design/project2/</guid>
-      <description></description>
+      <guid>https://MaikeyR.github.io/hugo-demo/design/project2/</guid>
+      <description>sedf</description>
     </item>
     
     <item>
       <title>Project2</title>
-      <link>http://example.org/project2/</link>
+      <link>https://MaikeyR.github.io/hugo-demo/project2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/project2/</guid>
+      <guid>https://MaikeyR.github.io/hugo-demo/project2/</guid>
       <description>project2</description>
     </item>
     
     <item>
       <title>Project3</title>
-      <link>http://example.org/development/project3/</link>
+      <link>https://MaikeyR.github.io/hugo-demo/development/project3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/development/project3/</guid>
+      <guid>https://MaikeyR.github.io/hugo-demo/development/project3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Project3</title>
-      <link>http://example.org/project3/</link>
+      <link>https://MaikeyR.github.io/hugo-demo/project3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/project3/</guid>
+      <guid>https://MaikeyR.github.io/hugo-demo/project3/</guid>
       <description>project3</description>
     </item>
     
