@@ -1,4 +1,4 @@
-baseURL = "http://example.org"
+baseURL = "http://MaikeyR.github.io/hugo-demo"
 languageCode = "en-us"
 title = "HUGO-demo"
 theme = "showcase"
