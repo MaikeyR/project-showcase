@@ -14,6 +14,12 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          
+      - name: Install dependencies
+        run: |
+          npm install postcss -D
+          npm install -g postcss-cli
+          npm install -g autoprefixer
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
