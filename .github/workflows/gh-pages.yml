@@ -22,7 +22,7 @@ jobs:
           # extended: true
 
       - name: Build
-        # working-directory: ./hugo_demo
+        working-directory: ./hugo_demo
         run: hugo --minify
 
       - name: Deploy
