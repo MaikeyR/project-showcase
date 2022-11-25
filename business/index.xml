@@ -1,20 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Businesses on HUGO-demo</title>
-    <link>https://MaikeyR.github.io/hugo-demo/business/</link>
-    <description>Recent content in Businesses on HUGO-demo</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://MaikeyR.github.io/hugo-demo/business/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Project1</title>
-      <link>https://MaikeyR.github.io/hugo-demo/business/project1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://MaikeyR.github.io/hugo-demo/business/project1/</guid>
-      <description>project 1 aergfbduifgbiodfguheiufgheoigbeuorgybeuiorgbeuygrb
-asdgfurhfuehertert </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Businesses on HUGO-demo</title><link>https://maikeyr.github.io/hugo-demo/business/</link><description>Recent content in Businesses on HUGO-demo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://maikeyr.github.io/hugo-demo/business/index.xml" rel="self" type="application/rss+xml"/><item><title>Project1</title><link>https://maikeyr.github.io/hugo-demo/business/project1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://maikeyr.github.io/hugo-demo/business/project1/</guid><description>project 1 aergfbduifgbiodfguheiufgheoigbeuorgybeuiorgbeuygrb
+asdgfurhfuehertert</description></item></channel></rss>
