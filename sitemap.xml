@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>http://example.org/categories/</loc></url><url><loc>http://example.org/</loc></url><url><loc>http://example.org/project1-copy-2/</loc></url><url><loc>http://example.org/project1-copy-3/</loc></url><url><loc>http://example.org/project1-copy-4/</loc></url><url><loc>http://example.org/project1-copy-5/</loc></url><url><loc>http://example.org/project1-copy/</loc></url><url><loc>http://example.org/project1/</loc></url><url><loc>http://example.org/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url><url>
+    <loc>http://example.org/</loc>
+  </url><url>
+    <loc>http://example.org/project1-copy-2/</loc>
+  </url><url>
+    <loc>http://example.org/project1-copy-3/</loc>
+  </url><url>
+    <loc>http://example.org/project1-copy-4/</loc>
+  </url><url>
+    <loc>http://example.org/project1-copy-5/</loc>
+  </url><url>
+    <loc>http://example.org/project1-copy/</loc>
+  </url><url>
+    <loc>http://example.org/project1/</loc>
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+</urlset>
