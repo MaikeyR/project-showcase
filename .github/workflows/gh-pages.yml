@@ -29,7 +29,7 @@ jobs:
 
       - name: Build
         working-directory: ./hugo_demo
-        run: hugo
+        run: hugo --minify
         
       - name: Show files
         run: ls hugo_demo
