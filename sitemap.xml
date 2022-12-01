@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://maikeyr.github.io/hugo-demo/categories/</loc>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://maikeyr.github.io/hugo-demo/</loc>
   </url><url>
-    <loc>http://example.org/project1-copy-2/</loc>
+    <loc>https://maikeyr.github.io/hugo-demo/project1-copy-2/</loc>
   </url><url>
-    <loc>http://example.org/project1-copy-3/</loc>
+    <loc>https://maikeyr.github.io/hugo-demo/project1-copy-3/</loc>
   </url><url>
-    <loc>http://example.org/project1-copy-4/</loc>
+    <loc>https://maikeyr.github.io/hugo-demo/project1-copy-4/</loc>
   </url><url>
-    <loc>http://example.org/project1-copy-5/</loc>
+    <loc>https://maikeyr.github.io/hugo-demo/project1-copy-5/</loc>
   </url><url>
-    <loc>http://example.org/project1-copy/</loc>
+    <loc>https://maikeyr.github.io/hugo-demo/project1-copy/</loc>
   </url><url>
-    <loc>http://example.org/project1/</loc>
+    <loc>https://maikeyr.github.io/hugo-demo/project1/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://maikeyr.github.io/hugo-demo/tags/</loc>
   </url>
 </urlset>
