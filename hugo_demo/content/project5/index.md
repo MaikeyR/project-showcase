@@ -2,8 +2,8 @@
 title: "Project5"
 date: 2022-10-3
 draft: false
-link: /project1/
-image: /bus.png/
+link: /project5/
+image: img/bus.png
 ---
 
 # project 1
