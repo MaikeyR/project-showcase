@@ -1,11 +1,11 @@
 ---
 title: "Project6"
-date: 2022-12-01T17:25:09+01:00
+date: 2022-12-01
 draft: false
-link: /project6/
+link: /hugo-demo/project6/
 image: project6/bus.png
 ---
 
-# project 1
+# project 6
 
 aergfbduifgbiodfguheiufgheoigbeuorgybeuiorgbeuygrb
