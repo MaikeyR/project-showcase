@@ -2,6 +2,8 @@
     position: relative;
     overflow: hidden;
     background-color: #fff;
+    margin: 0px;
+    padding: 0px;
 }
 
 .topnav a {
@@ -16,7 +18,6 @@
 
 
 .topnav a.active {
-    background-color: #04AA6D;
     color: white;
 }
 
@@ -39,3 +40,35 @@
 .topnav .link_logo {
     padding: 0px;
 }
+
+.Menu_Button {
+    border: 2px solid #DFDFDF;
+    border-radius: 2px;
+}
+
+.Menu_Button img {
+    float: right;
+}
+
+.topnav .Menu_Button img {
+    top: 50%;
+    bottom: 50%;
+    margin-left: 5px;
+}
+
+/* .Search_Button {
+    border: 2px solid #DFDFDF;
+    border-radius: 2px;
+    height: 57.5px;
+    width: 57.5px;
+    padding: 0px;
+}
+
+.Search_Button {
+    padding: 14px;
+}
+
+.topnav .Search_Button img {
+    height: 24px;
+    width: 200px;
+} */
