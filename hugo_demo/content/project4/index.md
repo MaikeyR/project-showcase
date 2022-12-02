@@ -2,7 +2,7 @@
 title: "Project4"
 date: 2022-10-3
 draft: false
-link: /project4/
+link: /hugo-demo/project4/
 image: project4/bus.png
 ---
 
