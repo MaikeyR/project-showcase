@@ -1,15 +1,25 @@
 {{ define "main" }}
 
+<head>
+  <link rel="stylesheet" href="/css/pagina-single.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
 {{- partial "header-single" . -}}
 
 
-<section class="text-gray-700 body-font dark:text-white">
-  <div class="container px-5 py-8 mx-auto">
-    <h1 class="text-2xl font-bold my-4">{{ .Title }}</h1>
-    <div>
+<section class="section">
+  <div class="Box1">
+
+    <div class="BoxTitelSingle">
+      <h1>{{ .Title }}</h1>
+    </div>
+
+    <div class="content">
       {{ .Content }}
     </div>
   </div>
 </section>
+
 
 {{ end }}
