@@ -1,0 +1,7 @@
+<div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+  <ul>
+    {{ range .Site.Taxonomies.tags }}
+            <tr><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> </tr>
+    {{ end }}
+  </ul>
+</div>
