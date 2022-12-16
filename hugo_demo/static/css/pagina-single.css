@@ -25,7 +25,7 @@
     height: 100px;
     left: 0px;
     top: 0px;
-    background-color: aqua;
+    background: linear-gradient(88.43deg, rgba(0, 117, 255, 0.6975) -0.33%, rgba(0, 72, 255, 0.7125) 48%, rgba(0, 117, 255, 0.6975) 98.73%);
     transform: skew(-20deg);
 }
 
