@@ -21,28 +21,67 @@
     border: none;
 
     /*Schuine lijnen*/
-    background: linear-gradient(125deg, transparent 71px, rgba(0, 117, 255, 0.6975) -100%,rgba(0, 72, 255, 0.7125) 60%) top left,
-    linear-gradient(-55deg, transparent 71px, rgba(0, 117, 255, 0.6975) -100%, rgba(0, 72, 255, 0.7125) 60%) top right;
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
+    width: 550px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(88.43deg, rgba(0, 117, 255, 0.6975) -0.33%, rgba(0, 72, 255, 0.7125) 48%, rgba(0, 117, 255, 0.6975) 98.73%);
+    transform: skew(-20deg);
 }
+
+
 
 .BoxTitelSingle h1 {
     font-size: 35px;
     color: #fff;
+    transform: skew(20deg);
 }
 
 .content {
     height: auto;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: auto;
+    margin: 3.5em;
+    font-size: 18px;
+
+    /* border: 2px solid black; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
-.content h1{     /*Pakt de # van md  https://www.markdownguide.org/basic-syntax*/
+.content h1 {     /*Pakt de # van md  https://www.markdownguide.org/basic-syntax*/
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.content h2 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+.content h3 {
     font-weight: bold;
     font-size: 20px;
+    margin-top: 10px;
+}
+
+.content h4 {
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.content img {
+    width: 45em;
+    border: 2.5px solid black;
+    border-radius: 7.5px;
+    margin-top: 15px;
+}
+
+.content iframe {
+    border-radius: 0;
+    margin-top: 20px;
 }
 
 
