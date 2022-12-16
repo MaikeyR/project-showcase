@@ -13,7 +13,7 @@ Door middel van meerdere contactmomenten hebben wij het probleem van het licenti
 
 #Geef hieronder informatie en uitleg over het project. Dit is geschreven in Markdown (.md) en hier zijn verschillende style-opties. Deze zijn hieronder als voorbeeld weergegeven:
 --- 
-{{< figure src="profity2022_1.jpg" title="Profity" >}}     
+{{< figure src="profity2022/profity2022_1.jpg" title="Profity" >}}     
 
 # Wat is profity en wat is hun probleem?      
 Profity BV ontwikkelt ERP software, waarvoor Profity licenties verkoopt aan de klant. Een probleem dat speelt bij Profity, is het tekort aan inzicht in de situatie qua aantal licenties en hoeveelheid gebruikers. Dit komt doordat de licenties van een klant niet zijn gekoppeld aan de accounts van haar medewerkers. Profity wil graag inzicht op alle gekochte licenties en de huidige status van desbetreffende licenties. Zoals het nu gaat is het vaak nodig om het aantal licenties te vergelijken met het aantal actieve gebruikers van een klant. De oorzaak hiervan is dat de licenties niet zijn gekoppeld aan de accounts, dus de drager van de licentie niet wordt opgeslagen.           
@@ -24,7 +24,7 @@ Dit proces zorgt er dan voor dat Profity haar klanten kan benaderen mochten zij 
                
 De tijd die besteed wordt aan het controleren, kost Profity veel uren, oftewel personeelskosten, in dit proces. Door minder facturatie dan daadwerkelijk gebruik van de licenties loopt Profity dus jaarlijks omzet mis. Daarnaast ontstaat er door een te groot aantal communicatielijnen ook een tekort aan overzicht van informatie over o.a. het aantal licenties.             
 Deze problemen zouden opgelost kunnen door een nieuwe applicatie te implementeren, waarbij alle werknemers én klanten in 1 applicatie bij alle benodigde informatie kunnen en de klant zelf beheer heeft over het aantal licenties en de toewijzing ervan.        
-{{< figure src="profity2022_2.jpg" title="Profity ERP" >}}     
+{{< figure src="profity2022/profity2022_2.jpg" title="Profity ERP" >}}     
         
 # Conclusie en aanbeveling       
 In de inleiding van dit verslag werd de volgende hoofdvraag gesteld: ‘Welk verbetervoorstel kan geformuleerd worden voor het licentiebeheer bij Profity?’         

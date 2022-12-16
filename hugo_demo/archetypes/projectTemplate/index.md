@@ -31,7 +31,7 @@ Dit was een gave ervaring!**
 **Deze regel is dikgedrukt**
 
 <!-- Wil je afbeeldingen toevoegen? Doe dat dan op de volgende manier:-->
-{{< figure src="projecttitel_1.png" title="tekst onder de afbeelding" >}}       
+{{< figure src="projectmapje/projecttitel_1.png" title="tekst onder de afbeelding" >}}       
 <!-- voeg afbeeldingen toe aan de content folder met het formaat: "projecttitel_1", "projecttitel_2" enzovoort. -->
 
 <!-- Wil je youtube videos toevoegen? Doe dat dan op de volgende manier:-->
