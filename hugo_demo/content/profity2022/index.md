@@ -3,7 +3,8 @@ title: "Profity2022"            #Dit is de titel van het project
 date: 2022-12-16T14:58:21+01:00
 draft: false
 link: /hugo-demo/profity2022/   #Verander de hoofdletter van de projectnaam naar een kleine letter
-image: profity2022/profity2022_1.jpg                     #Dit is de tumbnail van het project
+
+image: /hugo-demo/profity2022/profity2022_1.jpg                     #Dit is de tumbnail van het project
 naam: "Robbin van de Scheur, Jan Koudijs"                                  #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "Henk Jan Nieuwenhuis"                     #De naam van je opdrachtgever bijv. "Jan de Lange"
 tags: ["jaar1", "BM", "PM"]                                  #Vul je tags hierin. Het mogen er meerdere zijn. Kies uit (jaar1 / jaar2 / jaar3 / jaar4 / FDD / DB / DT / BM / PM / DIT / etcetera...)

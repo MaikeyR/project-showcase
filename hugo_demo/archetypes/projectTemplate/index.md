@@ -1,14 +1,15 @@
 ---
-titel: "{{ replace .Name "-" " " | title }}"            #Dit is de titel van het project
+titel: "{{ replace .Name "-" " " | title }}"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
 datum: {{ .Date }}
 draft: false
-link: /hugo-demo/{{ replace .Name "-" " " | title }}/   #Verander de hoofdletter van de projectnaam naar een kleine letter
-image: projectnaam/tumbnailnaam.png                     #Dit is de tumbnail van het project
-naam: "Je Naam, Namen"                                  #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
-opdrachtgever: "naam opdrachtgever"                     #De naam van je opdrachtgever bijv. "Jan de Lange"
-thema: "thema naam"                                          #Kies uit Development / UX Design / Business
-tags: ["jaar3", "DIT"]                                  #Vul je tags hierin. Het mogen er meerdere zijn. Kies uit (jaar1 / jaar2 / jaar3 / jaar4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
-samenvatting: "een samenvatting van het project"        #Korte samenvatting van het project   
+link: /hugo-demo/{{ replace .Name "-" " " }}/
+
+image: /hugo-demo/{{ replace .Name "-" " " }}/thumbnailnaam.png    #Dit wordt de thumbnail van het project
+naam: "Je Naam, Namen"                                             #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
+opdrachtgever: "naam opdrachtgever"                                #De naam van je opdrachtgever bijv. "Jan de Lange"
+thema: "thema naam"                                                #Kies uit Development / UX Design / Business
+tags: ["jaar3", "DIT"]                                             #Vul je tags hierin. Het mogen er meerdere zijn. Kies alleen uit (jaar1 / jaar2 / jaar3 / jaar4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
+samenvatting: "een samenvatting van het project"                   #Korte samenvatting van het project   
 
 #Geef hieronder informatie en uitleg over het project. Dit is geschreven in Markdown (.md) en hier zijn verschillende style-opties. Deze zijn hieronder als voorbeeld weergegeven:
 --- 
