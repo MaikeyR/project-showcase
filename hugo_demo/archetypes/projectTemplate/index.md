@@ -16,9 +16,7 @@ samenvatting: "een samenvatting van het project"        #Korte samenvatting van 
 # Heading level 1 <!-- Dit is de grootste titel--> 
 ## Heading level 2 <!-- Dit is een kleinere titel dan level 1--> 
 ### Heading level 3 <!-- Dit is een kleinere titel dan level 2--> 
-#### Heading level 4 <!-- Dit is een kleinere titel dan level 3--> 
-##### Heading level 5 <!-- Dit is een kleinere titel dan level 4--> 
-###### Heading level 6 <!-- Dit is een kleinere titel dan level 5--> 
+
 
 <!-- Wil je een nieuwe regel beginnen zoals hieronder? Zet dan een aantal spaties (2 of meer) achter het einde van de regel. In het 2e voorbeeld zijn de spaties uitgedrukt met een ster-->
 Mijn project ging over een softwarebedrijf.    
@@ -46,6 +44,6 @@ Er was eens een kippenbedrijf dat eieren verkocht. Dit bedrijf vond dat hun webs
 Bedankt voor het bekijken van dit project!   
 
 
-**Let op! Verwijder deze voorbeelden VOORDAT je deze file publiceer**
+**Let op! Verwijder deze voorbeelden VOORDAT je deze file publiceert**
 
 
