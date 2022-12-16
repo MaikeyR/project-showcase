@@ -2,40 +2,77 @@
     position: relative;
     overflow: hidden;
     background-color: #fff;
+    margin: 0px;
+    padding: 0px;
+    height: 100px; /*Hoogte navbalk*/
+    /* border: 2px solid #DFDFDF; Testborder */
+    box-shadow: 0px -1px 9px rgba(0, 0, 0, 0.25);
 }
 
 .topnav a {
     float: left;
-    color: black;
+    color: #0072BB;
     text-align: center;
-    padding: 14px 16px;
+    padding: 6px 12px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
+    font-family: Poppins;
 }
 
-
-
 .topnav a.active {
-    background-color: #04AA6D;
     color: white;
 }
 
+/*Links*/
+.Logo_CHE {
+    /* width: 120px; */
+    height: 100px; /*Zelfde als de hoogte van de navbalk*/
+}
+
+/*Midden*/
 .topnav-centered a {
     float: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
 }
 
+
+
+
+/*Rechts*/
 .topnav-right {
     float: right;
 }
 
-.Logo_CHE {
-    width: 120px;
+.topnav-right a{
+    top: 50%;
+    right: 2.5%; /*Hoevere het blok MENU naar rechts staat*/
+    position: absolute;
+    transform: translate(0%, -50%); /*Zorgt ervoor dat het blok in het midden staat*/
 }
+
+
 
 .topnav .link_logo {
     padding: 0px;
+}
+
+.Menu_Button {
+    border: 2px solid #DFDFDF; /*Border MenuBox*/
+    border-radius: 2px;
+}
+
+
+.Menu_Button img {
+    float: right;
+}
+
+.topnav .Menu_Button img {
+    margin-left: 5px;
+    transform: translate(0%, 20%); /*Top of Left etc van het huislogo*/
 }
