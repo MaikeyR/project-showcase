@@ -46,6 +46,6 @@ Er was eens een kippenbedrijf dat eieren verkocht. Dit bedrijf vond dat hun webs
 Bedankt voor het bekijken van dit project!   
 
 
-**Let op! Verwijder deze voorbeelden VOORDAT je deze file publiceer**
+**Let op! Verwijder deze voorbeelden VOORDAT je deze file publiceert**
 
 
