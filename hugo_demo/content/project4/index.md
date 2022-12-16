@@ -1,8 +1,8 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Project4"
+date: 2022-12-16T11:26:19+01:00
 draft: false
-link: /hugo-demo/{{ replace .Name "-" " " | title }}/
+link: /hugo-demo/project1/
 image: project1/bus.png
 summary: "een samenvatting van het project"
 ---

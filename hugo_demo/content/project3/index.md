@@ -6,8 +6,6 @@ link: /hugo-demo/project1/
 image: project1/bus.png
 summary: "een samenvatting van het project"
 ---
-# Project 3
-
 naam: "Maikel Reijneke"
 opdrachtgever: "Jan"
 tags: ["jaar3", "DIT"]                          <!-- kies uit één of meer van deze tags: "jaar1", "jaar2", "jaar3", "jaar4", "BM", "PM", "SDE", "DIT", -->
