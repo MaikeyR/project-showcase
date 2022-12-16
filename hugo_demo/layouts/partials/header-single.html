@@ -1,34 +1,10 @@
 <head>
-  <base href="/hugo-demo/"> <!--repository naam en moet later veranderd worden als wij naar een uiteindelijke versie gaan-->
+  <base href="/hugo-demo/">
   <link rel="stylesheet" href="css/header-single.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 <body>
-  <!-- <header class="navigatiebalk">
-    <a href="#">
-      <img class="Logo_CHE" src="/img/Logo.svg" alt="">
-    </a>
-
-    <nav>
-      <ul class="navbar_text">
-        <li>
-          <a href="#">
-            <h1 class="hoi">Hier komt het vak</h1>
-          </a>
-        </li>
-
-
-        <li class="li_homebutton">
-          <a class="Button-Home" href="">Home
-            <img class="img_search" src="/img/nav-search.png" alt="">
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-  </header> -->
-
-
   <div class="topnav">
 
     <!-- Left-aligned links (default) -->
@@ -38,13 +14,13 @@
 
     <!-- Centered link -->
     <div class="topnav-centered">
-      <a href="#home" class="active">Home</a>
+      <a href="#" class="VakTitel">{{ .Title }}</a>
     </div>
 
     <!-- Right-aligned links -->
     <div class="topnav-right">
-      <a href="#search">Search</a>
-      <a href="#about">About</a>
+      <!-- <a href="#" class="Search_Button"><img src="/img/Search.svg" alt=""></a> -->
+      <a href="../" class="Menu_Button">Home <img class="Menu_Logo" src="/hugo-demo/img/Home.svg" alt=""></a>
     </div>
 
   </div>

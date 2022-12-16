@@ -1,19 +1,26 @@
 {{ define "main" }}
 
 <head>
-  <base href="/hugo-demo/"> <!--repository naam en moet later veranderd worden als wij naar een uiteindelijke versie gaan-->
-  <link rel="stylesheet" href="css/projectContent.css">
+  <base href="/hugo-demo/">
+  <link rel="stylesheet" href="css/pagina-single.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 {{- partial "header-single" . -}}
 
-<section class="text-gray-700 body-font dark:text-white">
-  <div class="container px-5 py-8 mx-auto">
-    <h1 class="text-2xl font-bold my-4">{{ .Title }}</h1>
+
+<section class="section">
+  <div class="Box1">
+
+    <div class="BoxTitelSingle">
+      <h1>{{ .Title }}</h1>
+    </div>
+
     <div class="content">
       {{ .Content }}
     </div>
   </div>
 </section>
+
 
 {{ end }}
