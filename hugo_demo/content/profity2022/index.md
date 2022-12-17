@@ -31,5 +31,6 @@ Deze problemen zouden opgelost kunnen door een nieuwe applicatie te implementere
 # Conclusie en aanbeveling       
 In de inleiding van dit verslag werd de volgende hoofdvraag gesteld: ‘Welk     verbetervoorstel kan geformuleerd worden voor het licentiebeheer bij Profity?’         
 Deze vraag hebben wij beantwoord door onderzoek te doen naar het deelproces licentiebeheer. Voor dit onderzoek zijn wij dieper ingegaan op de situatie, het probleem en hoe de oplossing hiervoor gevormd kon worden. De kern van het probleem, is het tekort aan inzicht van het aantal licenties bij de klant. Door onderzoek te doen naar de eisen voor een nieuwe applicatie, is er een oplossing uitgewerkt. Het verbetervoorstel is om een nieuwe applicatie te implementeren, waarbij Profity medewerkers en klanten in de applicatie een overzicht hebben van het aantal licenties met de gekoppelde gebruikers.        
-Aan de hand van de business case is ook uitgevonden dat deze oplossingsrichting financieel een goede investering is. Hierop gebaseerd is de aanbeveling om voort te zetten met het implementatieplan.     
-{{< youtube M7ptoukOFgI >}}     
+Aan de hand van de business case is ook uitgevonden dat deze oplossingsrichting financieel een goede investering is. Hierop gebaseerd is de aanbeveling om voort te zetten met het implementatieplan.
+{{< youtube M7ptoukOFgI >}}    
+https://profity.nl/ 
