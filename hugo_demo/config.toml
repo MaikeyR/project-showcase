@@ -4,4 +4,4 @@ title = "HUGO-demo"
 theme = "showcase"
 
 [outputs]
-    home = [ "HTML", "JSON", "RSS"]
+home = [ "HTML", "JSON", "RSS"]

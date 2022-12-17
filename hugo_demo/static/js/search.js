@@ -15,7 +15,7 @@ function loadSearch() {
             }
         }
     };
-    xhr.open('GET', "../index.json");
+    xhr.open('GET', "../hugo-demo/json/index.json");
     xhr.send();
 }
 loadSearch(); // call loadsearch to load the json file
