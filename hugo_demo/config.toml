@@ -3,3 +3,5 @@ languageCode = "en-us"
 title = "HUGO-demo"
 theme = "showcase"
 
+[outputs]
+    home = [ "HTML", "JSON", "RSS"]

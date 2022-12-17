@@ -4,6 +4,7 @@
     <body class="dark:bg-gray-900 min-h-screen">
         <!-- {{- partial "header.html" . -}} -->
         <div id="content">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.2/lunr.js"></script>
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}

@@ -81,6 +81,7 @@
 </footer>
 {{ template "_internal/google_analytics_async.html" . }}
 
+<script src="/hugo-demo/js/search.js"></script>
 <script>
   const allTypes = ["all",  {{ range .Site.Sections }}"{{lower .Title}}",{{ end }}];
   const filter = (event, type) => {
@@ -163,3 +164,4 @@
   }
   {{ end }}
 </script>
+
