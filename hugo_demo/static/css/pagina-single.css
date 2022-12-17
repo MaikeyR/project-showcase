@@ -5,7 +5,7 @@
 .section {
     max-width: 1920px;
     margin-inline: auto;
-    border: 2px solid red;
+    border: 2px solid red; /*eruit halen, dit is alleen voor responsive*/
 }
 
 .Box1 .BoxTitelSingle {
