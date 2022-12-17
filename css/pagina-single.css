@@ -2,6 +2,12 @@
     font-family: poppins;
 }
 
+.section {
+    max-width: 1920px;
+    margin-inline: auto;
+    border: 2px solid red; /*eruit halen, dit is alleen voor responsive*/
+}
+
 .Box1 .BoxTitelSingle {
     display: flex;
     align-items: center;
@@ -11,8 +17,6 @@
 .BoxTitelSingle {
     padding: 8px 8px;
     border: 2px solid #DFDFDF; 
-    width: 550px;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,14 +78,68 @@
 
 .content img {
     width: 45em;
-    border: 2.5px solid black;
-    border-radius: 7.5px;
+    border: 7.5px solid #DFDFDF;
+    border-radius: 10px;
     margin-top: 15px;
 }
 
 .content iframe {
     border-radius: 0;
     margin-top: 20px;
+}
+
+.content a {
+    color: #0072BB;
+}
+
+/* ============================ */
+/* Responsive */
+
+@media all and (max-width: 750px) {
+
+    .BoxTitelSingle {
+        width: 450px;
+        height: 90px;
+    }
+
+    .BoxTitelSingle h1 {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    .BoxTitelSingle {
+        width: 400px;
+        height: 80px;
+    }
+
+    .BoxTitelSingle h1 {
+        font-size: 25px;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+
+    .BoxTitelSingle {
+        width: 300px;
+        height: 70px;
+    }
+
+    .BoxTitelSingle h1 {
+        font-size: 22px;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+
+    .BoxTitelSingle {
+        width: 250px;
+        height: 65px;
+    }
+
 }
 
 
