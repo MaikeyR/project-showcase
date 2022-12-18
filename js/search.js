@@ -6,8 +6,7 @@ function loadSearch() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-                var response = xhr.responseText.replace(/,(?=[^,]*$)/, "");
-                var data = JSON.parse(response);
+                var data = JSON.parse(xhr.responseText);
                 if (data) {
                     posts = data.items; // load json data
                 }
