@@ -6,7 +6,8 @@ function loadSearch() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-                var data = JSON.parse(xhr.responseText);
+                var response = xhr.responseText.replace(/,(?=[^,]*$)/, "");
+                var data = JSON.parse(response);
                 if (data) {
                     posts = data.items; // load json data
                 }
@@ -15,14 +16,17 @@ function loadSearch() {
             }
         }
     };
-    xhr.open('GET', "../hugo-demo/json/index.json");
+    xhr.open('GET', "../hugo-demo/index.json");
     xhr.send();
 }
-loadSearch(); // call loadsearch to load the json file
+loadSearch(); // call loadsearch to load the json files
 function showSearchResults() {
     var query = searchElem.value || ''; // get the value from input
+    console.log(query);
     var searchString = query.replace(/[^\w\s]/gi, ''); // clear white spaces
+    console.log(searchString);
     var target = document.getElementById('list'); // target the ul list to render the results
+    console.log(target);
     var postsByTitle = posts.reduce((acc, curr) => { // map lunr search index to your articles
         acc[curr.title] = curr;
         return acc;

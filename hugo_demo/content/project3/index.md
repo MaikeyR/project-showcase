@@ -1,5 +1,5 @@
 ---
-titel: "Project3"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
+title: "Project3"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
 datum: 2022-12-16T20:26:08+01:00
 draft: false
 link: /hugo-demo/project3/

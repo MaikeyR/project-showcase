@@ -5,9 +5,8 @@
         
         "url" : "{{ .Permalink }}",
         "title" : "{{ .Title }}",
-        "content": {{ .Content | plainify | jsonify }},
+        "content": {{ .Content | plainify | jsonify }}
     },
-        
     {{ end -}}
     ]
 }
