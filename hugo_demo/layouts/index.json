@@ -1,12 +1,16 @@
 {
-    "items" : [
-    {{ range $.Site.RegularPages -}}
+    "items" : [    {{ $first := true }}    {{ range $.Site.RegularPages -}}    {{ if $first }}
     {
         
         "url" : "{{ .Permalink }}",
         "title" : "{{ .Title }}",
         "content": {{ .Content | plainify | jsonify }}
-    },
-    {{ end -}}
+    }    {{ $first = false }}    {{ else }}
+    ,{
+        
+        "url" : "{{ .Permalink }}",
+        "title" : "{{ .Title }}",
+        "content": {{ .Content | plainify | jsonify }}
+    }    {{ end }}    {{ end -}}
     ]
 }
