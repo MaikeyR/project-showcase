@@ -1,14 +1,15 @@
 ﻿.sdropdown {
     position: relative;
     display: inline-block;
+    min-width: 100%;
 }
 
 .sdropdown-content {
     display: block;
     position: absolute;
-    background-color: #dfdfdf;
+    background-color: #eeeeee;
     z-index: 1;
-    min-width: 700px;
+    min-width: 100%;
 }
 
 .sdropdown-content a {
@@ -20,9 +21,12 @@
 }
 
 .sdropdown-content a:hover {
-    background-color: #cacacae3;
+    background-color: #dfdfdfe3;
 }
 
-.search-input {
-    border-width: 1px;
+.table, td{
+    max-height: 65px;
+    min-width: 110px;
+    padding: 5px;
+    padding-right: 20px;
 }
