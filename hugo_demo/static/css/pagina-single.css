@@ -1,11 +1,17 @@
 * {
     font-family: poppins;
+    
+}
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 24%, rgba(255,255,255,1) 54%, rgba(238,238,238,1) 80%, rgba(255,255,255,1) 100%);
 }
 
 .section {
     max-width: 1920px;
     margin-inline: auto;
-    border: 2px solid red; /*eruit halen, dit is alleen voor responsive*/
+    /* border: 2px solid red; eruit halen, dit is alleen voor responsive */
 }
 
 .Box1 .BoxTitelSingle {
