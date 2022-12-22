@@ -78,6 +78,7 @@ span {
 .content h4 {
     font-size: 18px;
     margin-top: 0px;
+    font-weight: normal;
 }
 
 .content img {
@@ -85,6 +86,10 @@ span {
     border: 7.5px solid #DFDFDF;
     border-radius: 10px;
     margin-top: 15px;
+}
+
+figure {
+    margin: 0px;
 }
 
 .content iframe {
