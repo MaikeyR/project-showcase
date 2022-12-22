@@ -1,0 +1,61 @@
+* {
+    font-family: poppins;
+    /* background: red; */
+}
+
+li img{
+    width: 2em;
+    height: auto;
+    color: rgb(255, 255, 255);
+}
+
+.contact .adres-che, .icon-facebook, .icon-twitter, .icon-instagram, .icon-youtube, .icon-linkedin, .logo-che-contact{
+    margin-left: 20px;
+    transform: skew(25deg);
+}
+
+footer .contact {
+    outline: 2px solid #B8BF00;
+    padding: 20px;
+
+    width: 80%;
+    max-width: 1760px;
+
+    margin: auto;
+
+    transform: skew(-25deg);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+.contact {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact a {
+    float: left;
+    text-align: center;
+    width: 2em;
+}
+
+.contact .adres-right {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.adres-right img {
+    width: 5em;
+}
+
+
+.socialmedia-logo {
+    margin-left: 0px;
+}
+
+
