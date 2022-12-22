@@ -5,6 +5,7 @@
         "url" : "{{ .Permalink }}",
         "title" : "{{ .Title }}",
         "image": "{{ .Params.image }}",
+        "samenvatting": "{{ .Params.samenvatting }}",
         "content": {{ .Content | plainify | jsonify }}
     }    {{ $first = false }}    {{ else }}
     ,{
@@ -12,6 +13,7 @@
         "url" : "{{ .Permalink }}",
         "title" : "{{ .Title }}",
         "image": "{{ .Params.image }}",
+        "samenvatting": "{{ .Params.samenvatting }}",
         "content": {{ .Content | plainify | jsonify }}
     }    {{ end }}    {{ end -}}
     ]

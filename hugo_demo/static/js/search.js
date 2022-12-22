@@ -52,10 +52,11 @@ function showSearchResults() {
                 if (p != undefined) {
                     var searchHtml = `
                         <a href='${p.url}'>
-                            <table>
+                            <table width='100%'>
                                 <tr>
-                                        <td><img src=${p.image} width='80' height='80' ></td>
-                                        <td>${p.title}</td>
+                                    <td min-width='90px' height='70px' ><img src=${p.image} ></td>
+                                    <td min-width='170px' height='70px' >${p.title}</td>
+                                    <td width=100% height='70px' >${p.samenvatting}</td>
                                 </tr>
                             </table>
                         </a>`;
