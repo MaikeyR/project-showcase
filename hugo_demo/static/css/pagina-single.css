@@ -20,6 +20,7 @@ body {
     justify-content: center;
 }
 
+
 .BoxTitelSingle {
     font-size: 35px;
     color: #ffffff;
@@ -44,6 +45,12 @@ span {
     display: block;
     text-align: center;
 }
+
+span {
+    display: block;
+    text-align: center;
+}
+
 
 .content {
     height: auto;
