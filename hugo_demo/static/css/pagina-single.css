@@ -8,34 +8,31 @@
     justify-content: center;
 }
 
+
 .BoxTitelSingle {
-    padding: 8px 8px;
-    border: 2px solid #DFDFDF; 
-    width: 550px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 30px;
-    border: none;
-
-    /*Schuine lijnen*/
-    width: 550px;
-    height: 100px;
-    left: 0px;
-    top: 0px;
-    background: linear-gradient(88.43deg, rgba(0, 117, 255, 0.6975) -0.33%, rgba(0, 72, 255, 0.7125) 48%, rgba(0, 117, 255, 0.6975) 98.73%);
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+    background: linear-gradient(88.43deg, rgba(0, 117, 255, 0.7275) -0.33%, rgba(0, 56, 255, 0.75) 48%, rgba(0, 117, 255, 0.72) 98.73%);
+    padding: 15px 20px;
+    width: 60%;
+    max-width: 800px;
+    margin: 20px auto auto;
     transform: skew(-20deg);
+    border-radius: 3px;
+    /*clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);*/ /*Andere manier voor transform*/
 }
-
-
 
 .BoxTitelSingle h1 {
-    font-size: 35px;
-    color: #fff;
     transform: skew(20deg);
+    
 }
+
+span {
+    display: block;
+    text-align: center;
+}
+
 
 .content {
     height: auto;
