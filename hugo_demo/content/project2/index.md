@@ -1,22 +1,50 @@
 ---
-title: "Project2"
-date: 2022-10-3
+title: "Project2"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
+datum: 2022-12-16T20:26:12+01:00
 draft: false
 link: /hugo-demo/project2/
-image: project1/bus.png
-summary: "een samenvatting van het project"
----
-# Project 2
 
-naam: "Maikel Reijneke"
-opdrachtgever: "Jan"
-tags: ["jaar3", "DIT"]                                                              <!-- kies uit één of meer van deze tags: "jaar1", "jaar2", "jaar3", "jaar4", "BM", "PM", "SDE", "DIT", -->
+image: /hugo-demo/project2/design.png    #Dit wordt de thumbnail van het project
+naam: "Je Naam, Namen"                                             #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
+opdrachtgever: "naam opdrachtgever"                                #De naam van je opdrachtgever bijv. "Jan de Lange"
+thema: "thema naam"                                                #Kies uit Development / UX Design / Business
+tags: ["jaar2", "SDE"]                                             #Vul je tags hierin. Het mogen er meerdere zijn. Kies alleen uit (jaar1 / jaar2 / jaar3 / jaar4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
+samenvatting: "een samenvatting van het project"                   #Korte samenvatting van het project   
 
-## afbeeldingen
-{{< figure src="img/handtekening.jpg" >}}       <!-- voeg afbeeldingen toe aan de content folder met het formaat: "projecttitel_1", "projecttitel_2" enzovoort. -->
+#Geef hieronder informatie en uitleg over het project. Dit is geschreven in Markdown (.md) en hier zijn verschillende style-opties. Deze zijn hieronder als voorbeeld weergegeven:
+--- 
 
-## youtube
-{{< youtube QWt8qbVEzLY >}}                                                <!-- vul het gedeelte van de url in wat na "https://www.youtube.com/watch?v=" komt. -->
+# Heading level 1 <!-- Dit is de grootste titel--> 
+## Heading level 2 <!-- Dit is een kleinere titel dan level 1--> 
+### Heading level 3 <!-- Dit is een kleinere titel dan level 2--> 
 
-# beschrijving
-"een soort uitgebreide beschrijving van het project met daarin het volledige project proces en de resultaten"
+
+<!-- Wil je een nieuwe regel beginnen zoals hieronder? Zet dan een aantal spaties (2 of meer) achter het einde van de regel. In het 2e voorbeeld zijn de spaties uitgedrukt met een ster-->
+Mijn project ging over een softwarebedrijf.    
+Dit was een gave ervaring!    
+
+Mijn project ging over een softwarebedrijf.***    
+Dit was een gave ervaring!**
+
+<!-- Wil je je tekst dikgedrukt hebben? Doe dit dan met 2 sterren voor en achter het woord of de regel-->
+**Dikgedrukt**
+**Deze regel is dikgedrukt**
+
+<!-- Wil je afbeeldingen toevoegen? Doe dat dan op de volgende manier:-->
+{{< figure src="projectmapje/projecttitel_1.png" title="tekst onder de afbeelding" >}}       
+<!-- voeg afbeeldingen toe aan de content folder met het formaat: "projecttitel_1", "projecttitel_2" enzovoort. -->
+
+<!-- Wil je youtube videos toevoegen? Doe dat dan op de volgende manier:-->
+{{< youtube QWt8qbVEzLY >}}                                                
+<!-- vul het gedeelte van de url in wat na "https://www.youtube.com/watch?v=" komt. -->
+
+# Website kippenbedrijf
+Er was eens een kippenbedrijf dat eieren verkocht. Dit bedrijf vond dat hun website niet meer gebruikersvriendelijk was. Hiervoor hadden ze een oplossing bedacht. Ze informeerde de CHE en liet een aantal studenten hun website verbeteren.   
+{{< figure src="projecttitel_1.png" title="Mooie kippen" >}}
+**Deze kippen zijn erg mooi**   
+Bedankt voor het bekijken van dit project!   
+
+
+**Let op! Verwijder deze voorbeelden VOORDAT je deze file publiceert**
+
+

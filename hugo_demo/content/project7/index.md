@@ -1,14 +1,14 @@
 ---
-title: "Project4"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
-datum: 2022-12-16T20:26:05+01:00
+title: "Project7"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
+datum: 2022-12-16T20:25:55+01:00
 draft: false
-link: /hugo-demo/project4/
+link: /hugo-demo/project7/
 
-image: /hugo-demo/project4/bus.png    #Dit wordt de thumbnail van het project
+image: /hugo-demo/project7/bus.png    #Dit wordt de thumbnail van het project
 naam: "Je Naam, Namen"                                             #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "naam opdrachtgever"                                #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "thema naam"                                                #Kies uit Development / UX Design / Business
-tags: ["jaar4", "DIT"]                                             #Vul je tags hierin. Het mogen er meerdere zijn. Kies alleen uit (jaar1 / jaar2 / jaar3 / jaar4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
+tags: ["jaar2", "DB"]                                             #Vul je tags hierin. Het mogen er meerdere zijn. Kies alleen uit (jaar1 / jaar2 / jaar3 / jaar4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
 samenvatting: "een samenvatting van het project"                   #Korte samenvatting van het project   
 
 #Geef hieronder informatie en uitleg over het project. Dit is geschreven in Markdown (.md) en hier zijn verschillende style-opties. Deze zijn hieronder als voorbeeld weergegeven:

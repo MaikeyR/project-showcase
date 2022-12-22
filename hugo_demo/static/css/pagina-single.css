@@ -1,5 +1,17 @@
 * {
     font-family: poppins;
+    
+}
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 24%, rgba(255,255,255,1) 54%, rgba(238,238,238,1) 80%, rgba(255,255,255,1) 100%);
+}
+
+.section {
+    max-width: 1920px;
+    margin-inline: auto;
+    /* border: 2px solid red; eruit halen, dit is alleen voor responsive */
 }
 
 .Box1 .BoxTitelSingle {
@@ -10,22 +22,28 @@
 
 
 .BoxTitelSingle {
-    text-align: center;
     font-size: 35px;
     color: #ffffff;
     background: linear-gradient(88.43deg, rgba(0, 117, 255, 0.7275) -0.33%, rgba(0, 56, 255, 0.75) 48%, rgba(0, 117, 255, 0.72) 98.73%);
-    padding: 15px 20px;
+    padding: 15px 17px;
     width: 60%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 20px auto auto;
-    transform: skew(-20deg);
+    transform: skew(-25deg);
     border-radius: 3px;
-    /*clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);*/ /*Andere manier voor transform*/
+    /*clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);/ /Andere manier voor transform/
+*/
 }
 
+
 .BoxTitelSingle h1 {
-    transform: skew(20deg);
-    
+    transform: skew(25deg);
+    text-align: center;
+}
+
+span {
+    display: block;
+    text-align: center;
 }
 
 span {
@@ -67,19 +85,116 @@ span {
 .content h4 {
     font-size: 18px;
     margin-top: 0px;
+    font-weight: normal;
 }
 
 .content img {
     width: 45em;
-    border: 2.5px solid black;
-    border-radius: 7.5px;
+    border: 7.5px solid #DFDFDF;
+    border-radius: 10px;
     margin-top: 15px;
+}
+
+figure {
+    margin: 0px;
 }
 
 .content iframe {
     border-radius: 0;
     margin-top: 20px;
 }
+
+.content a {
+    color: #0072BB;
+}
+
+/* ============================ */
+/* Responsive */
+
+@media all and (max-width: 750px) {
+
+    .BoxTitelSingle {
+        width: 450px;
+        height: 90px;
+    }
+
+    .BoxTitelSingle h1 {
+        font-size: 30px;
+    }
+
+    .content {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    .BoxTitelSingle {
+        width: 400px;
+        height: 80px;
+    }
+
+    .BoxTitelSingle h1 {
+        font-size: 25px;
+    }
+
+    .content {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+
+    .BoxTitelSingle {
+        width: 300px;
+        height: 70px;
+    }
+
+    .BoxTitelSingle h1 {
+        font-size: 22px;
+    }
+
+    .content {
+        margin-left: 1.3em;
+        margin-right: 1.3em;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+
+    .BoxTitelSingle {
+        width: 250px;
+        height: 65px;
+    }
+
+    .content {
+        margin-left: 1.1em;
+        margin-right: 1.1em;
+    }
+
+}
+
+@media all and (max-width: 300px) {
+
+    .BoxTitelSingle {
+        width: 220px;
+        height: 60px;
+    }
+    .BoxTitelSingle h1 {
+        font-size: 20px;
+    }
+
+    .content {
+        margin-left: 0.9em;
+        margin-right: 0.9em;
+    }
+
+}
+
 
 
 

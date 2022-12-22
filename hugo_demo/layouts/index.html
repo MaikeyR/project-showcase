@@ -41,9 +41,9 @@
   <div class="container px-5 py-8 mx-auto">
     {{- partial "custom-message.html" . -}}
     
-      <div class="hoi">
-        {{ .Scratch.Set "pages" .Site.Pages }}
-      </div>
+    {{- partial "taglist.html" . -}}
+    
+    {{ .Scratch.Set "pages" .Site.Pages }}
 
     {{ if eq .Site.Params.multipage true }}
     {{- partial "pagination.html" . -}}

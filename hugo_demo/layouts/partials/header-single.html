@@ -7,21 +7,22 @@
 <body>
   <div class="topnav">
 
-    <!-- Left-aligned links (default) -->
-    <a href="#" class="link_logo">
-      <img class="Logo_CHE" src="img/Logo.svg" alt="">
-    </a>
+    <div class="information">
+        <!-- Left-aligned links (default) -->
+        <a href="https://www.che.nl/" target="_blank" class="link_logo">
+          <img class="Logo_CHE" src="img/Logo.svg" alt="">
+        </a>
 
-    <!-- Centered link -->
-    <div class="topnav-centered">
-      <a href="#" class="VakTitel">{{ .Params.thema }}</a>
+        <!-- Centered link -->
+        <div class="topnav-centered">
+          <a href="index.html" class="VakTitel">{{ .Params.thema }}</a>
+        </div>
+
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+          <!-- <a href="#" class="Search_Button"><img src="/img/Search.svg" alt=""></a> -->
+          <a href="index.html" class="Menu_Button">Home <img class="Menu_Logo" src="img/Home.svg" alt=""></a>
+        </div>
     </div>
-
-    <!-- Right-aligned links -->
-    <div class="topnav-right">
-      <!-- <a href="#" class="Search_Button"><img src="/img/Search.svg" alt=""></a> -->
-      <a href="#" class="Menu_Button">Home <img class="Menu_Logo" src="/hugo-demo/img/Home.svg" alt=""></a>
-    </div>
-
   </div>
 </body>

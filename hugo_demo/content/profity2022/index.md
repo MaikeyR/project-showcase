@@ -1,9 +1,10 @@
 ---
-titel: "Profity 2022sadf gsdrfg hsedrth"            #Dit is de titel van het project
+title: "Profity 2022"            #Dit is de titel van het project
 datum: 2022-12-16T14:58:21+01:00
 draft: false
 link: /hugo-demo/profity2022/   #Verander de hoofdletter van de projectnaam naar een kleine letter
-image: profity2022/profity2022_1.jpg                     #Dit is de tumbnail van het project
+
+image: /hugo-demo/profity2022/profity2022_1.jpg                     #Dit is de tumbnail van het project
 naam: "Robbin van de Scheur, Jan Koudijs"                                  #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "Henk Jan Nieuwenhuis"                     #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "Business"                                         #Kies uit Development / UX Design / Business
@@ -30,5 +31,6 @@ Deze problemen zouden opgelost kunnen door een nieuwe applicatie te implementere
 # Conclusie en aanbeveling       
 In de inleiding van dit verslag werd de volgende hoofdvraag gesteld: ‘Welk     verbetervoorstel kan geformuleerd worden voor het licentiebeheer bij Profity?’         
 Deze vraag hebben wij beantwoord door onderzoek te doen naar het deelproces licentiebeheer. Voor dit onderzoek zijn wij dieper ingegaan op de situatie, het probleem en hoe de oplossing hiervoor gevormd kon worden. De kern van het probleem, is het tekort aan inzicht van het aantal licenties bij de klant. Door onderzoek te doen naar de eisen voor een nieuwe applicatie, is er een oplossing uitgewerkt. Het verbetervoorstel is om een nieuwe applicatie te implementeren, waarbij Profity medewerkers en klanten in de applicatie een overzicht hebben van het aantal licenties met de gekoppelde gebruikers.        
-Aan de hand van de business case is ook uitgevonden dat deze oplossingsrichting financieel een goede investering is. Hierop gebaseerd is de aanbeveling om voort te zetten met het implementatieplan.     
-{{< youtube M7ptoukOFgI >}}     
+Aan de hand van de business case is ook uitgevonden dat deze oplossingsrichting financieel een goede investering is. Hierop gebaseerd is de aanbeveling om voort te zetten met het implementatieplan.
+{{< youtube M7ptoukOFgI >}}    
+https://profity.nl/ 

@@ -26,7 +26,10 @@
 /*Links*/
 .Logo_CHE {
     /* width: 120px; */
-    height: 100px; /*Zelfde als de hoogte van de navbalk*/
+    height: 115px; /*Zelfde als de hoogte van de navbalk*/
+    margin-top: -15px;
+    padding: 0px;
+
 }
 
 /*Midden*/
@@ -56,12 +59,6 @@
     transform: translate(0%, -50%); /*Zorgt ervoor dat het blok in het midden staat*/
 }
 
-
-
-.topnav .link_logo {
-    padding: 0px;
-}
-
 .Menu_Button {
     border: 2px solid #DFDFDF; /*Border MenuBox*/
     border-radius: 2px;
@@ -75,4 +72,75 @@
 .topnav .Menu_Button img {
     margin-left: 5px;
     transform: translate(0%, 20%); /*Top of Left etc van het huislogo*/
+}
+
+/* ============================ */
+/* Responsive */
+
+@media all and (max-width: 1000px) {
+
+    .topnav .Menu_Button {
+        margin-right: 20px;
+    }
+
+    .Logo_CHE {
+        margin-left: -20px;
+        height: 125px; /*Zelfde als de hoogte van de navbalk*/
+        margin-top: -20px;
+    }
+
+}
+
+@media all and (max-width: 750px) {
+
+    .Logo_CHE {
+        margin-left: -52px;
+        height: 135px; /*Zelfde als de hoogte van de navbalk*/
+        margin-top: -25px;
+    }
+
+    .topnav-centered a {
+        font-size: 25px;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+
+    .topnav .Menu_Button {
+        margin-right: 10px;
+    }
+
+    .Logo_CHE {
+        margin-left: -70px;
+        height: 145px; /*Zelfde als de hoogte van de navbalk*/
+        margin-top: -30px;
+    }
+
+    .topnav-centered a {
+        font-size: 25px;
+    }
+
+    .topnav-right img {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 450px) {
+
+    .topnav .Menu_Button {
+        margin-right: 10px;
+    }
+
+    .Logo_CHE {
+        margin-left: -70px;
+        height: 145px; /*Zelfde als de hoogte van de navbalk*/
+        margin-top: -30px;
+    }
+
+    .topnav-centered a {
+        font-size: 25px;
+    }
+
 }
