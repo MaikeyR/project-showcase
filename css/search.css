@@ -1,0 +1,28 @@
+﻿.sdropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.sdropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #dfdfdf;
+    z-index: 1;
+    min-width: 700px;
+}
+
+.sdropdown-content a {
+    color: black;
+    min-width: 100%;
+    min-height: 100%;
+    text-decoration: none;
+    display: block;
+}
+
+.sdropdown-content a:hover {
+    background-color: #cacacae3;
+}
+
+.search-input {
+    border-width: 1px;
+}
