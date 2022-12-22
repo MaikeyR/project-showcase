@@ -15,30 +15,28 @@
 }
 
 .BoxTitelSingle {
-    padding: 8px 8px;
-    border: 2px solid #DFDFDF; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 30px;
-    border: none;
-
-    /*Schuine lijnen*/
-    width: 550px;
-    height: 100px;
-    left: 0px;
-    top: 0px;
-    background: linear-gradient(88.43deg, rgba(0, 117, 255, 0.6975) -0.33%, rgba(0, 72, 255, 0.7125) 48%, rgba(0, 117, 255, 0.6975) 98.73%);
-    transform: skew(-20deg);
+    font-size: 35px;
+    color: #ffffff;
+    background: linear-gradient(88.43deg, rgba(0, 117, 255, 0.7275) -0.33%, rgba(0, 56, 255, 0.75) 48%, rgba(0, 117, 255, 0.72) 98.73%);
+    padding: 15px 17px;
+    width: 60%;
+    max-width: 700px;
+    margin: 20px auto auto;
+    transform: skew(-25deg);
+    border-radius: 3px;
+    /*clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);/ /Andere manier voor transform/
+*/
 }
 
 
-
 .BoxTitelSingle h1 {
-    font-size: 35px;
-    color: #fff;
-    transform: skew(20deg);
+    transform: skew(25deg);
+    text-align: center;
+}
+
+span {
+    display: block;
+    text-align: center;
 }
 
 .content {
@@ -105,6 +103,11 @@
     .BoxTitelSingle h1 {
         font-size: 30px;
     }
+
+    .content {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -116,6 +119,11 @@
 
     .BoxTitelSingle h1 {
         font-size: 25px;
+    }
+
+    .content {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
     }
 
 }
@@ -131,6 +139,11 @@
         font-size: 22px;
     }
 
+    .content {
+        margin-left: 1.3em;
+        margin-right: 1.3em;
+    }
+
 }
 
 @media all and (max-width: 400px) {
@@ -140,7 +153,30 @@
         height: 65px;
     }
 
+    .content {
+        margin-left: 1.1em;
+        margin-right: 1.1em;
+    }
+
 }
+
+@media all and (max-width: 300px) {
+
+    .BoxTitelSingle {
+        width: 220px;
+        height: 60px;
+    }
+    .BoxTitelSingle h1 {
+        font-size: 20px;
+    }
+
+    .content {
+        margin-left: 0.9em;
+        margin-right: 0.9em;
+    }
+
+}
+
 
 
 
