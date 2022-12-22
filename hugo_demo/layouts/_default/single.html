@@ -8,19 +8,21 @@
 
 {{- partial "header-single" . -}}
 
-
-<section class="section">
-  <div class="Box1">
-
-    <div class="BoxTitelSingle">
-      <h1>{{ .Params.titel }}</h1>
+<body>
+  <section class="section">
+    <div class="Box1">
+  
+      <div class="BoxTitelSingle">
+        <h1><a>{{ .Params.title }}</a></h1>
+      </div>
+  
+      <div class="content">
+        {{ .Content }}
+      </div>
     </div>
+  </section>
+</body>
 
-    <div class="content">
-      {{ .Content }}
-    </div>
-  </div>
-</section>
 
 
 {{ end }}

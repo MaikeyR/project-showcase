@@ -121,6 +121,10 @@
         font-size: 25px;
     }
 
+    .topnav-right img {
+        display: none;
+    }
+
 }
 
 @media all and (max-width: 450px) {
