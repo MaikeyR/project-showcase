@@ -1,6 +1,6 @@
 ---
 title: "Profity 2022"            #Dit is de titel van het project
-datum: 2022-12-16T14:58:21+01:00
+date: "16-12-2022"
 draft: false
 link: /hugo-demo/profity2022/   #Verander de hoofdletter van de projectnaam naar een kleine letter
 
