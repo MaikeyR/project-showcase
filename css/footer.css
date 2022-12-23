@@ -1,0 +1,228 @@
+* {
+  font-family: poppins;
+  scroll-behavior: smooth;
+}
+
+li img {
+  width: 2em;
+  height: auto;
+  color: rgb(255, 255, 255);
+}
+
+.contact .adres-che,
+.icon-facebook,
+.icon-twitter,
+.icon-instagram,
+.icon-youtube,
+.icon-linkedin,
+.logo-che-contact {
+  margin-left: 20px;
+  transform: skew(25deg);
+}
+
+.icon-facebook {
+  margin-left: 40px;
+}
+
+.icon-linkedin {
+  margin-right: 10px;
+}
+
+footer .contact {
+  outline: 2px solid #b8bf00;
+  padding: 20px;
+
+  width: 60%;
+  max-width: 1200px;
+
+  margin: auto;
+
+  transform: skew(-25deg);
+  border-radius: 3px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.contact {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact a {
+  float: left;
+  text-align: center;
+  width: 2.4em;
+}
+
+.contact .adres-right {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.adres-right img {
+  width: 6em;
+}
+
+.adres-right p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.backhome {
+  background: #0072bb;
+  width: 65px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+  margin-right: 3px;
+  border-radius: 3px;
+}
+
+.backhome img {
+  transform: skew(25deg);
+  width: 16px;
+}
+
+.adres-chehide {
+  display: none;
+  transform: skew(25deg);
+}
+
+/* ============================ */
+/* Responsive */
+
+@media all and (max-width: 1750px) {
+  .backhome {
+    margin-left: 20px;
+  }
+  .icon-facebook {
+    margin-left: 5px;
+  }
+  .adres-right .adres-chehide {
+    margin-left: 7px;
+  }
+}
+
+@media all and (max-width: 1615px) {
+  .adres-che {
+    display: none;
+  }
+  .adres-chehide {
+    display: flex;
+  }
+  .backhome {
+    margin-left: 60px;
+  }
+  .icon-facebook {
+    margin-left: 20px;
+  }
+  footer .contact {
+    padding: 10px 15px;
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .contact {
+    overflow: hidden;
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  footer .contact {
+    max-width: 473px;
+  }
+
+  .contact .adres-right {
+    margin-top: 5px;
+  }
+
+  .contact .adres-right {
+    float: right;
+    display: flex;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .backhome {
+    display: none;
+  }
+
+  .adres-right .adres-chehide {
+    margin-right: 20px;
+  }
+
+  footer .contact {
+    max-width: 365px;
+  }
+}
+
+@media all and (max-width: 610px) {
+  .contact {
+    margin: 10px 10px 15px;
+  }
+
+  footer .contact {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 430px) {
+  footer .contact {
+    width: 100%;
+    max-width: 325px;
+  }
+
+  .icon-facebook {
+    margin-left: 0px;
+  }
+
+  .adres-right .adres-chehide {
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  footer .contact {
+    transform: skew(0deg);
+  }
+
+  .contact .adres-chehide,
+  .icon-facebook,
+  .icon-twitter,
+  .icon-instagram,
+  .icon-youtube,
+  .icon-linkedin,
+  .logo-che-contact {
+    transform: skew(0deg);
+  }
+
+  .contact .logo-left {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon-linkedin {
+    margin-right: 0px;
+  }
+
+  .contact .adres-chehide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .adres-right .adres-chehide {
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .adres-right .adres-chehide {
+    margin-right: 0px;
+  }
+}
