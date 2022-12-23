@@ -1,6 +1,6 @@
 ---
 title: "Project1"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
-datum: 2022-12-16T20:25:47+01:00
+date: "16-12-2022"
 draft: false
 link: /hugo-demo/project1/
 

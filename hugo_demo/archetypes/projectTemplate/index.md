@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
-datum: {{ .Date }}
+date: DD-MM-YYYY
 draft: false
 link: /hugo-demo/{{ replace .Name "-" " " }}/
 

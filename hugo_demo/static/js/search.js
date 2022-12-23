@@ -50,10 +50,17 @@ function showSearchResults() {
             // match found with input text and lunr index
             target.innerHTML = matchPosts.map(function (p) {
                 if (p != undefined) {
-                    return `<li>
-                        ${p.date} -
-                        <a href="${p.url}"> ${p.title}</a>
-                        </li>`;
+                    var searchHtml = `
+                        <a href='${p.url}'>
+                            <table width='100%'>
+                                <tr>
+                                    <td min-width='90px' height='70px' ><img src=${p.image} ></td>
+                                    <td min-width='170px' height='70px' >${p.title}</td>
+                                    <td width=100% height='70px' >${p.samenvatting}</td>
+                                </tr>
+                            </table>
+                        </a>`;
+                    return searchHtml;
                 }
             }).join('');
         } else {

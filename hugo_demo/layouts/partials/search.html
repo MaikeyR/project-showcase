@@ -1,6 +1,6 @@
-{{ define "main" }}
 <head>
     <base href="/hugo-demo/">
+    <link rel="stylesheet" href="css/search.css">
 </head>
 
 <div class="container content">
@@ -8,7 +8,10 @@
         <h1 class="post-title">Search:</h1>
         <input type="text" id="search-input" placeholder="" oninput="showSearchResults()">
         <br />
-        <ul id="list"></ul> <!-- this list is for rendering the results -->
+        <div class="sdropdown">
+            <div class="sdropdown-content">
+                <div id="list"></div> <!-- this list is for rendering the results -->
+            </div> 
+        </div>
     </section>
 </div>
-{{end}}

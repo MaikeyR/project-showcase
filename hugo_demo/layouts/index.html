@@ -41,6 +41,7 @@
   <div class="container px-5 py-8 mx-auto">
     {{- partial "custom-message.html" . -}}
     
+    {{- partial "search.html" . -}}
     {{- partial "taglist.html" . -}}
     
     {{ .Scratch.Set "pages" .Site.Pages }}
