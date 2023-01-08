@@ -1,5 +1,37 @@
 {{ define "main" }}
 
+<head>
+  <base href="/hugo-demo/">
+  <link rel="stylesheet" href="css/index.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<section class="text-gray-700 body-font">
+  <div class="home">
+    <div class="home-picture"></div>
+    <div class="box-overlay">
+      <div class="home-overlay"></div>
+      <div class="home-overlay2"></div>
+      <div class="links">
+        <div class="text-links">
+          <p class="direct-title">Direct naar:</p>
+          <img src="img/Line.svg" alt="">
+          <p class="direct-title">Usability</p>
+          <p class="direct-title">Development</p>
+          <p class="direct-title">Consulatancy</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-background">
+      <img class="logo" src="img/logoCHE.svg" alt="Logo">
+    </div>
+
+
+
+
+  </div>
+  
 <section class="text-gray-700 body-font">
   <div class="container px-5 py-8 mx-auto">
     {{- partial "custom-message.html" . -}}

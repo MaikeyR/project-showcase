@@ -1,5 +1,6 @@
 <head>
   <link rel="stylesheet" href="css/no-pagination.css">
+  <script type="text/javascript" src="js/ng-FitText.js"></script>
 </head>
 
 {{ $pagelist := $.Scratch.Get "pages" }}
@@ -10,22 +11,31 @@
   <div class="hoi">
     <!--oude class: flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4-->
     {{ range where $pages ".Params.exclude" "!=" "true" }}
+    
     <a rel="noopener" href="{{ .Params.Link }}"
       class="hoi2">
+      
       <!--oude class: card p-4 md:w-1/3 sm:mb-4 mb-6 hover:shadow-xl hover:bg-gray-400 transition duration-200 ease-in rounded-lg {{ lower .Section }}-->
-      <div class="hoi2-5">
+      <div class="content">
         {{ if (or .Params.Image .CurrentSection.Params.Image) }}
-        <img alt="{{ .Title }}" class="hoi3"
-          src="{{ (or .Params.Image .CurrentSection.Params.Image) }}">
+        <div class="thumbnail">
+          <img alt="{{ .Title }}" class="thumbnail2"
+               src="{{ (or .Params.Image .CurrentSection.Params.Image) }}">
+        </div>
+        
         <!--oude class: rounded-lg h-64 overflow-hidden relative-->
         {{ end }}
-        <h2
-          class="hoi4"> <!--Naam titel-->
+
+
+<!--        data-fittext="" data-fittext-min="100" data-fittext-max="310" data-ng-bind="mainCtrl.data.dyn"-->
+        <h2 data-fittext
+          class="title"> <!--Naam titel-->
           <!--oude class: text-white px-2 py-1 tracking-widest text-2xl leading-tight font-extrabold font-bree text-center w-full h-full flex justify-center items-center absolute top-0 left-0-->
           {{ .Title }}
         </h2>
+        
         <p
-          class="hoi5">
+          class="description">
           <!--text-white px-2 py-1 tracking-widest text-md leading-tight font-light w-full text-center absolute bottom-0 left-0-->
           {{ .Params.Subtitle }}
         </p>
@@ -36,3 +46,12 @@
 
 </div>
 {{ end }}
+
+
+<script>
+  // $("#textSize").fitText();
+
+  var myApp = angular.module('myApp', ['ngFitText']);
+</script>
+
+
