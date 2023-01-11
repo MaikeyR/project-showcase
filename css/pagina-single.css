@@ -179,6 +179,11 @@ figure {
     margin-left: 1.1em;
     margin-right: 1.1em;
   }
+
+  .content a {
+    font-size: 14px;
+    color: red;
+  }
 }
 
 @media all and (max-width: 300px) {
@@ -193,5 +198,9 @@ figure {
   .content {
     margin-left: 0.9em;
     margin-right: 0.9em;
+  }
+
+  .content a {
+    font-size: 11px;
   }
 }
