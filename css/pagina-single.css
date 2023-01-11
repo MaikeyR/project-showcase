@@ -1,202 +1,197 @@
 * {
-    font-family: poppins;
-    
+  font-family: poppins;
 }
 
 body {
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 24%, rgba(255,255,255,1) 54%, rgba(238,238,238,1) 80%, rgba(255,255,255,1) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(238, 238, 238, 1) 24%,
+    rgba(255, 255, 255, 1) 54%,
+    rgba(238, 238, 238, 1) 80%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .section {
-    max-width: 1920px;
-    margin-inline: auto;
-    /* border: 2px solid red; eruit halen, dit is alleen voor responsive */
+  max-width: 1920px;
+  margin-inline: auto;
+  /* border: 2px solid red; eruit halen, dit is alleen voor responsive */
 }
 
 .Box1 .BoxTitelSingle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .BoxTitelSingle {
-    font-size: 35px;
-    color: #ffffff;
-    background: linear-gradient(88.43deg, rgba(0, 117, 255, 0.7275) -0.33%, rgba(0, 56, 255, 0.75) 48%, rgba(0, 117, 255, 0.72) 98.73%);
-    padding: 15px 17px;
-    width: 60%;
-    max-width: 700px;
-    margin: 20px auto auto;
-    transform: skew(-25deg);
-    border-radius: 3px;
-    /*clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);/ /Andere manier voor transform/
+  font-size: 35px;
+  color: #ffffff;
+  background: linear-gradient(
+    88.43deg,
+    rgba(0, 117, 255, 0.7275) -0.33%,
+    rgba(0, 56, 255, 0.75) 48%,
+    rgba(0, 117, 255, 0.72) 98.73%
+  );
+  padding: 15px 17px;
+  width: 60%;
+  max-width: 700px;
+  margin: 20px auto auto;
+  transform: skew(-25deg);
+  border-radius: 3px;
+  /*clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);/ /Andere manier voor transform/
 */
 }
 
-
 .BoxTitelSingle h1 {
-    transform: skew(25deg);
-    text-align: center;
+  transform: skew(25deg);
+  text-align: center;
 }
 
 span {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 span {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
-
 
 .content {
-    height: auto;
-    width: auto;
-    margin: 3.5em;
-    font-size: 18px;
+  height: auto;
+  width: auto;
+  margin: 3.5em;
+  font-size: 18px;
 
-    /* border: 2px solid black; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+  /* border: 2px solid black; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
-.content h1 {     /*Pakt de # van md  https://www.markdownguide.org/basic-syntax*/
-    font-weight: bold;
-    font-size: 25px;
-    margin-top: 15px;
+.content h1 {
+  /*Pakt de # van md  https://www.markdownguide.org/basic-syntax*/
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 15px;
 }
 
 .content h2 {
-    font-weight: bold;
-    font-size: 22px;
-    margin-top: 12px;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 12px;
 }
 
 .content h3 {
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .content h4 {
-    font-size: 18px;
-    margin-top: 0px;
-    font-weight: normal;
+  font-size: 18px;
+  margin-top: 0px;
+  font-weight: normal;
 }
 
 .content img {
-    width: 45em;
-    border: 7.5px solid #DFDFDF;
-    border-radius: 10px;
-    margin-top: 15px;
+  width: 50em;
+  border: 7.5px solid #dfdfdf;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
 figure {
-    margin: 0px;
+  margin: 0px;
 }
 
 .content iframe {
-    border-radius: 0;
-    margin-top: 20px;
+  /* border-radius: 100px; */
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .content a {
-    color: #0072BB;
+  color: #0072bb;
 }
 
 /* ============================ */
 /* Responsive */
 
 @media all and (max-width: 750px) {
+  .BoxTitelSingle {
+    width: 450px;
+    height: 90px;
+  }
 
-    .BoxTitelSingle {
-        width: 450px;
-        height: 90px;
-    }
+  .BoxTitelSingle h1 {
+    font-size: 30px;
+  }
 
-    .BoxTitelSingle h1 {
-        font-size: 30px;
-    }
-
-    .content {
-        margin-left: 3em;
-        margin-right: 3em;
-    }
+  .content {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
 }
 
 @media all and (max-width: 600px) {
+  .BoxTitelSingle {
+    width: 400px;
+    height: 80px;
+  }
 
-    .BoxTitelSingle {
-        width: 400px;
-        height: 80px;
-    }
+  .BoxTitelSingle h1 {
+    font-size: 25px;
+  }
 
-    .BoxTitelSingle h1 {
-        font-size: 25px;
-    }
-
-    .content {
-        margin-left: 1.5em;
-        margin-right: 1.5em;
-    }
-
+  .content {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
 }
 
 @media all and (max-width: 500px) {
+  .BoxTitelSingle {
+    width: 300px;
+    height: 70px;
+  }
 
-    .BoxTitelSingle {
-        width: 300px;
-        height: 70px;
-    }
+  .BoxTitelSingle h1 {
+    font-size: 22px;
+  }
 
-    .BoxTitelSingle h1 {
-        font-size: 22px;
-    }
-
-    .content {
-        margin-left: 1.3em;
-        margin-right: 1.3em;
-    }
-
+  .content {
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+  }
 }
 
 @media all and (max-width: 400px) {
+  .BoxTitelSingle {
+    width: 250px;
+    height: 65px;
+  }
 
-    .BoxTitelSingle {
-        width: 250px;
-        height: 65px;
-    }
-
-    .content {
-        margin-left: 1.1em;
-        margin-right: 1.1em;
-    }
-
+  .content {
+    margin-left: 1.1em;
+    margin-right: 1.1em;
+  }
 }
 
 @media all and (max-width: 300px) {
+  .BoxTitelSingle {
+    width: 220px;
+    height: 60px;
+  }
+  .BoxTitelSingle h1 {
+    font-size: 20px;
+  }
 
-    .BoxTitelSingle {
-        width: 220px;
-        height: 60px;
-    }
-    .BoxTitelSingle h1 {
-        font-size: 20px;
-    }
-
-    .content {
-        margin-left: 0.9em;
-        margin-right: 0.9em;
-    }
-
+  .content {
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+  }
 }
-
-
-
-
-
-
