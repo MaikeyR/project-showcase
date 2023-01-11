@@ -1,13 +1,42 @@
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="css/tags.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins"
+    rel="stylesheet"
+  />
+  <script src="js/tags.js"></script>
 </head>
 
 <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
   <ul>
     {{ range .Site.Taxonomies.tags }}
-            <tr>
-              <a class="btn btn-primary" href="{{ .Page.Permalink }}" role="button" >{{ .Page.Title }}</a>
-            </tr>
+    <tr>
+      <a class="btn btn-primary" href="{{ .Page.Permalink }}" role="button"
+        >{{ .Page.Title }}
+      </a>
+    </tr>
     {{ end }}
   </ul>
+</div>
+
+<div class="tagvenster">
+  <input type="checkbox" id="tagvenster-head" />
+  <label for="tagvenster-head"><p>Tags</p></label>
+  <div class="tagvenster-text">
+    <div class="ptag">
+      {{ range .Site.Taxonomies.tags }}
+      <tr>
+        <a class="tagbutton" href="{{ .Page.Permalink }}" role="button"
+          >{{ .Page.Title }}
+        </a>
+      </tr>
+      {{ end }}
+    </div>
+  </div>
 </div>

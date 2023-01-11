@@ -1,0 +1,74 @@
+* {
+  font-family: Poppins;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tagvenster {
+  max-width: 530px; /*lengte taglist*/
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.tagvenster input {
+  display: none;
+}
+
+.tagvenster label {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+  color: #fff;
+  display: block;
+  /* margin-bottom: 10px; */
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  z-index: 1;
+  background: #0072bb;
+  max-width: 90px;
+}
+
+label p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.tagvenster-text {
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 4px;
+  line-height: 1.4;
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.tagvenster input:checked ~ .tagvenster-text {
+  max-height: 300px;
+  padding-bottom: 25px;
+  background: #00aeea;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+  opacity: 1;
+  top: 0;
+}
+
+.tagvenster-text .ptag {
+  padding: 15px;
+}
+
+.tagbutton {
+  background: #0d6efd;
+  padding: 16px 12px;
+  color: #fff;
+}
