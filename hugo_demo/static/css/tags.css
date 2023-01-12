@@ -2,28 +2,22 @@
   font-family: Poppins;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .tagvenster {
-  max-width: 530px; /*lengte taglist*/
+  max-width: 520px; /*lengte taglist*/
   overflow: hidden;
   font-weight: 500;
+  margin-bottom: 24px;
 }
 
+/*Vierkantje van de input weghalen*/
 .tagvenster input {
   display: none;
 }
 
+/*De knop Tags*/
 .tagvenster label {
   position: relative;
   background: #fff;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
   color: #fff;
   display: block;
   /* margin-bottom: 10px; */
@@ -33,8 +27,15 @@ body {
   z-index: 1;
   background: #0072bb;
   max-width: 90px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
+.tagvenster label:hover {
+  color: #fff;
+  background: #0b5ed7;
+}
+
+/*Tekst van de knop Tags*/
 label p {
   display: flex;
   justify-content: center;
@@ -43,6 +44,7 @@ label p {
   font-size: 20px;
 }
 
+/*Tekst in het tabje*/
 .tagvenster-text {
   max-height: 1px;
   overflow: hidden;
@@ -55,20 +57,51 @@ label p {
 }
 
 .tagvenster input:checked ~ .tagvenster-text {
-  max-height: 300px;
+  max-height: 800px; /*Maximale hoogte van de Taglist*/
   padding-bottom: 25px;
-  background: #00aeea;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
   opacity: 1;
   top: 0;
 }
 
 .tagvenster-text .ptag {
-  padding: 15px;
+  padding: 10px 15px 15px 15px;
+  margin-top: 5px;
+  background: linear-gradient(
+    135deg,
+    rgb(206, 231, 243) 0%,
+    rgb(206, 227, 255) 100%
+  );
+  border: 2px solid rgb(206, 227, 255);
+  border-radius: 4px;
 }
 
+/*Knoppen van de Tags*/
 .tagbutton {
   background: #0d6efd;
   padding: 16px 12px;
   color: #fff;
+
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+  margin-top: 5px;
+}
+
+.tagbutton:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  margin-bottom: -2px;
+  background: #0b5ed7;
 }
