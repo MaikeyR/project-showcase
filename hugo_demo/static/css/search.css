@@ -9,7 +9,7 @@
   display: inline-block;
   width: 765px;
 
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 .sdropdown-content {
@@ -27,7 +27,7 @@
   min-height: 100%;
   text-decoration: none;
   display: block;
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
 }
 
 .sdropdown-content a:hover {
