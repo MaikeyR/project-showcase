@@ -6,7 +6,7 @@
   max-width: 520px; /*lengte taglist*/
   overflow: hidden;
   font-weight: 500;
-  margin-bottom: 24px;
+  float: left;
 }
 
 /*Vierkantje van de input weghalen*/
@@ -22,8 +22,8 @@
   display: block;
   /* margin-bottom: 10px; */
   cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 8px;
   z-index: 1;
   background: #0072bb;
   max-width: 90px;
@@ -52,7 +52,7 @@ label p {
   line-height: 1.4;
   position: relative;
   top: -100%;
-  opacity: 0.5;
+  opacity: 0;
   transition: all 0.3s ease;
 }
 

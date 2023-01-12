@@ -1,57 +1,50 @@
 {{ define "main" }}
 
 <head>
-  <base href="/hugo-demo/">
-  <link rel="stylesheet" href="css/index.css">
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <base href="/hugo-demo/" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins"
+    rel="stylesheet"
+  />
 </head>
 
 <section class="text-gray-700 body-font">
-<div class="home">
+  <div class="home">
     <div class="home-picture"></div>
     <div class="box-overlay">
-        <div class="home-overlay"></div>
-        <div class="home-overlay2"></div>
-        <div class="links">
-            <div class="text-links">
-                <p class="direct-title">Direct naar:</p>
-                <img src="img/Line.svg" alt="">
-                <p class="direct-title">Usability</p>
-                <p class="direct-title">Development</p>
-                <p class="direct-title">Consulatancy</p>
-            </div>
-        </div>    
+      <div class="home-overlay"></div>
+      <div class="home-overlay2"></div>
+      <div class="links">
+        <div class="text-links">
+          <p class="direct-title">Direct naar:</p>
+          <img src="img/Line.svg" alt="" />
+          <p class="direct-title">Usability</p>
+          <p class="direct-title">Development</p>
+          <p class="direct-title">Consulatancy</p>
+        </div>
+      </div>
     </div>
-    
+
     <div class="logo-background">
-        <img class="logo" src="img/logoCHE.svg" alt="Logo">
+      <img class="logo" src="img/logoCHE.svg" alt="Logo" />
     </div>
+  </div>
 
+  <!--  <div class="home-picture-div">-->
+  <!--    <img class="home-picture" src="img/Home-Picture.jpg" alt="Home Picture">-->
+  <!--  </div>-->
 
-
-    
-</div>
-  
-  
-<!--  <div class="home-picture-div">-->
-<!--    <img class="home-picture" src="img/Home-Picture.jpg" alt="Home Picture">-->
-<!--  </div>-->
-  
-  
   <div class="container px-5 py-8 mx-auto">
     {{- partial "custom-message.html" . -}}
-    
-    {{- partial "search.html" . -}}
-    {{- partial "taglist.html" . -}}
-    
-    {{ .Scratch.Set "pages" .Site.Pages }}
 
-    {{ if eq .Site.Params.multipage true }}
-    {{- partial "pagination.html" . -}}
-    {{ else }}
-    {{- partial "no-pagination.html" . -}}
-    {{ end }}
+    <div class="search-tags">
+      {{- partial "search.html" . -}} {{- partial "taglist.html" . -}}
+    </div>
 
+    {{ .Scratch.Set "pages" .Site.Pages }} {{ if eq .Site.Params.multipage true
+    }} {{- partial "pagination.html" . -}} {{ else }} {{- partial
+    "no-pagination.html" . -}} {{ end }}
   </div>
 </section>
 
