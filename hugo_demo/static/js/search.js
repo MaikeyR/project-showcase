@@ -67,7 +67,7 @@ function showSearchResults() {
         .join("");
     } else {
       // if no results found, then render a general message
-      target.innerHTML = `<br><h2 style="text-align:center">No search results found</h2>`;
+      target.innerHTML = `<br><h2 class="tekstgeenzoekr" style="text-align:center">Geen zoekresultaten gevonden</h2>`;
     }
   } else {
     target.innerHTML = "";
