@@ -1,7 +1,10 @@
 ﻿.container-content {
   margin: 0px;
-  width: 1050px; /*Lengte zoekbalk op de achtergrond*/
-  margin-right: 10px;
+  width: 782px; /*Lengte zoekbalk op de achtergrond*/
+  margin-right: 20px;
+
+  /* border: 5px solid yellow; */
+  transition: all 0.3s ease;
 }
 
 .sdropdown {
@@ -15,10 +18,20 @@
 .sdropdown-content {
   display: block;
   position: absolute;
-  background-color: #eeeeee;
+  background-color: #e9e9e9;
   z-index: 1;
   min-width: 100%;
-  /* border: 5px solid green; */
+  margin: 0;
+  padding: 0;
+
+  border: 2px solid green;
+}
+
+.tekstgeenzoekr {
+  padding: 10px;
+  margin-top: -24px;
+  margin-bottom: 0;
+  font-size: 20px;
 }
 
 .sdropdown-content a {
@@ -27,6 +40,7 @@
   min-height: 100%;
   text-decoration: none;
   display: block;
+
   /* border: 5px solid blue; */
 }
 
@@ -46,23 +60,58 @@ h1.post-title {
   margin: 0;
 }
 
-.searchbar {
-  border: 2.2px solid black;
-  border-radius: 8px;
-}
+/* .searchbar {
+  border: solid 2px #0075ff;
+  border-radius: 2px;
 
-input {
+  transform: skew(-20deg);
+  transition: all 0.3s ease;
+} */
+
+/* input {
   height: 46px;
   width: 746px;
   outline: none;
 
+  transform: skew(20deg);
+  transition: all 0.3s ease;
   border-radius: 8px;
+
+  /* border: 5px solid pink; 
+} 
+*/
+
+input {
+  border: solid 2px #0075ff;
+
+  height: 46px;
+  width: 746px;
+  outline: none;
+
+  transform: skew(-20deg);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+  padding-left: 5px;
+  height: 50px;
+}
+
+input::placeholder {
+  transition: all 0.3s ease;
+  transform: skew(20deg);
+}
+
+input:focus,
+input:focus::placeholder {
+  transform: skew(0deg);
+}
+
+input:focus + .ptje {
+  display: none;
 }
 
 .searchbar input {
   margin-left: 15px;
   font-size: 20px;
+
+  margin-right: 10px;
 }
-
-
-
