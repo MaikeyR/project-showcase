@@ -2,9 +2,9 @@
 title: "Profity 2022"            #Dit is de titel van het project
 date: "16-12-2022"
 draft: false
-link: /project-showcase/profity2022/   #Verander de hoofdletter van de projectnaam naar een kleine letter
+link: /Project-Showcase/profity2022/   #Verander de hoofdletter van de projectnaam naar een kleine letter
 
-image: /project-showcase/profity2022/profity2022_1.jpg                     #Dit is de tumbnail van het project
+image: /Project-Showcase/profity2022/profity2022_1.jpg                     #Dit is de tumbnail van het project
 naam: "Robbin van de Scheur, Jan Koudijs"                                  #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "Henk Jan Nieuwenhuis"                     #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "Business"                                         #Kies uit Development / UX Design / Business
