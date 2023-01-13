@@ -8,7 +8,7 @@ image: /hugo-demo/project2/design.png    #Dit wordt de thumbnail van het project
 naam: "Je Naam, Namen"                                             #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "naam opdrachtgever"                                #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "thema naam"                                                #Kies uit Development / UX Design / Business
-tags: ["jaar2", "SDE"]                                             #Vul je tags hierin. Het mogen er meerdere zijn. Kies alleen uit (jaar1 / jaar2 / jaar3 / jaar4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
+tags: ["jaar 2", "SDE"]                                             #Vul je tags hierin. Het mogen er meerdere zijn. Kies alleen uit (jaar 1 / jaar 2 / jaar 3 / jaar 4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
 samenvatting: "een samenvatting van het project"                   #Korte samenvatting van het project   
 
 #Geef hieronder informatie en uitleg over het project. Dit is geschreven in Markdown (.md) en hier zijn verschillende style-opties. Deze zijn hieronder als voorbeeld weergegeven:

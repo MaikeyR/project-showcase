@@ -8,7 +8,7 @@ image: /hugo-demo/fddjankoudijs/fddjankoudijs_1.jpg #Dit wordt de thumbnail van 
 naam: "Jan Koudijs" #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "Marnix Bras, Jaap van den Beukel" #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "Development" #Kies uit Development / UX Design / Business
-tags: ["jaar1", "FDD"] #Vul je tags hierin. Het mogen er meerdere zijn. Kies alleen uit (jaar1 / jaar2 / jaar3 / jaar4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
+tags: ["jaar 1", "FDD"] #Vul je tags hierin. Het mogen er meerdere zijn. Kies alleen uit (jaar 1 / jaar 2 / jaar 3 / jaar 4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
 samenvatting: "Dit vak heet frondend development (FDD) en dat kreeg ik in het eerste blok in het eerste jaar. Hiervoor moesten we een website bouwen
 Hierin moest worden beschreven en weergegeven hoe het proces van het bouwen van een website in elkaar zat en hoe je deze op het internet kon krijgen" #Korte samenvatting van het project
 

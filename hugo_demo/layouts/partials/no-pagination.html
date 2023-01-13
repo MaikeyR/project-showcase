@@ -52,8 +52,8 @@
     tagButtons.forEach(function(button) {
       button.addEventListener("click", function() {
         var tag = this.textContent.trim();
-        var hoi2 = document.querySelectorAll(".box");
-        hoi2.forEach(function(el) {
+        var box = document.querySelectorAll(".box");
+        box.forEach(function(el) {
           let tags = JSON.parse(el.getAttribute("data-tags"));
           if (tags.includes(tag)) {
             el.style.display = "block";

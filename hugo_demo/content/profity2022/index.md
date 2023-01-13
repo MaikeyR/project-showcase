@@ -8,7 +8,7 @@ image: /hugo-demo/profity2022/profity2022_1.jpg                     #Dit is de t
 naam: "Robbin van de Scheur, Jan Koudijs"                                  #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "Henk Jan Nieuwenhuis"                     #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "Business"                                         #Kies uit Development / UX Design / Business
-tags: ["jaar1", "BM", "PM"]                                  #Vul je tags hierin. Het mogen er meerdere zijn. Kies uit (jaar1 / jaar2 / jaar3 / jaar4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
+tags: ["jaar 1", "BM", "PM"]                                  #Vul je tags hierin. Het mogen er meerdere zijn. Kies uit (jaar 1 / jaar 2 / jaar 3 / jaar 4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
 samenvatting: "In het eerste semester is er een bedrijfsanalyse uitgevoerd bij het softwarebedrijf Profity. In deze analyse is er een proces ontdekt wat in de huidige staat van Profity niet soepel verloopt. Dit proces is het licentiebeheer. 
 Door middel van meerdere contactmomenten hebben wij het probleem van het licentiebeheer kunnen beschrijven en modelleren. Op basis van deze knelpunten en de consequenties daarvan, moet er een verbetervoorstel geformuleerd worden voor Profity. Hiervoor is de volgende hoofdvraag opgesteld: ‘Welk verbetervoorstel kan geformuleerd worden voor het licentiebeheer bij Profity?’.
 "        #Korte samenvatting van het project   
