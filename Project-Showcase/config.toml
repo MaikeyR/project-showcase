@@ -1,6 +1,6 @@
-baseURL = "https://maikeyr.github.io/Project-Showcase/"
+baseURL = "https://maikeyr.github.io/project-showcase/"
 languageCode = "en-us"
-title = "Project-Showcase"
+title = "project-showcase"
 theme = "showcase"
 
 [outputs]
