@@ -15,23 +15,50 @@
   /* border: 5px solid red; */
 }
 
-.sdropdown-content {
+#sdropdown-content {
   display: block;
   position: absolute;
-  background-color: #e9e9e9;
+  background-color: #fff;
   z-index: 1;
-  min-width: 100%;
+  width: 746px;
   margin: 0;
+  margin-left: 15px !important;
+  margin-top: -17px !important;
   padding: 0;
-
-  border: 2px solid green;
 }
+
+input:not(:placeholder-shown) {
+  border-bottom: none;
+}
+
+.hr-lijn {
+  background: #9C9C9C;
+  height: 1px;
+  margin: 0;
+}
+
+#sdropdown-content {
+  border-top: none;
+}
+
+input:focus:not(:placeholder-shown) + #sdropdown-content {
+  border: solid 2px #0075ff;
+  border-top: none;
+}
+
+/* .zoekresultaten {
+  border: solid 2px #0075ff;
+  border-top: none;
+
+} */
 
 .tekstgeenzoekr {
   padding: 10px;
-  margin-top: -24px;
+  margin-top: 0px;
   margin-bottom: 0;
   font-size: 20px;
+  border: solid 2px #0075ff;
+  border-top: 1.5px solid #9C9C9C;
 }
 
 .sdropdown-content a {
@@ -60,27 +87,6 @@ h1.post-title {
   margin: 0;
 }
 
-/* .searchbar {
-  border: solid 2px #0075ff;
-  border-radius: 2px;
-
-  transform: skew(-20deg);
-  transition: all 0.3s ease;
-} */
-
-/* input {
-  height: 46px;
-  width: 746px;
-  outline: none;
-
-  transform: skew(20deg);
-  transition: all 0.3s ease;
-  border-radius: 8px;
-
-  /* border: 5px solid pink; 
-} 
-*/
-
 input {
   border: solid 2px #0075ff;
 
@@ -95,18 +101,21 @@ input {
   height: 50px;
 }
 
+.post {
+  height: 0px;
+}
+
 input::placeholder {
+  transform: skew(20deg);
+}
+
+input:not(:placeholder-shown) {
   transition: all 0.3s ease;
   transform: skew(20deg);
 }
 
-input:focus,
-input:focus::placeholder {
+input:not(:placeholder-shown) {
   transform: skew(0deg);
-}
-
-input:focus + .ptje {
-  display: none;
 }
 
 .searchbar input {
