@@ -5,7 +5,9 @@
     height: 100%;
     justify-content: flex-start;
 }
-
+.py-8 {
+    margin-top: 0;
+}
 .box {
     transform: skew(-5deg);
     position: relative;
@@ -52,23 +54,42 @@
     .box {
         margin-left: 49px;
         margin-right: 49px;
+        
     }
 }
 /*box 2 items*/
-@media only screen and (max-width: 1199px) and (min-width: 1000px){
+@media only screen and (max-width: 1199px) and (min-width: 1110px){
     .box {
         margin-left: 40px;
         margin-right: 40px;
     }
     .project {
+        /*padding-left: 102px;*/
+        /*padding-right: 102px;*/
+    }
+    .container.px-5.py-8.mx-auto {
+        width: 100%;
+    }
+    .container {
+        max-width: 1086px;
+    }
+}
+@media only screen and (max-width: 1109px) and (min-width: 992px){
+    .project {
         padding-left: 102px;
         padding-right: 102px;
+    }
+    .box {
+        margin-left: 31px;
+        margin-right: 31px;
+
     }
 }
 @media only screen and (max-width: 999px) and (min-width: 768px){
     .box {
         margin-left: 31px;
         margin-right: 31px;
+        
     }
 }
 
@@ -98,6 +119,7 @@
 
 .thumbnail {
     position: relative;
+    display: flex;
     height: 50%;
     width: 106%;
 }
@@ -110,7 +132,6 @@
     object-fit: cover;
     object-position: center;
     border-radius: 2px;
-    
 }
 
 
