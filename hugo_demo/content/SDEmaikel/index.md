@@ -1,10 +1,10 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
+title: "SDEmaikel"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
 date: DD-MM-YYYY
 draft: false
-link: /hugo-demo/{{ replace .Name "-" " " | lower }}/
+link: /hugo-demo/SDEmaikel/
 
-image: /hugo-demo/{{ replace .Name "-" " " | lower }}/thumbnailnaam.png    #Dit wordt de thumbnail van het project
+image: /hugo-demo/sdemaikel/thumbnailnaam.png    #Dit wordt de thumbnail van het project
 naam: "Je Naam, Namen"                                             #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "naam opdrachtgever"                                #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "thema naam"                                                #Kies uit Development / UX Design / Business
