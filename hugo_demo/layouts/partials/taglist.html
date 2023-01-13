@@ -10,28 +10,18 @@
     href="https://fonts.googleapis.com/css?family=Poppins"
     rel="stylesheet"
   />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-
-<!-- <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-  <ul>
-    {{ range .Site.Taxonomies.tags }}
-    <tr>
-      <a class="btn btn-primary" href="{{ .Page.Permalink }}" role="button"
-        >{{ .Page.Title }}
-      </a>
-    </tr>
-    {{ end }}
-  </ul>
-</div> -->
 
 <div class="tagvenster">
   <input type="checkbox" id="tagvenster-head" />
   <label for="tagvenster-head"><p>Tags</p></label>
   <div class="tagvenster-text">
     <div class="ptag">
+      <button id="clear-filter">Clear Filter</button>
       {{ range .Site.Taxonomies.tags }}
       <tr>
-        <a class="tagbutton" href="{{ .Page.Permalink }}" role="button"
+        <a class="tagbutton" role="button"
           >{{ .Page.Title }}
         </a>
       </tr>
@@ -39,3 +29,13 @@
     </div>
   </div>
 </div>
+
+<script>
+  var clearFilterButton = document.getElementById("clear-filter");
+  clearFilterButton.addEventListener("click", function() {
+    var box = document.querySelectorAll(".box");
+    box.forEach(function(el) {
+      el.style.display = "block";
+    });
+  });
+</script>
