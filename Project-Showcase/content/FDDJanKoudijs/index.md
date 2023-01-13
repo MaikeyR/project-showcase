@@ -2,9 +2,9 @@
 title: "FDD website van Jan Koudijs" #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
 date: "12-11-2021"
 draft: false
-link: /hugo-demo/fddjankoudijs/
+link: /project-showcase/fddjankoudijs/
 
-image: /hugo-demo/fddjankoudijs/fddjankoudijs_1.jpg #Dit wordt de thumbnail van het project
+image: /project-showcase/fddjankoudijs/fddjankoudijs_1.jpg #Dit wordt de thumbnail van het project
 naam: "Jan Koudijs" #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "Marnix Bras, Jaap van den Beukel" #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "Development" #Kies uit Development / UX Design / Business
