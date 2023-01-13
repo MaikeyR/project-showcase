@@ -1,10 +1,11 @@
 ﻿* {
-    font-family: poppins;
-    overflow-x: hidden;
+  font-family: poppins;
 }
-body, html {
-    height: 100%;
-    margin: 0;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 *, html {
@@ -15,99 +16,96 @@ body, html {
 .home {
     height: 99vh;
     width: 100%;
-}
+    }
 
 .logo-background {
-    position: relative;
-    margin-top: -85vh;
-    background: white;
-    width: 360px;
-    height: 138px;
-    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  position: relative;
+  margin-top: -85vh;
+  background: white;
+  width: 360px;
+  height: 138px;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 }
 .logo {
-    height: 138px;
-    width: 200px;
-    margin-left: 60px;
-    
+  height: 138px;
+  width: 200px;
+  margin-left: 60px;
 }
 
 .home-picture {
-    background-image: url("../img/Home-Picture.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/Home-Picture.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    width: 70%;
-    height: 85vh;
-    min-width: 1300px;
-    clip-path: polygon(0 0, 100% 0, calc(100% - 300px) 100%, 0 100%, 0 0);
+  width: 70%;
+  height: 85vh;
+  min-width: 1300px;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 300px) 100%, 0 100%, 0 0);
 }
 
 .box-overlay {
-    position: relative;
-    margin-top: -85vh;
-    margin-left: auto;
-    margin-right: 0;
-    width: 100%;
-    height: 85vh;
+  position: relative;
+  margin-top: -85vh;
+  margin-left: auto;
+  margin-right: 0;
+  width: 100%;
+  height: 85vh;
 }
 
 .home-overlay {
-    position: absolute;
-    margin-top: 0;
-    background: white;
-    left: 54%;
-    width: 56%;
-    min-width: 600px;
-    height: 85vh;
+  position: absolute;
+  margin-top: 0;
+  background: white;
+  left: 54%;
+  width: 56%;
+  min-width: 600px;
+  height: 85vh;
 
-    transform: skew(-33deg);
-    
+  transform: skew(-33deg);
 }
 
 .home-overlay2 {
-    position: relative;
-    margin-top: 0;
-    background: white;
-    left: 54%;
-    width: 56%;
-    min-width: 600px;
-    height: 85vh;
+  position: relative;
+  margin-top: 0;
+  background: white;
+  left: 54%;
+  width: 56%;
+  min-width: 600px;
+  height: 85vh;
 
-    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
 }
 
 .container px-5 py-8 mx-auto {
-    top: 100%;
+  top: 100%;
 }
 
 .links {
-    position: relative;
-    margin-top: -85vh;
-    margin-left: auto;
-    right: 10%;
-    width: 360px;
-    height: 85vh;
-    align-items: center;
-    
-    /*transform: skew(33deg);*/
-    
+  position: relative;
+  margin-top: -85vh;
+  margin-left: auto;
+  right: 10%;
+  width: 360px;
+  height: 85vh;
+  align-items: center;
+
+  /*transform: skew(33deg);*/
 }
 
 .text-links {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .direct-title {
-    font-size: 28px;
-    margin-left: 35px;
+  font-size: 28px;
+  margin-left: 35px;
 }
 
 .hoi {
-    width: 500px;
-    height: 50px;
+  width: 500px;
+  height: 50px;
 }
 
 .arrow {
@@ -133,4 +131,9 @@ hr.line {
     border-top: 4px #F3F5F6;
     width: 90%;
     border-radius: 5px;
+}
+
+.search-tags {
+  display: flex;
+  /* border: 2px solid aquamarine; */
 }

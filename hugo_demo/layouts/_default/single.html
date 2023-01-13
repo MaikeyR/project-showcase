@@ -1,27 +1,33 @@
 {{ define "main" }}
 
 <head>
-  <base href="/hugo-demo/">
-  <link rel="stylesheet" href="css/pagina-single.css">
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <base href="/hugo-demo/" />
+  <link rel="stylesheet" href="css/pagina-single.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins"
+    rel="stylesheet"
+  />
 </head>
 
 {{- partial "header-single" . -}}
 <body>
   <section class="section">
     <div class="Box1">
-  
       <div class="BoxTitelSingle">
         <h1><a>{{ .Params.title }}</a></h1>
       </div>
-  
+
       <div class="content">
+        <div class="information">
+          <h1>Informatie</h1>
+          <p>Naam: {{.Params.naam}}</p>
+          <p>Opdrachtgever: {{.Params.opdrachtgever}}</p>
+          <p>Thema: {{.Params.thema}}</p>
+        </div>
         {{ .Content }}
       </div>
     </div>
   </section>
 </body>
-
-
 
 {{ end }}
