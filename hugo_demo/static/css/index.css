@@ -133,7 +133,13 @@ hr.line {
     border-radius: 5px;
 }
 
+
+.searchsearch {
+  display: flex;
+}
+
 .search-tags {
   display: flex;
-  /* border: 2px solid aquamarine; */
+  border: 2px solid aquamarine;
+  margin-bottom: 40px;
 }

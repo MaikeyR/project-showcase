@@ -49,25 +49,27 @@ function showSearchResults() {
     if (matchPosts.length > 0) {
       // match found with input text and lunr index
       target.innerHTML = matchPosts
-        .map(function (p) {
+        .map(function (p, index) {
           if (p != undefined) {
             var searchHtml = `
-                        <a href='${p.url}'>
-                            <table width='100%'>
+                        <a class="zoekresultaten" style="border-left:solid 2px #0075ff; border-right:solid 2px #0075ff" href='${p.url}'>
+                          <table width='100%' ${index === matchPosts.length - 1 ? 'style="border-bottom: solid 2px #0075ff; border-radius: 10px"' : ''}>
                                 <tr>
                                     <td min-width='90px' height='70px' ><img src=${p.image} ></td>
                                     <td min-width='170px' height='70px' >${p.title}</td>
                                     <td width=100% height='70px' >${p.samenvatting}</td>
+                                    <hr class="hr-lijn">
                                 </tr>
                             </table>
                         </a>`;
+
             return searchHtml;
           }
         })
         .join("");
     } else {
       // if no results found, then render a general message
-      target.innerHTML = `<br><h2 class="tekstgeenzoekr" style="text-align:center">Geen zoekresultaten gevonden</h2>`;
+      target.innerHTML = `<h2 class="tekstgeenzoekr" style="text-align:center">Geen zoekresultaten gevonden</h2>`;
     }
   } else {
     target.innerHTML = "";
