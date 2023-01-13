@@ -18,21 +18,24 @@
 .tagvenster label {
   position: relative;
   background: #fff;
-  color: #fff;
+  color: #6f6f6f;
   display: block;
   /* margin-bottom: 10px; */
   cursor: pointer;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 8px;
+  border-radius: 2px;
+  border: solid 2px #0075ff;
   z-index: 1;
-  background: #0072bb;
+  background: #fff;
   max-width: 90px;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transform: skew(-20deg);
+  margin-left: 10px;
 }
 
 .tagvenster label:hover {
   color: #fff;
-  background: #0b5ed7;
+  background: #0075ff;
 }
 
 /*Tekst van de knop Tags*/
@@ -42,6 +45,7 @@ label p {
   align-items: center;
   margin-bottom: 0;
   font-size: 20px;
+  transform: skew(20deg);
 }
 
 /*Tekst in het tabje*/
