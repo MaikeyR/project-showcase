@@ -3,50 +3,95 @@
     flex-wrap: wrap!important;
     width: 100%;
     height: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-.hoi2 {
+.box {
     transform: skew(-5deg);
-    margin: 0 14px 0 14px;
     position: relative;
+    margin: 0 28px 0 28px;
+    
     display: flex;
     flex-direction: column;
     min-width: 0;
     width: calc(100%/3);
     background: linear-gradient(161.61deg, #E4DEDE 0.34%, rgba(251, 240, 240, 0.37) 56.96%, #D6D1D1 106.91%);
-    border-radius: 6px;
+    border-radius: 4px;
     
-    
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter, background-position-y, border-radius, transform;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    
+    /*transition: background 0.5ms ease-out;*/
 
+    background-size:500px 380px;
+    background-position-x: -70px;
     padding: 20px;
 }
 @media (min-width: 768px) {
-    .hoi2 {
+    .box {
         width: 250px;
     }
 }
 @media (min-width: 640px) {
-    .hoi2 {
+    .box {
         margin-bottom: 3rem;
+        
     }
 }
 
-.hoi2:hover {
-    /*hover:shadow-xl*/
-    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-
-    /*hover:bg-gray-400*/
-    --tw-bg-opacity: 1;
-    background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+/*box 4 items*/
+@media (min-width: 1400px) {
+    .box {
+        margin-left: 28px!important;
+        margin-right: 28px!important;
+    }
+}
+/*box 3 items*/
+@media only screen and (max-width: 1399px) and (min-width: 1200px){
+    .box {
+        margin-left: 49px;
+        margin-right: 49px;
+    }
+}
+/*box 2 items*/
+@media only screen and (max-width: 1199px) and (min-width: 1000px){
+    .box {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .hoi {
+        padding-left: 102px;
+        padding-right: 102px;
+    }
+}
+@media only screen and (max-width: 999px) and (min-width: 768px){
+    .box {
+        margin-left: 31px;
+        margin-right: 31px;
+    }
 }
 
+@media (max-width: 766px) {
+    .box {
+    /*    Mobile Viewer     */
+    }
+}
+
+
+.box:hover {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-shadow);
+    
+    background-position-y:-30px;
+    
+    border-radius: 6px;
+}
+
+
+
 .content {
-    border-radius: 3px;
+    border-radius: 2px;
     height: 280px;
     position: relative;
 }
@@ -64,50 +109,57 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 2px;
+    
 }
 
 
 .title {
     transform: skew(5deg);
-    /*--bs-text-opacity: 1;*/
-    color: black;
+    color: #090909;
+
+    /*font-family: 'Poppins', sans-serif;*/
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 0;
     
-    /*padding-right: 0.5rem!important;*/
-    /*padding-left: 0.5rem!important;*/
-    
-    /*padding-top: 0.25rem!important;*/
-    /*padding-bottom: 0.25rem!important;*/
-    /*letter-spacing: 1.5px;*/
-    /*!*font-size: 1.5rem;*!*/
+    display: block;
+    padding-top: 0.25rem!important;
+    padding-bottom: 0.25rem!important;
+    letter-spacing: 0.2px;
+    /*font-size: 1.5rem;*/
     /*line-height: 1.25;*/
-    /*font-weight: 1000;*/
+    /*font-weight: 500;*/
+    font-feature-settings: revert;
     word-wrap: break-word;
 }
 
+
 .description {
+    transform: skew(5deg);
     --tw-text-opacity: 1;
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
 
-    text-align: center!important;
+    display: flex;
+    text-align: left;
 
-    padding-top: 0.25rem!important;
-    padding-bottom: 0.25rem!important;
+    /*padding-top: 0.25rem!important;*/
+    /*padding-bottom: 0.25rem!important;*/
+    
+    /*padding-right: 0.5rem!important;*/
+    /*padding-left: 0.5rem!important;*/
 
-    padding-right: 0.5rem!important;
-    padding-left: 0.5rem!important;
 
-    bottom: 0!important;
-
-    letter-spacing: 0.1em;
-
-    line-height: 1.25;
-
-    font-weight: 300;
-
+    margin-top: -10px;
     width: 100%;
-    
     position: absolute;
-    
     left: 0;
+    
+    font-family: 'Poppins', system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+
+    color: #464646;
 }
