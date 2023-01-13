@@ -30,11 +30,22 @@
       <img class="logo" src="img/logoCHE.svg" alt="Logo" />
     </div>
   </div>
-
-  <!--  <div class="home-picture-div">-->
-  <!--    <img class="home-picture" src="img/Home-Picture.jpg" alt="Home Picture">-->
-  <!--  </div>-->
-
+    <div class="arrow">
+        <a href="#scroll"><img class="arrowImg" src="img/Arrow.svg" alt=""></a>
+    </div>
+    
+</div>
+    <div class="line">
+        <hr class="line">
+    </div>
+  
+  
+<!--  <div class="home-picture-div">-->
+<!--    <img class="home-picture" src="img/Home-Picture.jpg" alt="Home Picture">-->
+<!--  </div>-->
+    <div id="scroll"></div>
+  
+ 
   <div class="container px-5 py-8 mx-auto">
     {{- partial "custom-message.html" . -}}
 
@@ -46,6 +57,7 @@
     }} {{- partial "pagination.html" . -}} {{ else }} {{- partial
     "no-pagination.html" . -}} {{ end }}
   </div>
+    
 </section>
 
 {{ end }}
