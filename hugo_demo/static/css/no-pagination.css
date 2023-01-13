@@ -1,4 +1,4 @@
-﻿.hoi {
+﻿.project {
     display: flex;
     flex-wrap: wrap!important;
     width: 100%;
@@ -60,7 +60,7 @@
         margin-left: 40px;
         margin-right: 40px;
     }
-    .hoi {
+    .project {
         padding-left: 102px;
         padding-right: 102px;
     }

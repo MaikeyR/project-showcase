@@ -8,7 +8,7 @@
 <div>
   {{ $pages := where $pagelist "Kind" "page" }}
 
-  <div class="hoi">
+  <div class="project">
     <!--oude class: flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4-->
     {{ range where $pages ".Params.exclude" "!=" "true" }}
     
