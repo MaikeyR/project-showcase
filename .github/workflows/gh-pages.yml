@@ -28,15 +28,15 @@ jobs:
           # extended: true
 
       - name: Build
-        working-directory: ./hugo_demo
+        working-directory: ./Project-Showcase
         run: hugo --minify
         
       - name: Show files
-        run: ls hugo_demo/public
+        run: ls Project-Showcase/public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./hugo_demo/public
+          publish_dir: ./Project-Showcase/public
