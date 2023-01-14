@@ -1,6 +1,6 @@
 ﻿.container-content {
   margin: 0px;
-  width: 782px; /*Lengte zoekbalk op de achtergrond*/
+  width: 746px; /*Lengte zoekbalk op de achtergrond*/
   margin-right: 20px;
 
   transition: all 0.3s ease;
@@ -54,6 +54,7 @@ input:focus:not(:placeholder-shown) + #sdropdown-content {
   font-size: 20px;
   border: solid 2px #0075ff;
   border-top: 1.5px solid #9c9c9c;
+
 }
 
 .sdropdown-content a {
@@ -86,7 +87,7 @@ input {
   border: solid 2px #0075ff;
 
   height: 46px;
-  width: 746px;
+  width: 746px; /*lengte*/
   outline: none;
 
   transform: skew(-20deg);
@@ -97,6 +98,7 @@ input {
 
   text-align: center;
   cursor: pointer;
+  z-index: 100;
 }
 
 .searchbar {
@@ -105,7 +107,7 @@ input {
 
 .searchbar img {
   position: absolute;
-  right: 35px;
+  right: 0px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
