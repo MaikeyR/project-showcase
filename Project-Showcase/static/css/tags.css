@@ -3,10 +3,13 @@
 }
 
 .tagvenster {
-  max-width: auto; /*lengte taglist 520px*/
+  max-width: 520px; /*lengte taglist 520px*/
   overflow: hidden;
   font-weight: 500;
-  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 320px; /*Pas deze aan samen met .container-content margin-right in search.css, om deze goed in het midden te krijgen*/
 }
 
 /*Vierkantje van de input weghalen*/
@@ -31,7 +34,7 @@
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
     transform 0.2s ease-in-out;
   transform: skew(-20deg);
-  margin-left: 10px;
+  margin-right: 8px;
 }
 
 .tagvenster label:hover {
@@ -75,7 +78,7 @@ label p {
   padding-bottom: 25px;
   opacity: 1;
   top: 0;
-  margin-left: 10px;
+  margin-right: 8px;
 }
 
 .tagvenster-text .ptag {
@@ -89,7 +92,6 @@ label p {
 /*Knoppen van de Tags*/
 .tagbutton {
   background: #fff;
-  padding: 16px 12px;
   color: #0075ff;
   border: 2px solid #0075ff;
 
