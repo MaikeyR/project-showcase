@@ -141,3 +141,61 @@ label p {
 
   margin-top: 5px;
 }
+
+/* === Responsive === */
+
+@media all and (max-width: 1000px) {
+  .tagvenster {
+    margin-left: 280px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .tagvenster {
+    width: 520px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .tagvenster {
+    margin-left: 180px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .tagvenster {
+    margin-left: 80px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .tagvenster {
+    margin-left: 0px;
+    width: 490px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .tagvenster {
+    width: 440px;
+  }
+
+  .tagvenster label {
+    padding: 4px 8px 4px 8px;
+  }
+}
+
+@media all and (max-width: 475px) {
+  .tagvenster {
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 350px;
+    display: grid;
+    justify-items: center;
+  }
+
+  .tagvenster label {
+    padding: 3px 8px 3px 8px;
+    z-index: 0;
+  }
+}

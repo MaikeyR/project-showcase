@@ -155,3 +155,93 @@ input:focus {
 
   margin-right: 10px;
 }
+
+/* === Responsive === */
+
+@media all and (max-width: 1000px) {
+  .container-content {
+    width: 700px;
+    margin-right: 120px;
+  }
+
+  input {
+    width: 700px;
+  }
+
+  #sdropdown-content {
+    width: 700px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .container-content {
+    width: 600px;
+  }
+
+  input {
+    width: 600px;
+  }
+
+  #sdropdown-content {
+    width: 600px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .container-content {
+    width: 500px;
+  }
+
+  input {
+    width: 500px;
+  }
+
+  #sdropdown-content {
+    width: 500px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .container-content {
+    width: 400px;
+  }
+
+  input {
+    width: 400px;
+  }
+
+  #sdropdown-content {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .container-content {
+    width: 350px;
+  }
+
+  input {
+    width: 350px;
+    height: 42px;
+  }
+
+  #sdropdown-content {
+    width: 350px;
+  }
+}
+
+@media all and (max-width: 475px) {
+  .container-content {
+    width: 350px;
+    margin-right: 35px;
+  }
+
+  input {
+    width: 350px;
+    height: 40px;
+  }
+
+  #sdropdown-content {
+    width: 350px;
+  }
+}
