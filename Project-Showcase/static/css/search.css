@@ -1,7 +1,9 @@
 ﻿.container-content {
   margin: 0px;
-  width: 746px; /*Lengte zoekbalk op de achtergrond*/
-  margin-right: 120px; /*Pas deze aan samen met .tagvenster margin-left in tags.css, om deze goed in het midden te krijgen*/
+  width: 746px;
+  /*Lengte zoekbalk op de achtergrond*/
+  margin-right: 120px;
+  /*Pas deze aan samen met .tagvenster margin-left in tags.css, om deze goed in het midden te krijgen*/
 
   transition: all 0.3s ease;
 }
@@ -38,7 +40,7 @@ input:not(:placeholder-shown) {
   border-top: none;
 }
 
-input:focus:not(:placeholder-shown) + #sdropdown-content {
+input:focus:not(:placeholder-shown)+#sdropdown-content {
   border: solid 2px #0075ff;
   border-top: none;
 }
@@ -86,7 +88,8 @@ input {
   border: solid 2px #0075ff;
 
   height: 46px;
-  width: 746px; /*lengte*/
+  width: 746px;
+  /*lengte*/
   outline: none;
 
   transform: skew(-20deg);
@@ -244,4 +247,40 @@ input:focus {
   #sdropdown-content {
     width: 350px;
   }
+}
+
+
+@media all and (max-width: 385px) {
+  .AfbeeldingSearch {
+    display: none;
+  }
+
+  .container-content {
+    width: 300px;
+  }
+
+  input {
+    width: 300px;
+    height: 40px;
+  }
+
+  #sdropdown-content {
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .container-content {
+    width: 250px;
+  }
+
+  input {
+    width: 250px;
+    height: 40px;
+  }
+
+  #sdropdown-content {
+    width: 250px;
+  }
+
 }
