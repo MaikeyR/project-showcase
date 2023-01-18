@@ -168,3 +168,10 @@ hr.line {
     transform: translateY(-10px);
   }
 }
+
+@media all and (max-width: 430px) {
+  .container.px-5.py-8.mx-auto {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
