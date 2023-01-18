@@ -3,13 +3,15 @@
 }
 
 .tagvenster {
-  max-width: 520px; /*lengte taglist 520px*/
+  max-width: 520px;
+  /*lengte taglist 520px*/
   overflow: hidden;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-left: 320px; /*Pas deze aan samen met .container-content margin-right in search.css, om deze goed in het midden te krijgen*/
+  margin-left: 320px;
+  /*Pas deze aan samen met .container-content margin-right in search.css, om deze goed in het midden te krijgen*/
 }
 
 /*Vierkantje van de input weghalen*/
@@ -41,11 +43,11 @@
   color: #0075ff;
 }
 
-.tagvenster input:checked + label {
+.tagvenster input:checked+label {
   transform: skew(0deg);
 }
 
-.tagvenster input:checked + label p {
+.tagvenster input:checked+label p {
   transform: skew(0deg);
   transition: all 0.2s ease-in-out;
   color: #0075ff;
@@ -73,8 +75,9 @@ label p {
   transition: all 0.3s ease;
 }
 
-.tagvenster input:checked ~ .tagvenster-text {
-  max-height: 800px; /*Maximale hoogte van de Taglist*/
+.tagvenster input:checked~.tagvenster-text {
+  max-height: 800px;
+  /*Maximale hoogte van de Taglist*/
   padding-bottom: 25px;
   opacity: 1;
   top: 0;
@@ -140,4 +143,74 @@ label p {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
   margin-top: 5px;
+}
+
+/* === Responsive === */
+
+@media all and (max-width: 1000px) {
+  .tagvenster {
+    margin-left: 280px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .tagvenster {
+    width: 520px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .tagvenster {
+    margin-left: 180px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .tagvenster {
+    margin-left: 80px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .tagvenster {
+    margin-left: 0px;
+    width: 490px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .tagvenster {
+    width: 440px;
+  }
+
+  .tagvenster label {
+    padding: 4px 8px 4px 8px;
+  }
+}
+
+@media all and (max-width: 475px) {
+  .tagvenster {
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 350px;
+    display: grid;
+    justify-items: center;
+  }
+
+  .tagvenster label {
+    padding: 3px 8px 3px 8px;
+    z-index: 0;
+  }
+}
+
+@media all and (max-width: 385px) {
+  .tagvenster {
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .tagvenster {
+    width: 250px;
+  }
 }
