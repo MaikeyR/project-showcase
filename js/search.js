@@ -57,7 +57,7 @@ function showSearchResults() {
                                 <tr>
                                     <td min-width='90px' height='70px' ><img src=${p.image} ></td>
                                     <td min-width='170px' height='70px' >${p.title}</td>
-                                    <td width=100% height='70px' >${p.samenvatting}</td>
+                                    <td width=100% height='70px' class="SamenvattingSearch" >${p.samenvatting}</td>
                                     <hr class="hr-lijn">
                                 </tr>
                             </table>
