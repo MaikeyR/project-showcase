@@ -1,9 +1,10 @@
 ﻿.container-content {
   margin: 0px;
-  width: 782px; /*Lengte zoekbalk op de achtergrond*/
-  margin-right: 20px;
+  width: 746px;
+  /*Lengte zoekbalk op de achtergrond*/
+  margin-right: 120px;
+  /*Pas deze aan samen met .tagvenster margin-left in tags.css, om deze goed in het midden te krijgen*/
 
-  /* border: 5px solid yellow; */
   transition: all 0.3s ease;
 }
 
@@ -11,8 +12,6 @@
   position: relative;
   display: inline-block;
   width: 765px;
-
-  /* border: 5px solid red; */
 }
 
 #sdropdown-content {
@@ -32,7 +31,7 @@ input:not(:placeholder-shown) {
 }
 
 .hr-lijn {
-  background: #9C9C9C;
+  background: #9c9c9c;
   height: 1px;
   margin: 0;
 }
@@ -41,16 +40,14 @@ input:not(:placeholder-shown) {
   border-top: none;
 }
 
-input:focus:not(:placeholder-shown) + #sdropdown-content {
+input:focus:not(:placeholder-shown)+#sdropdown-content {
   border: solid 2px #0075ff;
   border-top: none;
 }
 
-/* .zoekresultaten {
-  border: solid 2px #0075ff;
-  border-top: none;
-
-} */
+.zoekresultaten:hover {
+  color: black;
+}
 
 .tekstgeenzoekr {
   padding: 10px;
@@ -58,7 +55,7 @@ input:focus:not(:placeholder-shown) + #sdropdown-content {
   margin-bottom: 0;
   font-size: 20px;
   border: solid 2px #0075ff;
-  border-top: 1.5px solid #9C9C9C;
+  border-top: 1.5px solid #9c9c9c;
 }
 
 .sdropdown-content a {
@@ -92,13 +89,42 @@ input {
 
   height: 46px;
   width: 746px;
+  /*lengte*/
   outline: none;
 
   transform: skew(-20deg);
   transition: all 0.3s ease;
   border-radius: 2px;
-  padding-left: 5px;
+
   height: 50px;
+
+  text-align: center;
+  z-index: 100;
+}
+
+.searchbar {
+  position: relative;
+}
+
+.searchbar img {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  height: 20px;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+  text-align: left;
+  cursor: text;
+  padding-left: 5px;
+  padding-right: 35px;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
 
 .post {
@@ -107,14 +133,22 @@ input {
 
 input::placeholder {
   transform: skew(20deg);
+  color: #6f6f6f;
 }
 
-input:not(:placeholder-shown) {
+input:hover::placeholder {
+  color: #0075ff;
   transition: all 0.3s ease;
-  transform: skew(20deg);
 }
 
-input:not(:placeholder-shown) {
+input:hover:focus::placeholder {
+  color: transparent;
+  transition: all 0s ease;
+}
+
+input:not(:placeholder-shown),
+input:focus {
+  transition: all 0.3s ease;
   transform: skew(0deg);
 }
 
@@ -123,4 +157,130 @@ input:not(:placeholder-shown) {
   font-size: 20px;
 
   margin-right: 10px;
+}
+
+/* === Responsive === */
+
+@media all and (max-width: 1000px) {
+  .container-content {
+    width: 700px;
+    margin-right: 120px;
+  }
+
+  input {
+    width: 700px;
+  }
+
+  #sdropdown-content {
+    width: 700px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .container-content {
+    width: 600px;
+  }
+
+  input {
+    width: 600px;
+  }
+
+  #sdropdown-content {
+    width: 600px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .container-content {
+    width: 500px;
+  }
+
+  input {
+    width: 500px;
+  }
+
+  #sdropdown-content {
+    width: 500px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .container-content {
+    width: 400px;
+  }
+
+  input {
+    width: 400px;
+  }
+
+  #sdropdown-content {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .container-content {
+    width: 350px;
+  }
+
+  input {
+    width: 350px;
+    height: 42px;
+  }
+
+  #sdropdown-content {
+    width: 350px;
+  }
+}
+
+@media all and (max-width: 475px) {
+  .container-content {
+    width: 350px;
+    margin-right: 35px;
+  }
+
+  input {
+    width: 350px;
+    height: 40px;
+  }
+
+  #sdropdown-content {
+    width: 350px;
+  }
+}
+
+
+@media all and (max-width: 385px) {
+  .AfbeeldingSearch {
+    display: none;
+  }
+
+  .container-content {
+    width: 300px;
+  }
+
+  input {
+    width: 300px;
+    height: 40px;
+  }
+
+  #sdropdown-content {
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .container-content {
+    width: 250px;
+  }
+
+  input {
+    width: 250px;
+    height: 40px;
+  }
+
+  #sdropdown-content {
+    width: 250px;
+  }
+
 }

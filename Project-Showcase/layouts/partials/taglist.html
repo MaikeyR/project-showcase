@@ -18,12 +18,10 @@
   <label for="tagvenster-head"><p>Tags</p></label>
   <div class="tagvenster-text">
     <div class="ptag">
-      <button id="clear-filter">Clear Filter</button>
+      <a id="clear-filter">Clear Filter</a>
       {{ range .Site.Taxonomies.tags }}
       <tr>
-        <a class="tagbutton" role="button"
-          >{{ .Page.Title }}
-        </a>
+        <a class="tagbutton" role="button">{{ .Page.Title }} </a>
       </tr>
       {{ end }}
     </div>
@@ -32,9 +30,9 @@
 
 <script>
   var clearFilterButton = document.getElementById("clear-filter");
-  clearFilterButton.addEventListener("click", function() {
+  clearFilterButton.addEventListener("click", function () {
     var box = document.querySelectorAll(".box");
-    box.forEach(function(el) {
+    box.forEach(function (el) {
       el.style.display = "block";
     });
   });

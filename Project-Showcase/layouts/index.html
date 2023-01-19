@@ -27,14 +27,15 @@
     </div>
 
     <div class="logo-background">
-      <a href="https://www.che.nl/">
+      <a target="_blank" href="https://www.che.nl/">
         <img class="logo" src="img/logoCHE.svg" alt="Logo" />
       </a>
     </div>
-    
   </div>
   <div class="arrow">
-    <a href="#Artikelen"><img class="arrowImg" src="img/Arrow.svg" alt="" /></a>
+    <a href="#Artikelen"
+      ><img class="arrowImg" src="img/Arrow.svg" alt="" id="bouncing-arrow"
+    /></a>
   </div>
   <div class="line">
     <hr class="line" />
@@ -49,10 +50,8 @@
     {{- partial "custom-message.html" . -}}
 
     <div class="searchsearch">
-      <div class="search-tags">
-        <div class="search">{{- partial "search.html" . -}}</div>
-        <div class="tags">{{- partial "taglist.html" . -}}</div>
-      </div>
+      <div class="search">{{- partial "search.html" . -}}</div>
+      <div class="tags">{{- partial "taglist.html" . -}}</div>
     </div>
 
     {{ .Scratch.Set "pages" .Site.Pages }} {{ if eq .Site.Params.multipage true
@@ -60,5 +59,10 @@
     "no-pagination.html" . -}} {{ end }}
   </div>
 </section>
-
+<script>
+  setInterval(function () {
+    var image = document.getElementById("bouncing-arrow");
+    image.style.animation = "bounce 4s infinite";
+  }, 5000);
+</script>
 {{ end }}
