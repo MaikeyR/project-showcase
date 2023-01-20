@@ -149,6 +149,9 @@
     height: 50px;
     margin: 15% 0% 10% -30%;
   }
+  .topnav-centered a {
+    display: none;
+  }
 }
 
 @media all and (max-width: 340px) {
@@ -160,10 +163,6 @@
     display: flex;
     height: 40px;
     margin: 25% 0% 10% -20%;
-  }
-
-  .topnav-centered a {
-    font-size: 20px;
   }
 }
 
@@ -177,10 +176,6 @@
     height: 40px;
     margin: 25% 0% 10% -40%;
   }
-
-  .topnav-centered a {
-    margin-left: -5px;
-  }
 }
 
 @media all and (max-width: 286px) {
@@ -192,9 +187,5 @@
     display: flex;
     height: 40px;
     margin: 25% 0% 10% 0%;
-  }
-
-  .topnav-centered a {
-    display: none;
   }
 }
