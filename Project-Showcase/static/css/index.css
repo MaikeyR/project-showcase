@@ -191,27 +191,45 @@ hr.line {
     height: 100vh;
   }
   .box-overlay {
-    display: none;
-    /*position: relative;*/
+    /*display: none;*/
+    position: relative;
     /*margin-top: -85vh;*/
-    /*margin-left: auto;*/
-    /*width: 100%;*/
-    /*height: 85vh;*/
+    margin-left: -55vw;
+    width: 100%;
+    height: 0;
+    top: 60px;
+  }
+  .links {
+    /*display: none;*/
+    width: 200px;
+    left: calc(200px - 40vw);
+    top: 72vh;
+    height: 0;
   }
   .home-overlay{
     position: absolute;
-    margin-top: 70vh;
-    background: white;
+    top: 70vh;
     min-width: 60px;
-    height: 8vh;
+    height: 150px;
+    width: 80%;
+    background: radial-gradient(76.45% 2453.69% at 42.69% 42.26%, #0066FF 0%, #094EFF 39.58%, #0057FF 100%);
 
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 80px) 100%, 0% 100%);
     transform: skew(0deg);
   }
   .home-overlay2 {
     display: none;
   }
   .text-links {
-    display: none;
+    /*display: none;*/
+    top: 0;
+    transform: translateY(0%);
+  }
+  .direct-title {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-left: 18px;
+    color: white;
   }
   .logo-background {
     display: none;
@@ -236,7 +254,6 @@ hr.line {
     height: 100%;
     width: auto;
     margin-left: 0;
-    padding: 22.5px;
   }
   .logo-search {
     height: 100%;
@@ -246,7 +263,6 @@ hr.line {
     
   }
   .home-picture {
-
     background-position: inherit;
 
     width: 100%;
@@ -257,5 +273,20 @@ hr.line {
 
   input {
     width: 10px;
+  }
+}
+
+@media (min-height: 650px) {
+  .home {
+    height: 85vh;
+  }
+  .arrow {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
