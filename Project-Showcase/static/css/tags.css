@@ -97,8 +97,7 @@ label p {
   background: #fff;
   color: #0075ff;
   border: 2px solid #0075ff;
-
-  display: inline-block!important;
+  display: inline-block !important;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
@@ -114,6 +113,7 @@ label p {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
   margin-top: 5px;
+  margin-left: 5px;
 }
 
 .tagbutton:hover {
