@@ -175,3 +175,87 @@ hr.line {
     padding-right: 20px !important;
   }
 }
+
+
+
+
+
+
+
+.header-mobile {
+  display: none;
+}
+/*-------------------Mobile-------------------------------*/
+@media (max-width: 750px) {
+  .home {
+    height: 100vh;
+  }
+  .box-overlay {
+    display: none;
+    /*position: relative;*/
+    /*margin-top: -85vh;*/
+    /*margin-left: auto;*/
+    /*width: 100%;*/
+    /*height: 85vh;*/
+  }
+  .home-overlay{
+    position: absolute;
+    margin-top: 70vh;
+    background: white;
+    min-width: 60px;
+    height: 8vh;
+
+    transform: skew(0deg);
+  }
+  .home-overlay2 {
+    display: none;
+  }
+  .text-links {
+    display: none;
+  }
+  .logo-background {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+    margin-top: 0;
+    background: white;
+    min-width: 60px;
+    height: 94px;
+  justify-content: space-between;
+    transform: skew(0deg);
+  }
+  .logo-mobile {
+    height: 100%;
+    width: auto;
+    margin-left: 0;
+    padding: 22.5px;
+  }
+  .logo-search {
+    height: 100%;
+    width: auto;
+    padding: 10px 17px 10px 17px;
+    transform: skew(8deg);
+    
+  }
+  .home-picture {
+
+    background-position: inherit;
+
+    width: 100%;
+    height: 60vh;
+    min-width: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  input {
+    width: 10px;
+  }
+}

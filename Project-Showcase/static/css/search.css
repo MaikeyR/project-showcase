@@ -148,6 +148,8 @@ input:hover:focus::placeholder {
 
 input:not(:placeholder-shown),
 input:focus {
+  width: 100%;
+  
   transition: all 0.3s ease;
   transform: skew(0deg);
 }
@@ -190,97 +192,125 @@ input:focus {
   }
 }
 
-@media all and (max-width: 750px) {
-  .container-content {
-    width: 500px;
+/*@media all and (max-width: 750px) {*/
+/*  .container-content {*/
+/*    width: 500px;*/
+/*  }*/
+
+/*  input {*/
+/*    width: 500px;*/
+/*  }*/
+
+/*  #sdropdown-content {*/
+/*    width: 500px;*/
+/*  }*/
+/*}*/
+
+/*@media all and (max-width: 650px) {*/
+/*  .container-content {*/
+/*    width: 400px;*/
+/*  }*/
+
+/*  input {*/
+/*    width: 400px;*/
+/*  }*/
+
+/*  #sdropdown-content {*/
+/*    width: 400px;*/
+/*  }*/
+/*}*/
+
+/*@media all and (max-width: 550px) {*/
+/*  .container-content {*/
+/*    width: 350px;*/
+/*  }*/
+
+/*  input {*/
+/*    width: 350px;*/
+/*    height: 42px;*/
+/*  }*/
+
+/*  #sdropdown-content {*/
+/*    width: 350px;*/
+/*  }*/
+/*}*/
+
+/*@media all and (max-width: 475px) {*/
+/*  .container-content {*/
+/*    width: 350px;*/
+/*    margin-right: 35px;*/
+/*  }*/
+
+/*  input {*/
+/*    width: 35px;*/
+/*    height: 40px;*/
+/*  }*/
+
+/*  #sdropdown-content {*/
+/*    width: 350px;*/
+/*  }*/
+/*}*/
+
+
+/*@media all and (max-width: 385px) {*/
+/*  .AfbeeldingSearch {*/
+/*    display: none;*/
+/*  }*/
+
+/*  .container-content {*/
+/*    width: 300px;*/
+/*  }*/
+
+/*  input {*/
+/*    width: 300px;*/
+/*    height: 40px;*/
+/*  }*/
+
+/*  #sdropdown-content {*/
+/*    width: 300px;*/
+/*  }*/
+/*}*/
+
+/*@media all and (max-width: 320px) {*/
+/*  .container-content {*/
+/*    width: 250px;*/
+/*  }*/
+
+/*  input {*/
+/*    width: 250px;*/
+/*    height: 40px;*/
+/*  }*/
+
+/*  #sdropdown-content {*/
+/*    width: 250px;*/
+/*  }*/
+
+/*}*/
+
+@media (max-width: 750px) {
+  .post-mobile{
+    width: 70px;
+    margin-right: 30px;
   }
-
-  input {
-    width: 500px;
+  .post-mobile:focus-within {
+    width: 100%;
   }
-
-  #sdropdown-content {
-    width: 500px;
+  .post-mobile:not(:focus) .logo-mobile {
+    width: 0;
+    height: 0;
+    padding: 0;
+    background:blue;
   }
-}
-
-@media all and (max-width: 650px) {
-  .container-content {
-    width: 400px;
-  }
-
-  input {
-    width: 400px;
-  }
-
-  #sdropdown-content {
-    width: 400px;
-  }
-}
-
-@media all and (max-width: 550px) {
-  .container-content {
-    width: 350px;
-  }
-
-  input {
-    width: 350px;
-    height: 42px;
-  }
-
-  #sdropdown-content {
-    width: 350px;
-  }
-}
-
-@media all and (max-width: 475px) {
-  .container-content {
-    width: 350px;
-    margin-right: 35px;
-  }
-
-  input {
-    width: 350px;
-    height: 40px;
-  }
-
-  #sdropdown-content {
-    width: 350px;
-  }
-}
-
-
-@media all and (max-width: 385px) {
-  .AfbeeldingSearch {
+  
+  
+  .searchbar {
     display: none;
   }
-
-  .container-content {
-    width: 300px;
-  }
-
+  
   input {
-    width: 300px;
-    height: 40px;
+    width: 50px;
   }
-
-  #sdropdown-content {
-    width: 300px;
+  .searchbar-mobile {
+    margin: 20px;
   }
-}
-
-@media all and (max-width: 320px) {
-  .container-content {
-    width: 250px;
-  }
-
-  input {
-    width: 250px;
-    height: 40px;
-  }
-
-  #sdropdown-content {
-    width: 250px;
-  }
-
 }
