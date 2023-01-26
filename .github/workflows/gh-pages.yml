@@ -32,7 +32,7 @@ jobs:
         run: hugo --minify
         
       - name: Create CNAME file
-        run: echo project-showcase.che-ict.nl > public/CNAME
+        run: echo project-showcase.che-ict.nl > ./Project-Showcase/public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
