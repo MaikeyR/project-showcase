@@ -55,8 +55,8 @@ function showSearchResults() {
                         <a class="zoekresultaten" style="border-left:solid 2px #0075ff; border-right:solid 2px #0075ff" href='${p.url}'>
                           <table width='100%' ${index === matchPosts.length - 1 ? 'style="border-bottom: solid 2px #0075ff; border-radius: 10px"' : ''}>
                                 <tr>
-                                    <td min-width='90px' height='70px' ><img src=${p.image} ></td>
-                                    <td min-width='170px' height='70px' >${p.title}</td>
+                                    <td min-width='90px' height='70px' class="searchimg"><img src=${p.image} ></td>
+                                    <td min-width='170px' height='70px' class="searchtitle" >${p.title}</td>
                                     <td width=100% height='70px' class="SamenvattingSearch" >${p.samenvatting}</td>
                                     <hr class="hr-lijn">
                                 </tr>
