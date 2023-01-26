@@ -216,6 +216,14 @@ input:focus {
   #sdropdown-content {
     width: 400px;
   }
+
+  .searchimg {
+    display: none;
+  }
+
+  .searchtitle {
+    max-width: 110px;
+  }
 }
 
 @media all and (max-width: 550px) {
