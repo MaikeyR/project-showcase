@@ -8,52 +8,41 @@
 .py-8 {
   margin-top: 0;
 }
+
+/* Box itself */
 .box {
   transform: skew(-5deg);
   position: relative;
   margin: 0 28px 3rem 28px;
-
   display: flex;
   flex-direction: column;
   min-width: 0;
   width: 250px;
-  background: linear-gradient(
-    161.61deg,
-    #e4dede 0.34%,
-    rgba(251, 240, 240, 0.37) 56.96%,
-    #d6d1d1 106.91%
-  );
+  background: linear-gradient(161.61deg, #e4dede 0.34%, rgba(251, 240, 240, 0.37) 56.96%, #d6d1d1 106.91%);
   border-radius: 4px;
-
   transition-property: background-color, border-color, color, fill, stroke,
     opacity, box-shadow, transform, filter, backdrop-filter,
     -webkit-backdrop-filter, background-position-y, border-radius, transform;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-
-  /*transition: background 0.5ms ease-out;*/
-
   background-size: 500px 380px;
   background-position-x: -70px;
   padding: 20px;
 }
-
 .box:hover {
   --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-shadow);
-
   background-position-y: -30px;
-
   border-radius: 6px;
 }
 
+/*------Inside box content--------*/
 .content {
   border-radius: 2px;
   height: 280px;
   position: relative;
 }
-
 .thumbnail {
   position: relative;
   display: flex;
@@ -70,27 +59,19 @@
   object-position: center;
   border-radius: 2px;
 }
-
 .title {
   transform: skew(5deg);
   color: #090909;
-
-  /*font-family: 'Poppins', sans-serif;*/
   font-style: normal;
   font-weight: 900;
   margin-bottom: 0;
-
   display: block;
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
   letter-spacing: 0.2px;
-  /*font-size: 1.5rem;*/
-  /*line-height: 1.25;*/
-  /*font-weight: 500;*/
   font-feature-settings: revert;
   word-wrap: break-word;
 }
-
 .description {
   transform: skew(5deg);
   --tw-text-opacity: 1;
@@ -98,12 +79,6 @@
 
   display: flex;
   text-align: left;
-
-  /*padding-top: 0.25rem!important;*/
-  /*padding-bottom: 0.25rem!important;*/
-
-  /*padding-right: 0.5rem!important;*/
-  /*padding-left: 0.5rem!important;*/
 
   margin-top: -10px;
   width: 100%;
@@ -119,6 +94,8 @@
   color: #464646;
 }
 
+
+/*---------------Mobile-------------------*/
 /* === Responsive === */
 
 /*box 4 items*/
