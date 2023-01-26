@@ -31,5 +31,8 @@
     "postcss-cli": "^10.0.0",
     "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.4"
+  },
+  "devDependencies": {
+    "cypress": "^12.4.0"
   }
 }
