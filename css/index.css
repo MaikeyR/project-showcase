@@ -1,23 +1,28 @@
 ﻿* {
   font-family: poppins;
 }
+
 body,
 html {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
 }
+
 *,
 html {
   scroll-behavior: smooth !important;
 }
+
 .mb-12 {
   margin-bottom: 0;
 }
+
 .py-6 {
   margin: 0;
   padding: 0;
 }
+
 .home {
   height: 85vh;
   width: 100%;
@@ -32,6 +37,7 @@ html {
   height: 138px;
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 }
+
 .logo {
   height: 138px;
   width: 200px;
@@ -60,6 +66,7 @@ html {
   width: 100%;
   height: 85vh;
 }
+
 .home-overlay {
   position: absolute;
   margin-top: 0;
@@ -71,6 +78,7 @@ html {
 
   transform: skew(-33deg);
 }
+
 .home-overlay2 {
   position: relative;
   margin-top: 0;
@@ -98,11 +106,17 @@ html {
   height: 85vh;
   align-items: center;
 }
+
 .text-links {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
+
+.text-links a {
+  color: #374151;
+}
+
 .direct-title {
   font-size: 28px;
   margin-left: 35px;
@@ -118,6 +132,7 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+
 .arrowImg:hover {
   cursor: pointer;
 }
@@ -129,6 +144,7 @@ html {
   justify-content: space-around;
   width: 100%;
 }
+
 hr.line {
   border-top: 4px #f3f5f6;
   width: 90%;
@@ -148,6 +164,7 @@ hr.line {
 
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -155,15 +172,19 @@ hr.line {
   100% {
     transform: translateY(0);
   }
+
   10% {
     transform: translateY(0px);
   }
+
   20% {
     transform: translateY(5px);
   }
+
   40% {
     transform: translateY(-15px);
   }
+
   60% {
     transform: translateY(-10px);
   }
@@ -182,11 +203,13 @@ hr.line {
 .header-mobile {
   display: none;
 }
+
 /*-------------------Mobile-------------------------------*/
 @media (max-width: 750px) {
   .home {
     height: 100vh;
   }
+
   .box-overlay {
     position: relative;
     margin-left: -55vw;
@@ -194,13 +217,15 @@ hr.line {
     height: 0;
     top: 60px;
   }
+
   .links {
     width: 200px;
     left: calc(200px - 40vw);
     top: 72vh;
     height: 0;
   }
-  .home-overlay{
+
+  .home-overlay {
     position: absolute;
     top: 70vh;
     min-width: 60px;
@@ -211,25 +236,35 @@ hr.line {
     clip-path: polygon(0 0, 100% 0%, calc(100% - 80px) 100%, 0% 100%);
     transform: skew(0deg);
   }
+
   .home-overlay2 {
     display: none;
   }
+
   .text-links {
     top: 0;
     transform: translateY(0%);
   }
+
+  .text-links a {
+    color: white;
+  }
+
   .direct-title {
     font-size: 15px;
     margin-bottom: 0;
     margin-left: 18px;
     color: white;
   }
+
   .logo-background {
     display: none;
   }
+
   .arrow {
     display: none;
   }
+
   .line {
     display: none;
   }
@@ -240,21 +275,24 @@ hr.line {
     background: white;
     min-width: 60px;
     height: 94px;
-  justify-content: space-between;
+    justify-content: space-between;
     transform: skew(0deg);
   }
+
   .logo-mobile {
     height: 100%;
     width: auto;
     margin-left: 0;
   }
+
   .logo-search {
     height: 100%;
     width: auto;
     padding: 10px 17px 10px 17px;
     transform: skew(8deg);
-    
+
   }
+
   .home-picture {
     background-position: inherit;
 
@@ -273,6 +311,7 @@ hr.line {
   .home {
     height: 85vh;
   }
+
   .arrow {
     position: relative;
     width: 100%;
