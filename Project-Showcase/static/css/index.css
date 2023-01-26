@@ -23,6 +23,7 @@ html {
   width: 100%;
 }
 
+/* CHE logo and link */
 .logo-background {
   position: relative;
   margin-top: -85vh;
@@ -37,8 +38,9 @@ html {
   margin-left: 60px;
 }
 
+/* Home background image */
 .home-picture {
-  background-image: url("../img/Home-Picture.jpg");
+  background-image: url("../img/Homepage/Home-Picture.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,6 +51,7 @@ html {
   clip-path: polygon(0 0, 100% 0, calc(100% - 300px) 100%, 0 100%, 0 0);
 }
 
+/* White skew overlap on home-picture */
 .box-overlay {
   position: relative;
   margin-top: -85vh;
@@ -57,7 +60,6 @@ html {
   width: 100%;
   height: 85vh;
 }
-
 .home-overlay {
   position: absolute;
   margin-top: 0;
@@ -69,7 +71,6 @@ html {
 
   transform: skew(-33deg);
 }
-
 .home-overlay2 {
   position: relative;
   margin-top: 0;
@@ -82,10 +83,12 @@ html {
   clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
 }
 
+
 .container px-5 py-8 mx-auto {
   top: 100%;
 }
 
+/* Theme fast links */
 .links {
   position: relative;
   margin-top: -85vh;
@@ -94,10 +97,7 @@ html {
   width: 360px;
   height: 85vh;
   align-items: center;
-
-  /*transform: skew(33deg);*/
 }
-
 .text-links {
   position: relative;
   top: 50%;
@@ -108,11 +108,7 @@ html {
   margin-left: 35px;
 }
 
-.hoi {
-  width: 500px;
-  height: 50px;
-}
-
+/* arrow to articles */
 .arrow {
   position: relative;
   width: 100%;
@@ -126,6 +122,7 @@ html {
   cursor: pointer;
 }
 
+/* Break line homepage -> articles */
 .line {
   position: relative;
   display: flex;
@@ -138,6 +135,7 @@ hr.line {
   border-radius: 5px;
 }
 
+/* Searchbar */
 .searchsearch {
   margin-bottom: 40px;
   display: flex;
@@ -146,6 +144,8 @@ hr.line {
   align-items: center;
   justify-content: center;
 }
+
+
 
 @keyframes bounce {
   0%,
@@ -173,5 +173,119 @@ hr.line {
   .container.px-5.py-8.mx-auto {
     padding-left: 20px !important;
     padding-right: 20px !important;
+  }
+}
+
+
+
+
+.header-mobile {
+  display: none;
+}
+/*-------------------Mobile-------------------------------*/
+@media (max-width: 750px) {
+  .home {
+    height: 100vh;
+  }
+  .box-overlay {
+    position: relative;
+    margin-left: -55vw;
+    width: 100%;
+    height: 0;
+    top: 60px;
+  }
+  .links {
+    width: 200px;
+    left: calc(200px - 40vw);
+    top: 72vh;
+    height: 0;
+  }
+  .home-overlay{
+    position: absolute;
+    top: 70vh;
+    min-width: 60px;
+    height: 150px;
+    width: 80%;
+    background: radial-gradient(76.45% 2453.69% at 42.69% 42.26%, #0066FF 0%, #094EFF 39.58%, #0057FF 100%);
+
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 80px) 100%, 0% 100%);
+    transform: skew(0deg);
+  }
+  .home-overlay2 {
+    display: none;
+  }
+  .text-links {
+    top: 0;
+    transform: translateY(0%);
+  }
+  .direct-title {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-left: 18px;
+    color: white;
+  }
+  .logo-background {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+    margin-top: 0;
+    background: white;
+    min-width: 60px;
+    height: 94px;
+  justify-content: space-between;
+    transform: skew(0deg);
+  }
+  .logo-mobile {
+    height: 100%;
+    width: auto;
+    margin-left: 0;
+  }
+  .logo-search {
+    height: 100%;
+    width: auto;
+    padding: 10px 17px 10px 17px;
+    transform: skew(8deg);
+    
+  }
+  .home-picture {
+    background-position: inherit;
+
+    width: 100%;
+    height: 60vh;
+    min-width: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  input {
+    width: 10px;
+  }
+}
+
+@media (min-height: 650px) {
+  .home {
+    height: 85vh;
+  }
+  .arrow {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1110px) and (min-width: 751px) {
+  .links {
+    right: -60px;
   }
 }

@@ -5,64 +5,91 @@
   <link rel="stylesheet" href="css/index.css" />
   <link
     href="https://fonts.googleapis.com/css?family=Poppins"
-    rel="stylesheet"
-  />
+    rel="stylesheet"/>
 </head>
 
 <section class="text-gray-700 body-font">
   <div class="home">
+    <!-- Mobile header HTML -->
+    <div id="myAnchor" class="header-mobile">
+      <div class="logo-mobile-div">
+        <a target="_blank" href="https://www.che.nl/">
+          <img class="logo-mobile" src="img/Homepage/logo-mobile.svg" alt="Logo" />
+        </a>
+      </div>
+        
+    </div>
+    <!-------------->
+
+    <!-- Home background image -->
     <div class="home-picture"></div>
+    
+    <!-- White skew overlay -->
     <div class="box-overlay">
       <div class="home-overlay"></div>
       <div class="home-overlay2"></div>
+
+      <!-- Snel naar thema links -->
       <div class="links">
         <div class="text-links">
           <p class="direct-title">Direct naar:</p>
-          <img src="img/Line.svg" alt="" />
+          <img src="img/Homepage/Line.svg" alt="" />
           <p class="direct-title">Usability</p>
           <p class="direct-title">Development</p>
           <p class="direct-title">Consulatancy</p>
         </div>
       </div>
+      
     </div>
 
+    <!-- CHE logo and link -->
     <div class="logo-background">
       <a target="_blank" href="https://www.che.nl/">
-        <img class="logo" src="img/logoCHE.svg" alt="Logo" />
+        <img class="logo" src="img/Homepage/logoCHE.svg" alt="Logo" />
       </a>
     </div>
+    
   </div>
+  
+  <!-- Click arrow to articles -->
   <div class="arrow">
-    <a href="#Artikelen"
-      ><img class="arrowImg" src="img/Arrow.svg" alt="" id="bouncing-arrow"
-    /></a>
+    <a href="#Artikelen">
+      <img class="arrowImg" src="img/Homepage/Arrow.svg" alt="" id="bouncing-arrow"/>
+    </a>
   </div>
+  
+  <!-- Break line home -> articles -->
   <div class="line">
     <hr class="line" />
   </div>
 
-  <!--  <div class="home-picture-div">-->
-  <!--    <img class="home-picture" src="img/Home-Picture.jpg" alt="Home Picture">-->
-  <!--  </div>-->
+  <!-- Link for class arrow -->
   <div id="Artikelen"></div>
 
   <div class="container px-5 py-8 mx-auto">
     {{- partial "custom-message.html" . -}}
 
+    <!-- Searchbar and tags -->
     <div class="searchsearch">
       <div class="search">{{- partial "search.html" . -}}</div>
       <div class="tags">{{- partial "taglist.html" . -}}</div>
     </div>
 
+    <!-- All articles -->
     {{ .Scratch.Set "pages" .Site.Pages }} {{ if eq .Site.Params.multipage true
     }} {{- partial "pagination.html" . -}} {{ else }} {{- partial
     "no-pagination.html" . -}} {{ end }}
+    
   </div>
 </section>
+
+<!-- Script for bouncing arrow -->
 <script>
   setInterval(function () {
     var image = document.getElementById("bouncing-arrow");
     image.style.animation = "bounce 4s infinite";
   }, 5000);
 </script>
+
+
 {{ end }}
