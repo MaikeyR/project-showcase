@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen. (verander de foldernaam NOOIT)
+title: "{{ replace .Name "-" " " | title }}"                       #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
 date: DD-MM-YYYY
 draft: false
 link: /project-showcase/{{ replace .Name "-" " " | lower }}/
