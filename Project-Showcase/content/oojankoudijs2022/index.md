@@ -2,9 +2,9 @@
 title: "Object Oriented Development Jan Koudijs" #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
 date: "12-7-2022"
 draft: false
-link: /project-showcase/oojankoudijs2022/
+link: /oojankoudijs2022/
 
-image: /project-showcase/oojankoudijs2022/oojankoudijs2022_1.jpg #Dit wordt de thumbnail van het project
+image: /oojankoudijs2022/oojankoudijs2022_1.jpg #Dit wordt de thumbnail van het project
 naam: "Jan Koudijs" #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "René Zeeders, Bob Mulder, Björn Postema" #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "Development" #Kies uit Development / UX Design / Business

@@ -2,9 +2,9 @@
 title: "Voorbeeld project5" #Dit is de titel van het project. Kan aangepast worden, maar probeer het aan de foldernaam te herkennen.
 date: "16-12-2022"
 draft: false
-link: /project-showcase/project5/
+link: /project5/
 
-image: /project-showcase/project5/voorbeeldproject_1.jpg #Dit wordt de thumbnail van het project
+image: /project5/voorbeeldproject_1.jpg #Dit wordt de thumbnail van het project
 naam: "Robin Hood" #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "Disney" #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "Robin Hood Disney" #Kies uit Development / UX Design / Business

@@ -1,5 +1,6 @@
-baseURL = "https://maikeyr.github.io/project-showcase/"
+baseURL = "https://project-showcase.che-ict.nl"
 languageCode = "en-us"
+relativeURLs = true
 title = "project-showcase"
 theme = "showcase"
 

@@ -12,7 +12,7 @@
   {{ end }}
   <title>{{ .Site.Title }}</title>
   
-  {{ $styles := resources.Get "css/main.css" | postCSS (dict "config" "./postcss.config.js") }}
+  {{ $styles := resources.Get "/css/main.css" | postCSS (dict "config" "./postcss.config.js") }}
 
   {{ if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
@@ -24,7 +24,7 @@
   <style>
     @font-face {
       font-family: "Bree Serif";
-      src: url("/project-showcase/BreeSerif-Regular.ttf") format("truetype");
+      src: url("/BreeSerif-Regular.ttf") format("truetype");
     }
     .font-bree {
       font-family: "Bree Serif", serif;
