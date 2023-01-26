@@ -31,8 +31,8 @@ jobs:
         working-directory: ./Project-Showcase
         run: hugo --minify
         
-      - name: Show files
-        run: ls Project-Showcase/public
+      - name: Create CNAME file
+        run: echo project-showcase.che-ict.nl > ./Project-Showcase/public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
