@@ -1,4 +1,4 @@
-baseURL = "https://project-showcase.che-ict.nl"
+baseURL = "https://project-showcase.che-ict.nl/"
 languageCode = "en-us"
 relativeURLs = true
 title = "project-showcase"

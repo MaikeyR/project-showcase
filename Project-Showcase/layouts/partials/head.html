@@ -13,7 +13,7 @@
   {{ end }}
   <title>Project Showcase CHE</title>
   
-  {{ $styles := resources.Get "/css/main.css" | postCSS (dict "config" "./postcss.config.js") }}
+  {{ $styles := resources.Get "css/main.css" | postCSS (dict "config" "./postcss.config.js") }}
 
   {{ if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
