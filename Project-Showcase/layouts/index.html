@@ -17,13 +17,13 @@
           <img class="logo-mobile" src="img/Homepage/logo-mobile.svg" alt="Logo" />
         </a>
       </div>
-        
+
     </div>
     <!-------------->
 
     <!-- Home background image -->
     <div class="home-picture"></div>
-    
+
     <!-- White skew overlay -->
     <div class="box-overlay">
       <div class="home-overlay"></div>
@@ -34,12 +34,15 @@
         <div class="text-links">
           <p class="direct-title">Direct naar:</p>
           <img src="img/Homepage/Line.svg" alt="" />
-          <p class="direct-title">Usability</p>
-          <p class="direct-title">Development</p>
-          <p class="direct-title">Consulatancy</p>
+          <p class="direct-title"><a style="text-decoration: none" href="fddjankoudijs">FDD website</a>
+          </p>
+          <p class="direct-title"><a style="text-decoration: none" href="oojankoudijs2022">OO
+              opdracht</a></p>
+          <p class="direct-title"><a style="text-decoration: none" href="profity2022">Profity
+              project</a></p>
         </div>
       </div>
-      
+
     </div>
 
     <!-- CHE logo and link -->
@@ -48,16 +51,16 @@
         <img class="logo" src="img/Homepage/logoCHE.svg" alt="Logo" />
       </a>
     </div>
-    
+
   </div>
-  
+
   <!-- Click arrow to articles -->
   <div class="arrow">
     <a href="#Artikelen">
-      <img class="arrowImg" src="img/Homepage/Arrow.svg" alt="" id="bouncing-arrow"/>
+      <img class="arrowImg" src="img/Homepage/Arrow.svg" alt="" id="bouncing-arrow" />
     </a>
   </div>
-  
+
   <!-- Break line home -> articles -->
   <div class="line">
     <hr class="line" />
@@ -79,7 +82,7 @@
     {{ .Scratch.Set "pages" .Site.Pages }} {{ if eq .Site.Params.multipage true
     }} {{- partial "pagination.html" . -}} {{ else }} {{- partial
     "no-pagination.html" . -}} {{ end }}
-    
+
   </div>
 </section>
 
