@@ -15,7 +15,7 @@ function loadSearch() {
       }
     }
   };
-  xhr.open("GET", "../project-showcase/index.json");
+  xhr.open("GET", "/index.json");
   xhr.send();
 }
 loadSearch(); // call loadsearch to load the json files
