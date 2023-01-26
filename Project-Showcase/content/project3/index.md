@@ -8,7 +8,7 @@ image: /project3/voorbeeldproject_1.jpg #Dit wordt de thumbnail van het project
 naam: "Robin Hood" #Naam / Namen bijv. "Jan de Lange, Fred Bouwhuis"
 opdrachtgever: "Disney" #De naam van je opdrachtgever bijv. "Jan de Lange"
 thema: "Robin Hood Disney" #Kies uit Development / UX Design / Business
-tags: [""] #Vul je tags hierin. Het mogen er meerdere zijn. Kies alleen uit (jaar 1 / jaar 2 / jaar 3 / jaar 4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
+tags: ["jaar 4"] #Vul je tags hierin. Het mogen er meerdere zijn. Kies alleen uit (jaar 1 / jaar 2 / jaar 3 / jaar 4 / FDD / DB / DT / BM / PM / DIT / etcetera...)
 samenvatting: "Dit is een mooi voorbeeld van projecten. Hier komt dus een mooie samenvatting." #Korte samenvatting van het project
 
 #Geef hieronder informatie en uitleg over het project. Dit is geschreven in Markdown (.md) en hier zijn verschillende style-opties. Deze zijn hieronder als voorbeeld weergegeven:
