@@ -91,7 +91,6 @@ html {
   clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
 }
 
-
 .container px-5 py-8 mx-auto {
   top: 100%;
 }
@@ -161,10 +160,7 @@ hr.line {
   justify-content: center;
 }
 
-
-
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -197,9 +193,6 @@ hr.line {
   }
 }
 
-
-
-
 .header-mobile {
   display: none;
 }
@@ -231,7 +224,11 @@ hr.line {
     min-width: 60px;
     height: 150px;
     width: 80%;
-    background: radial-gradient(76.45% 2453.69% at 42.69% 42.26%, #0066FF 0%, #094EFF 39.58%, #0057FF 100%);
+    background: radial-gradient(
+      182.06% 182.06% at 50% 50%,
+      #0075ff 0%,
+      #3f97ff 100%
+    );
 
     clip-path: polygon(0 0, 100% 0%, calc(100% - 80px) 100%, 0% 100%);
     transform: skew(0deg);
@@ -290,7 +287,6 @@ hr.line {
     width: auto;
     padding: 10px 17px 10px 17px;
     transform: skew(8deg);
-
   }
 
   .home-picture {
