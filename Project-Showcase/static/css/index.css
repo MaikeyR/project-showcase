@@ -160,6 +160,40 @@ hr.line {
   justify-content: center;
 }
 
+.menuButton {
+  display: inline-block;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.menuLogo {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.menuOptions {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuOptions li {
+  margin-bottom: 5px;
+}
+
+.menuOptions li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+.menuOptions li a:hover {
+  background-color: #ddd;
+}
+
+
 @keyframes bounce {
   0%,
   20%,
