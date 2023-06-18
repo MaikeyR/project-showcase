@@ -8,7 +8,12 @@ menuButton.addEventListener("click", function() {
   menuOptions.classList.toggle("show");
 });
 
-
+document.addEventListener("click", function(event) {
+  const target = event.target;
+  if (!menuButton.contains(target) && !menuOptions.contains(target)) {
+    menuOptions.classList.remove("show");
+  }
+});
 
 
 // Example usage
