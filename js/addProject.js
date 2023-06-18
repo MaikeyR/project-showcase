@@ -1,14 +1,13 @@
 const studentAccountName = "Maikel Reijneke";
 const accessToken = "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"; // personal accesstoken from the owner of the repository (Default token from "MaikeyR" expires on Wed, Sep 6 2023)
 
-const menuButtons = document.getElementsByClassName('menuButton');
-const menuOptions = document.getElementById('menuOptions');
+const menuButton = document.querySelector(".home-menuButton");
+const menuOptions = document.querySelector(".home-menuOptions");
 
-for (const menuButton of menuButtons) {
-  menuButton.addEventListener('click', () => {
-    menuOptions.style.display = menuOptions.style.display === 'none' ? 'block' : 'none';
-  });
-}
+menuButton.addEventListener("click", function() {
+  menuOptions.classList.toggle("show");
+});
+
 
 
 
