@@ -17,7 +17,7 @@ document.addEventListener("click", function(event) {
 });
 */
 
-const menuOptions = document.getElementById("#home-menuOptions");
+const menuOptions = document.getElementById("home-menuOptions");
 const menuButton = document.querySelector(".home-menuButton");
 
 menuButton.addEventListener("click", function () {
