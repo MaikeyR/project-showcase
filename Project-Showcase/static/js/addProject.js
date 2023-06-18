@@ -17,7 +17,7 @@ document.addEventListener("click", function(event) {
 });
 */
 
-const menuOptions = document.querySelector(".home-menuOptions");
+const menuOptions = document.querySelector("#home-menuOptions");
 const menuButton = document.querySelector(".home-menuButton");
 
 menuButton.addEventListener("click", function() {
@@ -36,6 +36,7 @@ document.addEventListener("click", function(event) {
     menuButton.textContent = "Menu";
   }
 });
+
 
 
 // Example usage
