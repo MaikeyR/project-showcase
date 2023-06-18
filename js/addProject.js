@@ -17,10 +17,10 @@ document.addEventListener("click", function(event) {
 });
 */
 
-const menuOptions = document.querySelector("#home-menuOptions");
+const menuOptions = document.getElementById("home-menuOptions");
 const menuButton = document.querySelector(".home-menuButton");
 
-menuButton.addEventListener("click", function() {
+menuButton.addEventListener("click", function () {
   menuOptions.classList.toggle("show");
   if (menuOptions.classList.contains("show")) {
     menuButton.textContent = "Close";
@@ -29,13 +29,17 @@ menuButton.addEventListener("click", function() {
   }
 });
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
   const target = event.target;
-  if (!menuButton.contains(target) && !menuOptions.contains(target)) {
+  if (
+    !target.classList.contains("home-menuButton") &&
+    !target.classList.contains("home-menuOptions")
+  ) {
     menuOptions.classList.remove("show");
     menuButton.textContent = "Menu";
   }
 });
+
 
 
 
