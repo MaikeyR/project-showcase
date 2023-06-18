@@ -9,26 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log(menuSpan);
   console.log(menuImg);
 
-  /*
-  menuButton.addEventListener("click", function(event) {
-    if (event.target === menuButton) {
-      console.log("Menu button clicked");
-      menuOptions.classList.toggle("show");
-    }
-  });
-  menuSpan.addEventListener("click", function(event) {
-    if (event.target === menuSpan) {
-      console.log("Menu button clicked");
-      menuOptions.classList.toggle("show");
-    }
-  });
-  menuImg.addEventListener("click", function(event) {
-    if (event.target === menuImg) {
-      console.log("Menu button clicked");
-      menuOptions.classList.toggle("show");
-    }
-  });
-  */
   menuButton.addEventListener("click", function(event) {
     if (event.target.matches(".home-menuButton, .home-menuButton span, .home-menuButton img")) {
       console.log("Menu button clicked");
