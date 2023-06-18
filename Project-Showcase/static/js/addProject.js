@@ -21,6 +21,7 @@ const menuOptions = document.getElementById("home-menuOptions");
 const menuButton = document.querySelector(".home-menuButton");
 
 menuButton.addEventListener("click", function () {
+  console.log("Menu button clicked");
   menuOptions.classList.toggle("show");
   if (menuOptions.classList.contains("show")) {
     menuButton.textContent = "Close";
