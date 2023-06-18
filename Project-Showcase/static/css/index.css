@@ -166,8 +166,8 @@ hr.line {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 40px;
+  right: 70px;
   z-index: 10;
 }
 
@@ -198,6 +198,10 @@ hr.line {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.home-menuOptions.show {
+  display: block;
 }
 
 .home-menuOptions li {
