@@ -200,6 +200,7 @@ hr.line2 {
   margin-left: 5px;
 }
 
+/* HomeOptions */
 .home-menuOptions {
   display: none;
   list-style-type: none;
@@ -234,6 +235,10 @@ hr.line2 {
   background-color: #ddd;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+}
 
 @keyframes bounce {
   0%,
