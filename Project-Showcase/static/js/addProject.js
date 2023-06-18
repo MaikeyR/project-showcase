@@ -20,6 +20,9 @@ document.addEventListener("click", function(event) {
 const menuOptions = document.getElementById("home-menuOptions");
 const menuButton = document.querySelector(".home-menuButton");
 
+console.log(menuButton);
+console.log(menuOptions);
+
 menuButton.addEventListener("click", function () {
   console.log("Menu button clicked");
   menuOptions.classList.toggle("show");
