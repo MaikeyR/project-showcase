@@ -162,7 +162,7 @@ hr.line {
 }
 
 /* homeMenu */
-.topnav-right a {
+.home-topnav-right a {
   top: 50%;
   right: 2.5%; /*Hoevere het blok MENU naar rechts staat*/
   position: absolute;
@@ -172,36 +172,50 @@ hr.line {
   ); /*Zorgt ervoor dat het blok in het midden staat*/
 }
 
-.menuButton {
+.home-topnav a {
+  float: left;
+  color: #0072bb;
+  text-align: center;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: Poppins;
+}
+
+.home-topnav-right {
+  float: right;
+}
+
+.home-menuButton {
   display: inline-block;
   padding: 12px;
   cursor: pointer;
 }
 
-.menuLogo {
+.home-menuLogo {
   vertical-align: middle;
   margin-left: 5px;
 }
 
-.menuOptions {
+.home-menuOptions {
   display: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.menuOptions li {
+.home-menuOptions li {
   margin-bottom: 5px;
 }
 
-.menuOptions li a {
+.home-menuOptions li a {
   display: block;
   padding: 8px;
   text-decoration: none;
   color: #000;
 }
 
-.menuOptions li a:hover {
+.home-menuOptions li a:hover {
   background-color: #ddd;
 }
 
