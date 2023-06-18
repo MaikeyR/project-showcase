@@ -167,7 +167,8 @@ hr.line {
 }
 
 .home-menuButton {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: #0072bb;
   text-align: center;
   padding: 6px 12px;
@@ -176,6 +177,10 @@ hr.line {
   cursor: pointer;
   border: 2px solid #dfdfdf;
   border-radius: 2px;
+}
+
+.home-menuButton span {
+  margin-right: 5px;
 }
 
 .home-menuLogo {
