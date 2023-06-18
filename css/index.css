@@ -95,6 +95,7 @@ html {
   top: 100%;
 }
 
+
 /* Theme fast links */
 .links {
   position: relative;
@@ -158,6 +159,17 @@ hr.line {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+/* homeMenu */
+.topnav-right a {
+  top: 50%;
+  right: 2.5%; /*Hoevere het blok MENU naar rechts staat*/
+  position: absolute;
+  transform: translate(
+    0%,
+    -50%
+  ); /*Zorgt ervoor dat het blok in het midden staat*/
 }
 
 .menuButton {
