@@ -1,6 +1,7 @@
 const studentAccountName = "Maikel Reijneke";
 const accessToken = "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"; // personal accesstoken from the owner of the repository (Default token from "MaikeyR" expires on Wed, Sep 6 2023)
 
+/*
 const menuButton = document.querySelector(".home-menuButton");
 const menuOptions = document.querySelector(".home-menuOptions");
 
@@ -12,6 +13,27 @@ document.addEventListener("click", function(event) {
   const target = event.target;
   if (!menuButton.contains(target) && !menuOptions.contains(target)) {
     menuOptions.classList.remove("show");
+  }
+});
+*/
+
+const menuOptions = document.querySelector(".home-menuOptions");
+const menuButton = document.querySelector(".home-menuButton");
+
+menuButton.addEventListener("click", function() {
+  menuOptions.classList.toggle("show");
+  if (menuOptions.classList.contains("show")) {
+    menuButton.textContent = "Close";
+  } else {
+    menuButton.textContent = "Menu";
+  }
+});
+
+document.addEventListener("click", function(event) {
+  const target = event.target;
+  if (!menuButton.contains(target) && !menuOptions.contains(target)) {
+    menuOptions.classList.remove("show");
+    menuButton.textContent = "Menu";
   }
 });
 
