@@ -5,13 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log(menuButton);
   console.log(menuOptions);
 
-  menuButton.addEventListener("click", function () {
-    console.log("Menu button clicked");
-    menuOptions.classList.toggle("show");
-    if (menuOptions.classList.contains("show")) {
-      menuButton.textContent = "Close";
-    } else {
-      menuButton.textContent = "Menu";
+  menuButton.addEventListener("click", function(event) {
+    if (event.target === menuButton || menuButton.contains(event.target) && !event.target.matches("span, img")) {
+      console.log("Menu button clicked");
+      menuOptions.classList.toggle("show");
+      if (menuOptions.classList.contains("show")) {
+        menuButton.textContent = "Close";
+      } else {
+        menuButton.textContent = "Menu";
+      }
     }
   });
 
