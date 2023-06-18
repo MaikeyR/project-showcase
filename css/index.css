@@ -163,7 +163,6 @@ hr.line {
 
 /* homeMenu */
 .home-topnav-right {
-  float: right;
 }
 
 .home-menuButton {
@@ -180,7 +179,7 @@ hr.line {
 }
 
 .home-menuButton span {
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .home-menuLogo {
