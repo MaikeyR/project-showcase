@@ -163,6 +163,8 @@ hr.line {
 
 /* homeMenu */
 .home-topnav-right {
+  display: flex;
+  align-items: center;
 }
 
 .home-menuButton {
@@ -270,7 +272,7 @@ hr.line {
 
   .home-overlay {
     position: absolute;
-    top: 70vh;
+    top: 75vh;
     min-width: 60px;
     height: 150px;
     width: 80%;
