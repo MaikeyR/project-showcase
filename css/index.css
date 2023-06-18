@@ -1,5 +1,5 @@
 ﻿* {
-  font-family: poppins;
+  font-family: Poppins;
 }
 
 body,
@@ -163,23 +163,12 @@ hr.line {
 
 /* homeMenu */
 .home-topnav-right a {
-  top: 50%;
-  right: 2.5%; /*Hoevere het blok MENU naar rechts staat*/
-  position: absolute;
-  transform: translate(
-    0%,
-    -50%
-  ); /*Zorgt ervoor dat het blok in het midden staat*/
-}
-
-.home-topnav a {
   float: left;
   color: #0072bb;
   text-align: center;
   padding: 6px 12px;
   text-decoration: none;
   font-size: 22px;
-  font-family: Poppins;
 }
 
 .home-topnav-right {
@@ -190,6 +179,8 @@ hr.line {
   display: inline-block;
   padding: 12px;
   cursor: pointer;
+  border: 2px solid #dfdfdf;
+  border-radius: 2px;
 }
 
 .home-menuLogo {
