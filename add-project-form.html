@@ -9,7 +9,6 @@
   />
 </head>
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.0.2/lunr.js"></script>
   <div class="topnav">
     <div class="information">
       <!-- Left-aligned links (default) -->
@@ -40,7 +39,7 @@
   </div>
 
     <!-- HTML form element -->
-  <form id="myForm" style="display: none;">
+  <form id="myForm">
     <label for="projectTitle">Project Title</label>
     <input type="text" id="projectTitle" name="projectTitle" required>
 
@@ -67,4 +66,10 @@
 
     <input type="submit" value="Submit">
   </form>
+  <style>
+    body {
+      display: initial;
+      margin: 0;
+    }
+  </style>
 </body>
