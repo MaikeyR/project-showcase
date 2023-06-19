@@ -231,6 +231,12 @@ hr.line2 {
   align-items: center;
 }
 
+.home-menuOptions li .menu-item-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
 .home-menuOptions li span.optionTitle {
   height: 18px;
 }
