@@ -187,7 +187,8 @@ hr.line2 {
   text-align: center;
   padding: 6px 12px;
   text-decoration: none;
-  font-size: 22px;
+  font-weight: bold;
+  font-size: 23px;
   cursor: pointer;
   border: 2px solid #dfdfdf;
   border-radius: 2px;
@@ -227,6 +228,11 @@ hr.line2 {
   margin-left: 25px;
   display: flex;
   align-items: center;
+}
+
+.home-menuOptions li span summary {
+  font-size: 14px;
+  color: #999999;
 }
 
 .home-menuOptions li img {
