@@ -143,6 +143,7 @@ html {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 hr.line {
@@ -222,8 +223,8 @@ hr.line2 {
 }
 
 .home-menuOptions li {
-  margin-bottom: 5px;
-  left: 25px;
+  margin-bottom: 15px;
+  margin-left: 25px;
   display: flex;
   align-items: center;
 }
