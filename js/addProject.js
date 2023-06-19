@@ -1,53 +1,6 @@
 const studentAccountName = "Maikel Reijneke";
 const accessToken = "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"; // personal accesstoken from the owner of the repository (Default token from "MaikeyR" expires on Wed, Sep 6 2023)
 
-/*
-const menuButton = document.querySelector(".home-menuButton");
-const menuOptions = document.querySelector(".home-menuOptions");
-
-menuButton.addEventListener("click", function() {
-  menuOptions.classList.toggle("show");
-});
-
-document.addEventListener("click", function(event) {
-  const target = event.target;
-  if (!menuButton.contains(target) && !menuOptions.contains(target)) {
-    menuOptions.classList.remove("show");
-  }
-});
-*/
-
-document.addEventListener("DOMContentLoaded", function() {
-  const menuOptions = document.getElementById('home-menuOptions');
-  const menuButton = document.querySelector('.home-menuButton');
-
-  console.log(menuButton);
-  console.log(menuOptions);
-
-  menuButton.addEventListener("click", function () {
-    console.log("Menu button clicked");
-    menuOptions.classList.toggle("show");
-    if (menuOptions.classList.contains("show")) {
-      menuButton.textContent = "Close";
-    } else {
-      menuButton.textContent = "Menu";
-    }
-  });
-
-  document.addEventListener("click", function (event) {
-    const target = event.target;
-    if (
-      !target.classList.contains("home-menuButton") &&
-      !target.classList.contains("home-menuOptions")
-    ) {
-      menuOptions.classList.remove("show");
-      menuButton.textContent = "Menu";
-    }
-  });
-});
-
-
-
 // Example usage
 const projectTitle = "My project for DIT";
 const projectDescription = "This is a project description";
