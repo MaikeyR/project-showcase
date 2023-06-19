@@ -1,34 +1,36 @@
+
 <head>
   <base href="../" />
   <link rel="stylesheet" href="css/form.css" />
 </head>
+{{- partial "header-single" . -}}
+<body>
+    <!-- HTML form element -->
+  <form id="myForm" style="display: none;">
+    <label for="projectTitle">Project Title</label>
+    <input type="text" id="projectTitle" name="projectTitle" required>
 
-  <!-- HTML form element -->
-<form id="myForm" style="display: none;">
-  <label for="projectTitle">Project Title</label>
-  <input type="text" id="projectTitle" name="projectTitle" required>
+    <label for="projectDescription">Project Description</label>
+    <input type="text" id="projectDescription" name="projectDescription" required>
 
-  <label for="projectDescription">Project Description</label>
-  <input type="text" id="projectDescription" name="projectDescription" required>
+    <label for="authors">Authors</label>
+    <input type="text" id="authors" name="authors" required>
 
-  <label for="authors">Authors</label>
-  <input type="text" id="authors" name="authors" required>
+    <label for="client">Client</label>
+    <input type="text" id="client" name="client" required>
 
-  <label for="client">Client</label>
-  <input type="text" id="client" name="client" required>
+    <label for="theme">Theme</label>
+    <input type="text" id="theme" name="theme" required>
 
-  <label for="theme">Theme</label>
-  <input type="text" id="theme" name="theme" required>
+    <label for="tags">Tags</label>
+    <input type="text" id="tags" name="tags" required>
 
-  <label for="tags">Tags</label>
-  <input type="text" id="tags" name="tags" required>
+    <label for="thumbnail">Thumbnail</label>
+    <input type="text" id="thumbnail" name="thumbnail" required>
 
-  <label for="thumbnail">Thumbnail</label>
-  <input type="text" id="thumbnail" name="thumbnail" required>
+    <label for="projectContent">Project Content</label>
+    <textarea id="projectContent" name="projectContent" rows="4" required></textarea>
 
-  <label for="projectContent">Project Content</label>
-  <textarea id="projectContent" name="projectContent" rows="4" required></textarea>
-
-  <input type="submit" value="Submit">
-</form>
-
+    <input type="submit" value="Submit">
+  </form>
+</body>
