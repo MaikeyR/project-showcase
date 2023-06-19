@@ -224,13 +224,19 @@ hr.line2 {
 }
 
 .home-menuOptions li {
+  height: 36px;
   margin-bottom: 15px;
   margin-left: 25px;
   display: flex;
   align-items: center;
 }
 
+.home-menuOptions li span.optionTitle {
+  height: 18px;
+}
+
 .home-menuOptions li span.desc {
+  height: 18px;
   font-size: 14px;
   color: #999999;
 }
