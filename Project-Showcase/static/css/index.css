@@ -224,6 +224,10 @@ hr.line2 {
   margin-bottom: 5px;
 }
 
+.home-menuOptions li span{
+  margin-right: 22px;
+}
+
 .home-menuOptions li a {
   display: block;
   padding: 8px;
