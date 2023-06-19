@@ -230,7 +230,7 @@ hr.line2 {
   align-items: center;
 }
 
-.home-menuOptions li span summary {
+.home-menuOptions li span.description {
   font-size: 14px;
   color: #999999;
 }
