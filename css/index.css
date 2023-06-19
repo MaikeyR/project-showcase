@@ -222,10 +222,16 @@ hr.line2 {
 
 .home-menuOptions li {
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.home-menuOptions li img {
+  margin-right: 22px;
 }
 
 .home-menuOptions li span{
-  margin-right: 22px;
+  flex-grow: 1;
 }
 
 .home-menuOptions li a {
