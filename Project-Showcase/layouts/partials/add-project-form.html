@@ -1,95 +1,34 @@
 <head>
   <base href="../" />
-  <link rel="stylesheet" href="css/search.css" />
+  <link rel="stylesheet" href="css/form.css" />
 </head>
 
-<div class="container-content">
-    <!-- HTML button element to trigger the form display -->
-  <button id="showFormButton">Show Form</button>
-
   <!-- HTML form element -->
-  <form id="myForm" style="display: none;">
-    <!-- Form inputs will be dynamically generated here -->
-    <input type="submit" value="Submit">
-  </form>
+<form id="myForm" style="display: none;">
+  <label for="projectTitle">Project Title</label>
+  <input type="text" id="projectTitle" name="projectTitle" required>
 
-  <script>
-  // Assuming you have the markdown template parameters defined as an array
-  const templateParameters = ['title', 'author', 'description'];
+  <label for="projectDescription">Project Description</label>
+  <input type="text" id="projectDescription" name="projectDescription" required>
 
-  // Function to generate the form inputs dynamically
-  function generateFormInputs() {
-    const form = document.getElementById('myForm');
+  <label for="authors">Authors</label>
+  <input type="text" id="authors" name="authors" required>
 
-    // Iterate through the template parameters
-    templateParameters.forEach(parameter => {
-      // Create a label element
-      const label = document.createElement('label');
-      label.textContent = parameter;
+  <label for="client">Client</label>
+  <input type="text" id="client" name="client" required>
 
-      // Create an input element
-      const input = document.createElement('input');
-      input.type = 'text';
-      input.name = parameter;
+  <label for="theme">Theme</label>
+  <input type="text" id="theme" name="theme" required>
 
-      // Append the label and input elements to the form
-      form.appendChild(label);
-      form.appendChild(input);
-    });
-  }
+  <label for="tags">Tags</label>
+  <input type="text" id="tags" name="tags" required>
 
-  // Function to show the form and hide the button
-  function showForm() {
-    const showButton = document.getElementById('showFormButton');
-    const form = document.getElementById('myForm');
+  <label for="thumbnail">Thumbnail</label>
+  <input type="text" id="thumbnail" name="thumbnail" required>
 
-    showButton.style.display = 'none';
-    form.style.display = 'block';
-  }
+  <label for="projectContent">Project Content</label>
+  <textarea id="projectContent" name="projectContent" rows="4" required></textarea>
 
-  // Event listener for form submission
-  document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+  <input type="submit" value="Submit">
+</form>
 
-    // Retrieve the form values
-    const form = event.target;
-    const formValues = new FormData(form);
-
-    // Create a JavaScript object to store the form values
-    const values = {};
-    for (const [name, value] of formValues) {
-      values[name] = value;
-    }
-
-    // Generate the markdown content with the form values
-    const markdownContent = generateMarkdownContent(values);
-
-    // Use the generated markdown content as needed
-    console.log(markdownContent);
-
-    // Hide the form and show the button after submitting
-    form.style.display = 'none';
-    showButton.style.display = 'block';
-  });
-
-  // Function to generate the markdown content with the form values
-  function generateMarkdownContent(values) {
-    let markdownContent = `---
-  title: ${values.title}
-  author: ${values.author}
-  description: ${values.description}
-  ---`;
-
-    // Additional markdown content or processing based on the form values
-    // ...
-
-    return markdownContent;
-  }
-
-  // Add click event listener to the button to show the form
-  document.getElementById('showFormButton').addEventListener('click', showForm);
-
-  // Generate the form inputs on page load
-  generateFormInputs();
-  </script>
-</div>
