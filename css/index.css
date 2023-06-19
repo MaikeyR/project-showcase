@@ -235,10 +235,12 @@ hr.line2 {
 }
 
 .home-menuOptions li a {
+  /*
   display: block;
   padding: 8px;
   text-decoration: none;
   color: #000;
+  */
 }
 
 .home-menuOptions li a:hover {
