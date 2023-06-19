@@ -240,6 +240,10 @@ hr.line2 {
   align-items: center;
 }
 
+.cross {
+  cursor: pointer;
+}
+
 @keyframes bounce {
   0%,
   20%,
