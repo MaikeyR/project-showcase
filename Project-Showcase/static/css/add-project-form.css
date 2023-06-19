@@ -1,9 +1,10 @@
 /* Common Styles */
 .inputBox {
-  box-sizing: border-box !important;
+  box-sizing: 100% !important;
   position: absolute !important;
   background: #FFFFFF !important;
   border: 2px solid rgba(30, 36, 50, 0.42) !important;
+  border-radius: 7px !important;
 }
 
 .text-styles {
@@ -35,7 +36,7 @@
 /* Project title */
 .projectTitleBox {
   width: 477px;
-  height: 95px;
+  height: 44px;
   left: 333px;
   top: 262px;
 }
