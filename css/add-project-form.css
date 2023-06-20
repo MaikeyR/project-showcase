@@ -23,7 +23,8 @@
   align-items: center;
   letter-spacing: 0.2px;
   color: #004274;
-  border: 0.2px solid #004274;
+  margin-bottom: 10px;
+  height: 27px;
 }
 
 /* studiejaarBox */
@@ -46,10 +47,16 @@
 /* Project Title */
 .projectTitleLabel {
   width: 131px;
-  height: 27px;
   left: 333px;
   top: 232px;
-  margin-bottom: 10px;
+}
+
+/* Project Description */
+.projectDescriptionLabel {
+  position: absolute;
+  width: 233px;
+  left: 382px;
+  top: 678px;
 }
 
 /* Rectangle 36 */
@@ -128,30 +135,30 @@
   color: #000000;
 }
 
-/* Check Box1-4 */
-.checkbox-1,
-.checkbox-2,
-.checkbox-3,
-.checkbox-4 {
+/* Radio Button1-4 */
+.radio-1,
+.radio-2,
+.radio-3,
+.radio-4 {
   position: absolute;
   width: 24px;
   height: 24px;
   left: 343px;
 }
 
-.checkbox-1 {
+.radio-1 {
   top: 429px;
 }
 
-.checkbox-2 {
+.radio-2 {
   top: 466px;
 }
 
-.checkbox-3 {
+.radio-3 {
   top: 505px;
 }
 
-.checkbox-4 {
+.radio-4 {
   top: 543px;
 }
 
