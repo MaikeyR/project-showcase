@@ -3,10 +3,8 @@
   <base href="../" />
   <link rel="stylesheet" href="css/header-single.css" />
   <link rel="stylesheet" href="css/add-project-form.css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Poppins"
-    rel="stylesheet"
-  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 <body>
   <div class="topnav">
@@ -45,25 +43,29 @@
       <input type="text" id="projectTitle" name="projectTitle" class="inputBox" required>
     </div>
     
-    <label for="authors">Authors</label>
-    <input type="text" id="authors" name="authors" required>
+    <label for="authorsBoxLabel">Authors</label>
+    <div class="authorsBox">
+      <input type="text" id="authors1" name="authors" class="inputBox" required>
+      <input type="text" id="authors2" name="authors" class="inputBox" required>
+      <input type="text" id="authors3" name="authors" class="inputBox" required>
+    </div>
 
     <label for="client">Client</label>
     <input type="text" id="client" name="client" required>
-    
+
     <label for="jaarTagsLabel" class="labelStyles">Studiejaar</label>
     <div class="studiejaarBox">
       <input type="radio" id="radio-1" name="studiejaar" value="Jaar 1">
-      <label for="radio-1">Jaar 1</label><br>
+      <label for="radio-1">Jaar 1</label>
     
       <input type="radio" id="radio-2" name="studiejaar" value="Jaar 2">
-      <label for="radio-2">Jaar 2</label><br>
+      <label for="radio-2">Jaar 2</label>
     
       <input type="radio" id="radio-3" name="studiejaar" value="Jaar 3">
-      <label for="radio-3">Jaar 3</label><br>
+      <label for="radio-3">Jaar 3</label>
     
       <input type="radio" id="radio-4" name="studiejaar" value="Jaar 4">
-      <label for="radio-4">Jaar 4</label><br>
+      <label for="radio-4">Jaar 4</label>
     </div>
 
     <label for="projectDescriptionLabel">Samenvatting Project</label>
