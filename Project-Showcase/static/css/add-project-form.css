@@ -1,9 +1,7 @@
 /* Form */
 #myForm {
-  width: 776px;
+  width: 840px;
   margin: 57px auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 /* Common Styles */
