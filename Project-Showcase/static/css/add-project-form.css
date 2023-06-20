@@ -1,10 +1,12 @@
 /* Common Styles */
 .inputBox {
-  box-sizing: 100% !important;
-  position: absolute !important;
-  background: #FFFFFF !important;
-  border: 2px solid rgba(30, 36, 50, 0.42) !important;
-  border-radius: 7px !important;
+  box-sizing: 100%;
+  position: absolute;
+  background: #FFFFFF;
+  border: 2px solid rgba(30, 36, 50, 0.42);
+  border-radius: 7px;
+  height: inherit;
+  width: inherit;
 }
 
 .text-styles {
