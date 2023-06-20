@@ -23,6 +23,7 @@
 }
 
 .labelStyles {
+  font-family: 'Roboto';
   font-size: 24px;
   line-height: 24px;
   display: flex;
@@ -51,12 +52,31 @@
   top: 262px;
 }
 
-/* Project Title */
+/* Project title label */
 .projectTitleLabel {
   width: 131px;
   left: 333px;
   top: 232px;
 }
+
+/* Groepsgenoten */
+.authorsBox {
+  width: 477px;
+  height: 44px;
+  left: 333px;
+  top: 262px;
+}
+
+/* Project Title */
+.authorsBoxLabel {
+  width: 131px;
+  left: 333px;
+  top: 232px;
+}
+
+
+
+
 
 /* Project Description */
 .projectDescriptionLabel {
