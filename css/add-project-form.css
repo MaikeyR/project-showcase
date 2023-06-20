@@ -23,7 +23,6 @@
 }
 
 .labelStyles {
-  font-family: 'Roboto';
   font-size: 24px;
   line-height: 24px;
   display: flex;
@@ -67,6 +66,7 @@
   top: 262px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 #authors1,
