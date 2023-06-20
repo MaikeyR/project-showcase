@@ -1,16 +1,6 @@
 const studentAccountName = "Maikel Reijneke";
 const accessToken = "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"; // personal accesstoken from the owner of the repository (Default token from "MaikeyR" expires on Wed, Sep 6 2023)
 
-/* Example usage
-const projectTitle = "My project for DIT";
-const projectDescription = "This is a project description";
-const authors = "Jan Koudijs, Robbin van de Scheur";
-const client = "Client Name";
-const theme = "Theme Name";
-const tags = ["tag1", "tag2, tag3"];
-const thumbnail = "thumbnail.jpg";
-const projectContent = "Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content Project content ";
-*/
 
 async function generateProject(projectTitle, projectDescription, authors, client, theme, tags, thumbnail, projectContent) {
     try {
