@@ -1,6 +1,13 @@
+/* Form */
+#myForm {
+  width: 776px;
+  margin: 57px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 /* Common Styles */
 .inputBox {
-  box-sizing: 100%;
   position: absolute;
   background: #FFFFFF;
   border: 2px solid rgba(30, 36, 50, 0.42);
