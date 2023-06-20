@@ -2,6 +2,7 @@
 #myForm {
   width: 840px;
   margin: 57px auto;
+  font-family: 'Roboto';
 }
 
 /* Common Styles */
@@ -16,7 +17,6 @@
 }
 
 .text-styles {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.2px;
