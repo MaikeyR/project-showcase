@@ -12,6 +12,7 @@
   border-radius: 7px;
   height: inherit;
   width: inherit;
+  margin-bottom: 10px;
 }
 
 .text-styles {
@@ -29,6 +30,7 @@
   letter-spacing: 0.2px;
   color: #004274;
   margin-bottom: 10px;
+  margin-top: 10px;
   height: 27px;
 }
 
