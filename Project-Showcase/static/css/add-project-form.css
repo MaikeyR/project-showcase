@@ -58,7 +58,7 @@
 /* Project title */
 .projectTitleBox {
   width: 477px;
-  height: 44px;
+  height: 35px;
   left: 333px;
   top: 262px;
 }
@@ -80,7 +80,7 @@
 }
 
 .authorsBox input[type="text"] {
-  height: 39px;
+  height: 35px;
   margin-bottom: 10px;
 }
 
@@ -90,9 +90,6 @@
   left: 333px;
   top: 232px;
 }
-
-
-
 
 
 /* Project Description */
