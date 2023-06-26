@@ -7,7 +7,6 @@
 
 /* Common Styles */
 .inputBox {
-  position: absolute;
   background: #FFFFFF;
   border: 2px solid rgba(30, 36, 50, 0.42);
   border-radius: 7px;
@@ -76,7 +75,6 @@
   height: 217px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .authorsBox input[type="text"] {
