@@ -34,6 +34,18 @@
   height: 27px;
 }
 
+.formTitle {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #004274;
+  margin-bottom: 10px;
+  height: 27px;
+  letter-spacing: 0.2px;
+}
+
 /* studiejaarBox */
 .studiejaarBox {
   width: 132px;
