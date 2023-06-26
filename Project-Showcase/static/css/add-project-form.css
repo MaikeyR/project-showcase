@@ -30,7 +30,7 @@
   letter-spacing: 0.2px;
   color: #004274;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   height: 27px;
 }
 
@@ -74,16 +74,14 @@
 .authorsBox {
   width: 264px;
   height: 217px;
-  left: 843px;
-  top: 262px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .authorsBox input[type="text"] {
-  width: 100%;
   height: 39px;
+  margin-bottom: 10px;
 }
 
 /* Groepsgenoten label */
