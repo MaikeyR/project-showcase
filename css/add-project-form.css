@@ -3,7 +3,15 @@
   width: 840px;
   margin: 57px auto;
   font-family: 'Roboto';
+  max-width: calc(100% - 100px);
 }
+
+#myForm span {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 
 /* Common Styles */
 .inputBox {
@@ -91,7 +99,7 @@
 
 .clientBox {
   width: 264px;
-  height: 45px;
+  height: 35px;
   flex-direction: column;
   display: inline-block;
   vertical-align: top;
