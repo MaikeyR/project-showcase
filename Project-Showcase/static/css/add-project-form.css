@@ -106,6 +106,52 @@
   vertical-align: top;
 }
 
+/* Studiejaar label */
+.studiejaarLabel {
+  width: 131px;
+}
+
+/* Studiejaar */
+.studiejaarBox {
+  width: 110px;
+  height: 27px;
+  left: 343px;
+  top: 394px;
+}
+
+/* Radio Button1-4 */
+.radio-1,
+.radio-2,
+.radio-3,
+.radio-4 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 343px;
+}
+
+.radio-1 {
+  top: 429px;
+}
+
+.radio-2 {
+  top: 466px;
+}
+
+.radio-3 {
+  top: 505px;
+}
+
+.radio-4 {
+  top: 543px;
+}
+
+.projectDescriptionLabel {
+  position: absolute;
+  width: 233px;
+  left: 382px;
+  top: 678px;
+}
 
 /* Project Description */
 .projectDescriptionLabel {
@@ -174,48 +220,6 @@
   top: 383px;
 }
 
-/* Studiejaar */
-.studiejaarBox {
-  width: 110px;
-  height: 27px;
-  left: 343px;
-  top: 394px;
-}
 
-/* Jaar 1 */
-.typography-year1 {
-  width: 57px;
-  height: 24px;
-  left: 376px;
-  top: 429px;
-  color: #000000;
-}
-
-/* Radio Button1-4 */
-.radio-1,
-.radio-2,
-.radio-3,
-.radio-4 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  left: 343px;
-}
-
-.radio-1 {
-  top: 429px;
-}
-
-.radio-2 {
-  top: 466px;
-}
-
-.radio-3 {
-  top: 505px;
-}
-
-.radio-4 {
-  top: 543px;
-}
 
 /* needs adding from after checkbox
