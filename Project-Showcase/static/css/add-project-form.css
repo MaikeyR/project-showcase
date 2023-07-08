@@ -65,10 +65,8 @@
 
 /* Project title */
 .projectTitleBox {
-  width: 477px;
+  width: inherit;
   height: 35px;
-  left: 333px;
-  top: 262px;
 }
 
 /* Project title label */
