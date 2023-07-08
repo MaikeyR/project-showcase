@@ -80,8 +80,8 @@
 
 /* Groepsgenoten */
 .authorsBox {
-  width: 264px;
-  height: 217px;
+  width: 300px;
+  height: 220px;
   flex-direction: column;
   display: inline-block;
   vertical-align: top;
@@ -99,7 +99,7 @@
 }
 
 .clientBox {
-  width: 264px;
+  width: 300px;
   height: 35px;
   flex-direction: column;
   display: inline-block;
@@ -175,7 +175,7 @@
 }
 
 /* Studiejaar */
-.typography-study-year {
+.studiejaarBox {
   width: 110px;
   height: 27px;
   left: 343px;
