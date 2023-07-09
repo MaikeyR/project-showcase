@@ -69,13 +69,6 @@
   height: 35px;
 }
 
-/* Project title label */
-.projectTitleLabel {
-  width: 131px;
-  left: 333px;
-  top: 232px;
-}
-
 /* Groepsgenoten */
 .authorsBox {
   width: 300px;
@@ -89,24 +82,12 @@
   height: 35px;
 }
 
-/* Groepsgenoten label */
-.authorsBoxLabel {
-  width: 131px;
-  left: 333px;
-  top: 232px;
-}
-
 .clientBox {
   width: 300px;
   height: 35px;
   flex-direction: column;
   display: inline-block;
   vertical-align: top;
-}
-
-/* Studiejaar label */
-.studiejaarLabel {
-  width: 131px;
 }
 
 /* Studiejaar */
