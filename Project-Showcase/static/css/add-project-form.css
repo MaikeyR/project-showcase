@@ -1,6 +1,6 @@
 /* Form */
 #myForm {
-  width: 840px;
+  max-width: 840px;
   margin: 57px auto;
   font-family: 'Roboto';
   max-width: calc(100% - 100px);
@@ -83,19 +83,15 @@
 
 /* studiejaarBox */
 .studiejaarBox {
-  width: 100px;
-  display: inline-flex;
+  width: 91px;
+  padding: 5px 10px 5px 5px;
+  display: flex;
   flex-direction: column;
   border: 2px solid rgba(30, 36, 50, 0.42);
   border-radius: 7px;
 }
 .studiejaarBox span{
-  margin: 5px;
-  display: inline-block;
-}
-
-.studiejaarBox input[type="radio"] {
-  margin-right: 10px;
+  margin: 4px 0px 3px 0px;
 }
 
 .studiejaarBox input[type="radio"]:checked + label {
