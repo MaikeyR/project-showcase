@@ -54,15 +54,6 @@
   letter-spacing: 0.2px;
 }
 
-/* studiejaarBox */
-.studiejaarBox {
-  width: 132px;
-  height: 194px;
-  left: 333px;
-  top: 384px;
-  border-radius: 7px;
-}
-
 /* Project title */
 .projectTitleBox {
   width: inherit;
@@ -90,39 +81,19 @@
   vertical-align: top;
 }
 
-/* Studiejaar */
+/* studiejaarBox */
 .studiejaarBox {
-  width: 110px;
-  height: 27px;
-  left: 343px;
-  top: 394px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Radio Button1-4 */
-.radio-1,
-.radio-2,
-.radio-3,
-.radio-4 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  left: 343px;
+.studiejaarBox input[type="radio"] {
+  margin-right: 5px;
 }
 
-.radio-1 {
-  top: 429px;
-}
-
-.radio-2 {
-  top: 466px;
-}
-
-.radio-3 {
-  top: 505px;
-}
-
-.radio-4 {
-  top: 543px;
+.studiejaarBox input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: #004274;
 }
 
 /* Rectangle 36 */
