@@ -83,12 +83,19 @@
 
 /* studiejaarBox */
 .studiejaarBox {
-  display: flex;
+  width: 100px;
+  display: inline-flex;
   flex-direction: column;
+  border: 2px solid rgba(30, 36, 50, 0.42);
+  border-radius: 7px;
+}
+.studiejaarBox span{
+  margin: 5px;
+  display: inline-block;
 }
 
 .studiejaarBox input[type="radio"] {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .studiejaarBox input[type="radio"]:checked + label {
