@@ -22,6 +22,7 @@
   height: inherit;
   width: inherit;
   margin-bottom: 2px;
+  padding-left: 10px;
 }
 
 .text-styles {
@@ -63,7 +64,7 @@
 
 /* Groepsgenoten */
 .authorsBox {
-  width: 300px;
+  width: 320px;
   height: 220px;
   flex-direction: column;
   display: inline-block;
@@ -75,7 +76,7 @@
 }
 
 .clientBox {
-  width: 300px;
+  width: 320px;
   height: 35px;
   flex-direction: column;
   display: inline-block;
