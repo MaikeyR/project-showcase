@@ -1,9 +1,9 @@
 /* Form */
 #myForm {
   max-width: 840px;
-  margin: 57px auto;
+  margin: 60px auto;
   font-family: 'Roboto';
-  max-width: calc(100% - 100px);
+  width: calc(100% - 100px);
 }
 
 #myForm span {
@@ -56,8 +56,9 @@
 
 /* Project title */
 .projectTitleBox {
-  width: inherit;
+  width: 100%;
   height: 35px;
+  display: flex;
 }
 
 /* Groepsgenoten */
@@ -97,6 +98,13 @@
 .studiejaarBox input[type="radio"]:checked + label {
   font-weight: bold;
   color: #004274;
+}
+
+select#schoolYear {
+  padding: 10px;
+  border: 2px solid rgba(30, 36, 50, 0.42);
+  border-radius: 7px;
+  font-size: 16px;
 }
 
 /* Rectangle 36 */
@@ -157,7 +165,3 @@
   left: 498px;
   top: 383px;
 }
-
-
-
-/* needs adding from after checkbox
