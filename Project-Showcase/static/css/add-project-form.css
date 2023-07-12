@@ -64,7 +64,7 @@
 
 /* Groepsgenoten */
 .authorsBox {
-  width: 320px;
+  width: 360px;
   height: 220px;
   flex-direction: column;
   display: inline-block;
@@ -76,7 +76,7 @@
 }
 
 .clientBox {
-  width: 320px;
+  width: 360px;
   height: 35px;
   flex-direction: column;
   display: inline-block;
