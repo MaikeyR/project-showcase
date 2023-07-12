@@ -3,7 +3,7 @@
   max-width: 840px;
   margin: 60px auto;
   font-family: 'Roboto';
-  width: calc(100% - 100px);
+  width: calc(100% - 120px);
 }
 
 #myForm span {
