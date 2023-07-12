@@ -120,7 +120,11 @@
       </div>
       <div>
         <label for="thumbnail" class="labelStyles">Thumbnail</label>
-        <input type="thumbnail" id="imageUpload" name="imageUpload" accept="image/*">
+        <div class="thumbnail-wrapper">
+          <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+          <label for="imageUpload" class="custom-file-input">Choose File</label>
+          <span class="file-name"></span>
+        </div>
         </select>
       </div>
     </span>
