@@ -107,7 +107,8 @@
   border-radius: 7px;
   font-size: 16px;
   width: 120px;
-  height: 21px;
+  height: 35px;
+  box-sizing: border-box;
 }
 
 /* Hide the default file input button */
@@ -115,30 +116,19 @@ input[type="file"] {
   display: none;
 }
 
-/* Style the custom file input button */
-.custom-file-input {
-  background: #FFFFFF;
-  border: 2px solid rgba(30, 36, 50, 0.42);
-  border-radius: 7px;
-  height: inherit;
-  width: inherit;
-  margin-bottom: 2px;
-  padding-left: 10px;
+.imageUploadLabel {
+  font-weight: normal;
+  display: block;
+  white-space-collapse: collapse;
+  text-wrap: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
 }
 
 /* Optional: Style the file name display */
 .file-name {
   margin-top: 4px;
   font-size: 14px;
-}
-
-option {
-  font-weight: normal;
-    display: block;
-    white-space-collapse: collapse;
-    text-wrap: nowrap;
-    min-height: 1.2em;
-    padding: 0px 2px 1px;
 }
 
 /* Rectangle 36 */
