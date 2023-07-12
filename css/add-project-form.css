@@ -117,12 +117,8 @@ input[type="file"] {
 }
 
 .imageUploadLabel {
-  font-weight: normal;
   display: block;
-  white-space-collapse: collapse;
-  text-wrap: nowrap;
-  min-height: 1.2em;
-  padding: 0px 2px 1px;
+  padding: 1px 3px 0px;
 }
 
 /* Optional: Style the file name display */
