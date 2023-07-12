@@ -106,6 +106,7 @@ select {
   border: 2px solid rgba(30, 36, 50, 0.42);
   border-radius: 7px;
   font-size: 16px;
+  width: 120px;
 }
 
 /* Rectangle 36 */
