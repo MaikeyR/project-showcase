@@ -101,8 +101,8 @@
   color: #004274;
 }
 
-select#schoolYear {
-  padding: 10px;
+select {
+  padding: 6px 5px 5px 8px;
   border: 2px solid rgba(30, 36, 50, 0.42);
   border-radius: 7px;
   font-size: 16px;
