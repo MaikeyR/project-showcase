@@ -2,7 +2,7 @@
 #myForm {
   max-width: 840px;
   margin: 60px auto;
-  font-family: 'Roboto';
+  font-family: 'Roboto' !important;
   width: calc(100% - 120px);
 }
 
@@ -107,6 +107,7 @@
   border-radius: 7px;
   font-size: 16px;
   width: 120px;
+  height: 21px;
 }
 
 /* Hide the default file input button */
@@ -131,7 +132,14 @@ input[type="file"] {
   font-size: 14px;
 }
 
-
+option {
+  font-weight: normal;
+    display: block;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
 
 /* Rectangle 36 */
 .paragraphTitleBox {
