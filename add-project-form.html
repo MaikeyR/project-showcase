@@ -26,7 +26,7 @@
 
       <!-- Centered link -->
       <div class="topnav-centered">
-        <a href="" class="VakTitel">Add Project</a>
+        <a href="" class="vakTitel">Add Project</a>
       </div>
 
       <!-- Right-aligned links -->
@@ -98,8 +98,8 @@
         </select>
       </div>
       <div>
-        <label for="Vak" class="labelStyles">Dropdown</label>
-        <select id="Vak" name="Vak" required>
+        <label for="vak" class="labelStyles">Vak</label>
+        <select id="vak" name="vak" required>
           <option value="" disabled selected>Vak</option>
           <option value="ID-FDD">ID-FDD</option>
           <option value="PO-PD">PO-PD</option>
@@ -109,14 +109,25 @@
           <option value="VK-IT">VK-IT</option>
         </select>
       </div>
-      
+      <div>
+        <label for="thema" class="labelStyles">Thema</label>
+        <select id="thema" name="thema" required>
+          <option value="" disabled selected>Thema</option>
+          <option value="development">Development</option>
+          <option value="ux-design">UX-design</option>
+          <option value="business">Business</option>
+        </select>
+      </div>
+      <div>
+        <label for="thumbnail" class="labelStyles">Thumbnail</label>
+        <input type="thumbnail" id="imageUpload" name="imageUpload" accept="image/*">
+        </select>
+      </div>
     </span>
     
 
 
     <!-- 
-      Vak
-      thema
       thumbnail
 
       samenvatting
@@ -128,13 +139,6 @@
         videos
         audio
     -->
-
-
-    <label for="theme">Theme</label>
-    <input type="text" id="theme" name="theme" required>
-
-    <label for="tags">Tags</label>
-    <input type="text" id="tags" name="tags" required>
 
     <label for="thumbnail">Thumbnail</label>
     <input type="text" id="thumbnail" name="thumbnail" required>
@@ -156,4 +160,5 @@
     }
   </style>
   <script src="\js\schoolYear.js"></script>
+  <script src="\js\thumbnailUpload.js"></script>
 </body>
