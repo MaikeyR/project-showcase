@@ -1,10 +1,10 @@
 // Update the file name display when a file is selected
 const fileInput = document.getElementById('imageUpload');
-const fileNameDisplay = document.querySelector('.file-name');
+const customLabel = document.querySelector('.imageUploadLabel');
 
 fileInput.addEventListener('change', () => {
   const fileName = fileInput.files[0]?.name;
-  fileNameDisplay.textContent = fileName ? `Selected File: ${fileName}` : '';
+  customLabel.textContent = fileName ? `Selected File: ${fileName}` : 'Kies Bestand';
 });
 
 const imageUpload = document.getElementById('imageUpload');
