@@ -116,6 +116,11 @@ input[type="file"] {
   display: none;
 }
 
+.selectBox input[type="file"]:not(:placeholder-shown) + label.imageUploadLabel {
+  background-color: #4299e1;
+  color: white;
+}
+
 .imageUploadLabel {
   display: block;
   padding: 1px 3px 0px;
