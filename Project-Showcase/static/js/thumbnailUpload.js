@@ -13,7 +13,7 @@ fileInput.addEventListener('change', (event) => {
     reader.onload = (e) => {
       const img = document.createElement('img');
       img.src = e.target.result;
-      img.style.maxWidth = '100px'; // Set the maximum width for the preview image
+      img.style.maxWidth = '140px'; // Set the maximum width for the preview image
       imagePreview.innerHTML = ''; // Clear previous preview
       imagePreview.appendChild(img); // Add the new preview image
     };
