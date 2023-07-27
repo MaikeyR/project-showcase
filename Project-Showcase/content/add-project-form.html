@@ -50,7 +50,7 @@
       <div>
         <label for="authors1" class="labelStyles">Groepsgenoten</label>
         <div class="authorsBox">
-          <input type="text" id="authors1" name="authors" class="inputBox" placeholder="Naam groepsgenoot..."required>
+          <input type="text" id="authors1" name="authors" class="inputBox" placeholder="Naam groepsgenoot..." required>
           <input type="text" id="authors2" name="authors" class="inputBox">
           <input type="text" id="authors3" name="authors" class="inputBox">
           <input type="text" id="authors4" name="authors" class="inputBox">
@@ -62,7 +62,7 @@
       <div>
         <label for="client" class="labelStyles">Opdrachtgever</label>
         <div class="clientBox">
-          <input type="text" id="client" name="client" class="inputBox" placeholder="Naam opdrachtgever..."required>
+          <input type="text" id="client" name="client" class="inputBox" placeholder="Naam opdrachtgever..." required>
         </div>
 
         <label for="studiejaarBox" class="labelStyles">Studiejaar</label>
@@ -127,6 +127,10 @@
       </div>
     </span>
     
+    <label for="descriptionLabel" class="labelStyles">Samenvatting Project</label>
+    <div class="descriptionBox">
+      <input type="text" id="projectDescription" name="projectDescription" class="inputBox" placeholder="Typ hier een samenvatting van jouw project in max 4 regels..." required>
+    </div>
 
 
     <!-- 
@@ -140,11 +144,6 @@
         audio
     -->
 
-
-    <label for="descriptionLabel" class="labelStyles">Samenvatting Project</label>
-    <div class="descriptionBox">
-      <input type="text" id="projectDescription" name="projectDescription" class="inputBox" required>
-    </div>
 
     <label for="projectContent">Project Content</label>
     <textarea id="projectContent" name="projectContent" rows="4" required></textarea>
