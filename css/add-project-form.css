@@ -55,7 +55,6 @@
   letter-spacing: 0.2px;
 }
 
-/* Project title */
 .projectTitleBox {
   width: 100%;
   height: 35px;
@@ -83,7 +82,6 @@
   vertical-align: top;
 }
 
-/* studiejaarBox */
 .studiejaarBox {
   width: 91px;
   padding: 5px 10px 5px 5px;
@@ -122,78 +120,22 @@
   background-color: #bbb;
 }
 
-/* Hide the default file input button */
 input[type="file"] {
   display: none;
 }
-
 
 .imageUploadLabel {
   display: block;
   padding: 1px 3px 0px;
 }
 
-/* Optional: Style the file name display */
 .file-name {
   margin-top: 4px;
   font-size: 14px;
 }
 
-/* Rectangle 36 */
-.paragraphTitleBox {
-  width: 675px;
-  height: 44px;
-  left: 383px;
-  top: 848px;
-}
-
-/* Typ hier de titel van jouw alinea... */
-.typography-title {
-  width: 300px;
-  height: 24px;
-  left: 393px;
-  top: 858px;
-  font-size: 20px;
-  line-height: 24px;
-  color: rgba(30, 36, 50, 0.6);
-}
-
-/* Titel */
-.typography-heading {
-  width: 48px;
-  height: 24px;
-  left: 383px;
-  top: 820px;
-}
-
-/* Inhoud Project */
-.typography-content {
-  width: 200px;
-  height: 24px;
-  left: 383px;
-  top: 782px;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 24px;
-  color: #004274;
-}
-
-/* Project Informatie */
-.typography-project-info {
-  width: 249px;
-  height: 24px;
-  left: 332px;
-  top: 195px;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 24px;
-  color: #004274;
-}
-
-/* Schooljaar */
-.typography-school-year {
-  width: 116px;
-  height: 27px;
-  left: 498px;
-  top: 383px;
+.projectTitleBox {
+  width: 100%;
+  height: 105px;
+  display: flex;
 }
