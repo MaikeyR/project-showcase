@@ -1,7 +1,7 @@
 /* Form */
 #myForm {
   max-width: 840px;
-  margin: 60px auto;
+  margin: 10px auto;
   font-family: 'Roboto' !important;
   width: calc(100% - 120px);
 }
@@ -57,6 +57,7 @@ textarea {
   align-items: center;
   color: #004274;
   margin-bottom: 10px;
+  margin-top: 50px;
   height: 27px;
   letter-spacing: 0.2px;
 }
