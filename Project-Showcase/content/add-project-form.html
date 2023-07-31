@@ -132,10 +132,23 @@
       <textarea id="projectDescription" name="projectDescription" class="inputBox" placeholder="Typ hier een samenvatting van jouw project in max 3 regels..." required></textarea>
     </div>
 
+    <div id="dynamicForm">
+      <div>
+        <div class="formTitle">Inhoud Project</label>
+        <button class="addElementBtn" data-type="title">Add Title</button>
+        <button class="addElementBtn" data-type="paragraph">Add Paragraph</button>
+        <button class="addElementBtn" data-type="image">Add Image</button>
+        <button class="addElementBtn" data-type="video">Add Video</button>
+        <button class="addElementBtn" data-type="audio">Add Audio</button>
+      </div>
+      <div id="formElements"></div>
+      <button id="submitBtn">Submit Form</button>
+      
+    
+    </div>
 
     <!-- 
-      samenvatting
-
+      
       Inhoud
         Titel
         Alinea
@@ -158,4 +171,5 @@
   </style>
   <script src="\js\schoolYear.js"></script>
   <script src="\js\thumbnailUpload.js"></script>
+  <script src="\js\projectContent.js"></script>
 </body>
