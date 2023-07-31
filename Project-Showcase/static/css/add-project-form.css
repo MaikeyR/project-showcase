@@ -90,6 +90,7 @@ textarea {
 }
 
 .studiejaarBox {
+  display: inline-block;
   width: 98px;
   padding: 5px 10px 5px 7px;
   display: flex;
@@ -99,6 +100,30 @@ textarea {
 }
 .studiejaarBox span{
   margin: 4px 0px 3px 0px;
+}
+
+/* Hide the default radio buttons */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Style the custom radio indicator */
+.studiejaarBox input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #004274; /* Change this to your desired color */
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Style the custom radio indicator when selected */
+.studiejaarBox input[type="radio"]:checked + label:before {
+  background-color: #004274; /* Change this to your desired color */
 }
 
 .studiejaarBox input[type="radio"]:checked + label {
@@ -123,7 +148,7 @@ textarea {
 }
 
 .selectBox.dynamicForm {
-  width: 100%;
+  width: 1;
   min-width: 100px;
 }
 
