@@ -119,7 +119,7 @@
         <label for="thumbnail" class="labelStyles">Thumbnail</label>
         <div class="selectBox uploaded">
           <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
-          <label for="imageUpload" class="imageUploadLabel">Kies Afbeelding</label>
+          <label for="imageUpload" class="imageUploadLabel">+ Afbeelding</label>
           <div class="imagePreview"></div>
         </div>
         <span class="file-name"></span>
@@ -133,18 +133,13 @@
     </div>
 
     <div id="dynamicForm">
-      <div>
-        <div class="formTitle">Inhoud Project</label>
-        <button class="selectBox" data-type="title">+ Title</button>
-        <button class="selectBox" data-type="paragraph">+ Paragraph</button>
-        <button class="selectBox" data-type="image">+ Image</button>
-        <button class="selectBox" data-type="video">+ Video</button>
-        <button class="selectBox" data-type="audio">+ Audio</button>
-      </div>
-      <div id="formElements"></div>
-      <button id="submitBtn">Submit Form</button>
-      
-    
+      <div class="formTitle">Inhoud Project</label></div>
+      <button class="selectBox dynamicForm" data-type="title">+ Title</button>
+      <button class="selectBox dynamicForm" data-type="paragraph">+ Alinea</button>
+      <button class="selectBox dynamicForm" data-type="image">+ Afbeelding</button>
+      <button class="selectBox dynamicForm" data-type="video">+ Video</button>
+      <button class="selectBox dynamicForm" data-type="audio">+ Audio</button>
+      <div id="formElements"></div>    
     </div>
 
     <!-- 
