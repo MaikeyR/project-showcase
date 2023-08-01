@@ -24,7 +24,7 @@
 }
 
 .inputBox:focus {
-  border: 2px solid #004274;
+  border: 2px solid #004274 !important;
 }
 
 textarea {
