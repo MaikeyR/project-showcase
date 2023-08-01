@@ -119,6 +119,7 @@ input[type="radio"] {
   border-radius: 3px;
   margin-right: 26px;
   transition: border-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .studiejaarBox input[type="radio"]:checked + label:before {
@@ -130,6 +131,7 @@ input[type="radio"] {
 }
 
 .studiejaarBox input[type="radio"]:active + label:before {
+  border: 2px solid #004274;
   background-color: #bbb;
 }
 
@@ -155,6 +157,7 @@ input[type="radio"] {
 }
 
 .selectBox:active {
+  border: 2px solid #004274;
   background-color: #bbb;
 }
 
