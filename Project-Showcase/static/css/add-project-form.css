@@ -155,7 +155,7 @@ input[type="radio"] {
 }
 
 .selectBox:active {
-  border: 2px solid #004274;
+  background-color: #bbb;
 }
 
 input[type="file"] {
