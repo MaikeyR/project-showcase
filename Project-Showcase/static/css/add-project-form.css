@@ -185,6 +185,7 @@ input[type="file"] {
 .selectBox.dynamicForm {
   border-radius: 0px 0 0 0px;
   margin-right: -2px;
+  padding-left: -2px;
   position: relative;
   z-index: 1;
 }
@@ -197,7 +198,6 @@ input[type="file"] {
   border-radius: 7px 0 0 7px;
 }
 
-/* Apply round edges to the last button */
 .selectBox.dynamicForm:last-child {
   border-radius: 0 7px 7px 0;
 }
