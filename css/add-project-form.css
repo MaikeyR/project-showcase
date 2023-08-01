@@ -195,6 +195,6 @@ input[type="file"] {
   border-radius: 0 7px 7px 0;
 }
 
-.selectBox.dynamicForm span{
+.dynamicForm span{
   justify-content: flex-start;
 }
