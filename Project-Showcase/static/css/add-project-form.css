@@ -129,6 +129,10 @@ input[type="radio"] {
   border: 2px solid #004274;
 }
 
+.studiejaarBox input[type="radio"]:active + label:before {
+  background-color: #bbb;
+}
+
 .selectBox {
   padding: 6px 5px 5px 8px;
   border: 2px solid rgba(30, 36, 50, 0.42);
