@@ -147,6 +147,7 @@ input[type="radio"] {
   min-height: 35px;
   box-sizing: border-box;
   background-color: white;
+  z-index: 1;
   transition: border-color 0.2s ease;
 }
 
@@ -157,11 +158,13 @@ input[type="radio"] {
 
 .selectBox:hover {
   border: 2px solid #004274;
+  z-index: 2;
 }
 
 .selectBox:active {
   border: 2px solid #004274;
   background-color: #bbb;
+  z-index: 2;
 }
 
 input[type="file"] {
@@ -184,17 +187,11 @@ input[type="file"] {
   display: flex;
 }
 
-
 .selectBox.dynamicForm {
   border-radius: 0px 0 0 0px;
   margin-right: -2px;
-  padding-left: -2px;
+  padding-left: 0px;
   position: relative;
-  z-index: 1;
-}
-
-.selectBox.dynamicForm:hover {
-  z-index: 2;
 }
 
 .selectBox.dynamicForm:first-child {
