@@ -23,7 +23,7 @@
   font-family: 'Roboto' !important;
 }
 
-.inputBox:focus {
+.inputBox input[type="text"]:focus {
   border: 2px solid #004274 !important;
 }
 
