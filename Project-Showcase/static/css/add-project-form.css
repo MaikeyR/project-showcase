@@ -23,7 +23,7 @@
   font-family: 'Roboto' !important;
 }
 
-div.projectTitleBox input#projectTitle.inputBox[type="text"][name="projectTitle"]:focus  {
+input:focus {
   border: 2px solid #004274 !important;
 }
 
