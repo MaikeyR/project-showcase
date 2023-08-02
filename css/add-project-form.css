@@ -21,15 +21,20 @@
   margin-bottom: 4px !important;
   padding-left: 10px;
   font-family: 'Roboto' !important;
+  outline: none;
 }
 
-input:focus {
+.inputBox:focus {
   border: 2px solid #004274 !important;
 }
 
 textarea {
   padding: 9px;
   resize: none;
+}
+
+textarea:focus {
+  border: 2px solid #004274 !important;
 }
 
 .text-styles {
