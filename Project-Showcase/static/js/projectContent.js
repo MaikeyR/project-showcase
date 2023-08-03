@@ -60,15 +60,15 @@ function addElement(type, content) {
   const formElementsContainer = document.querySelector('.formElements');
 
   if (type === 'title') {
-    formElementsContainer.appendChild(createWrapperDiv(addInputElement('Typ hier de titel van jouw alinea...', true)));
+    formElementsContainer.appendChild(createWrapperDiv(addInputElement('Typ hier de titel van jouw alinea...', true)), 'input');
   } else if (type === 'paragraph') {
-    formElementsContainer.appendChild(createWrapperDiv(addTextareaElement('Typ hier de tekst van jouw alinea...', true)));
+    formElementsContainer.appendChild(createWrapperDiv(addTextareaElement('Typ hier de tekst van jouw alinea...', true)), 'paragraph');
   } else if (type === 'image') {
-    formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('image/*', '+ Afbeelding')));
+    formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('image/*', '+ Afbeelding')), 'image');
   } else if (type === 'video') {
-    formElementsContainer.appendChild(createWrapperDiv(addVideoInputElement('Typ hierEmbed video code here...')));
+    formElementsContainer.appendChild(createWrapperDiv(addVideoInputElement('Typ hierEmbed video code here...')), 'video');
   } else if (type === 'audio') {
-    formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('audio/*', '+ Audio')));
+    formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('audio/*', '+ Audio')), 'audio');
   } else {
     const element = document.createElement(type);
     element.textContent = content;
