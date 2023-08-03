@@ -193,6 +193,36 @@ input[type="file"] {
   display: flex;
 }
 
+
+.elementWrapper {
+  margin: 20px 0 5px;
+  height: 35px;
+  display: flex;
+}
+
+.elementWrapper.title { 
+  width: 100%;
+  display: flex;
+}
+
+.elementWrapper.paragraph {
+  width: 100%;
+  height: 200px;
+}
+
+.elementWrapper.image {  
+  width: 120px;
+}
+
+.elementWrapper.video {
+  width: 200px;
+}
+
+.elementWrapper.audio {
+  width: 120px;
+}
+
+
 .selectBox.dynamicForm {
   border-radius: 0px 0 0 0px;
   margin-right: -2px;
