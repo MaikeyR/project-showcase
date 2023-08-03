@@ -47,24 +47,32 @@ function addVideoInputElement(placeholder) {
 // Get the container element that holds the buttons
 const buttonContainer = document.querySelector('.dynamicForm');
 
+// Function to create a wrapper div with the added element
+function createWrapperDiv(element) {
+  const wrapperDiv = document.createElement('div');
+  wrapperDiv.className = 'elementWrapper ${elementType}'; // Set your desired class name for the wrapper
+  wrapperDiv.appendChild(element);
+  return wrapperDiv;
+}
+
 // Function to add a new element to the form
 function addElement(type, content) {
-  const formElementsContainer = document.getElementById('formElements');
+  const formElementsContainer = document.querySelector('.formElements');
 
   if (type === 'title') {
-    formElementsContainer.appendChild(addInputElement('Typ hier de titel van jouw alinea...', true));
+    formElementsContainer.appendChild(createWrapperDiv(addInputElement('Typ hier de titel van jouw alinea...', true)));
   } else if (type === 'paragraph') {
-    formElementsContainer.appendChild(addTextareaElement('Typ hier de tekst van jouw alinea...', true));
+    formElementsContainer.appendChild(createWrapperDiv(addTextareaElement('Typ hier de tekst van jouw alinea...', true)));
   } else if (type === 'image') {
-    formElementsContainer.appendChild(addUploadedElement('image/*', '+ Afbeelding'));
+    formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('image/*', '+ Afbeelding')));
   } else if (type === 'video') {
-    formElementsContainer.appendChild(addVideoInputElement('Typ hierEmbed video code here...'));
+    formElementsContainer.appendChild(createWrapperDiv(addVideoInputElement('Typ hierEmbed video code here...')));
   } else if (type === 'audio') {
-    formElementsContainer.appendChild(addUploadedElement('audio/*', '+ Audio'));
+    formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('audio/*', '+ Audio')));
   } else {
     const element = document.createElement(type);
     element.textContent = content;
-    formElementsContainer.appendChild(element);
+    formElementsContainer.appendChild(createWrapperDiv(element));
   }
 }
 
