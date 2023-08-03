@@ -46,12 +46,17 @@ function addVideoInputElement(placeholder) {
 
 // Get the container element that holds the buttons
 const buttonContainer = document.querySelector('.dynamicForm');
-const elementLabel = '';
+const elementLabelText = '';
 
 // Function to create a wrapper div with the added element
-function createWrapperDiv(element, elementType) {
+function createWrapperDiv(element, elementType, elementLabelText) {
   const wrapperDiv = document.createElement('div');
-  wrapperDiv.className = `elementWrapper ${elementType}`; // Set your desired class name for the wrapper
+  wrapperDiv.className = `elementWrapper ${elementType}`;
+
+  const labelElement = document.createElement('label');
+  labelElement.textContent = elementLabelText;
+  labelElement.className = 'labelStyles';
+  wrapperDiv.appendChild(labelElement);
   wrapperDiv.appendChild(element);
   return wrapperDiv;
 }
@@ -61,20 +66,15 @@ function addElement(type, content) {
   const formElementsContainer = document.querySelector('.formElements');
 
   if (type === 'title') {
-    formElementsContainer.appendChild(createWrapperDiv(addInputElement('Typ hier de titel van jouw alinea...', true), type));
-    elementLabel = 'Titel';
+    formElementsContainer.appendChild(createWrapperDiv(addInputElement('Typ hier de titel van jouw alinea...', true), type, 'Titel'));
   } else if (type === 'paragraph') {
-    formElementsContainer.appendChild(createWrapperDiv(addTextareaElement('Typ hier de tekst van jouw alinea...', true), type));
-    elementLabel = 'Alinea';
+    formElementsContainer.appendChild(createWrapperDiv(addTextareaElement('Typ hier de tekst van jouw alinea...', true), type, 'Alinea'));
   } else if (type === 'image') {
-    formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('image/*', '+ Afbeelding'), type));
-    elementLabel = 'Afbeelding';
+    formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('image/*', '+ Afbeelding'), type, 'Afbeelding'));
   } else if (type === 'video') {
-    formElementsContainer.appendChild(createWrapperDiv(addVideoInputElement('Typ hierEmbed video code here...'), type));
-    elementLabel = 'Video';
+    formElementsContainer.appendChild(createWrapperDiv(addVideoInputElement('Typ hierEmbed video code here...'), type, 'Video'));
   } else if (type === 'audio') {
-    formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('audio/*', '+ Audio'), type));
-    elementLabel = 'Audio';
+    formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('audio/*', '+ Audio'), type, 'Audio'));
   } else {
     const element = document.createElement(type);
     element.textContent = content;
