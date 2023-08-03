@@ -50,7 +50,7 @@ const buttonContainer = document.querySelector('.dynamicForm');
 // Function to create a wrapper div with the added element
 function createWrapperDiv(element) {
   const wrapperDiv = document.createElement('div');
-  wrapperDiv.className = 'elementWrapper ${elementType}'; // Set your desired class name for the wrapper
+  wrapperDiv.className = `elementWrapper ${elementType}`; // Set your desired class name for the wrapper
   wrapperDiv.appendChild(element);
   return wrapperDiv;
 }
