@@ -48,7 +48,7 @@ function addVideoInputElement(placeholder) {
 const buttonContainer = document.querySelector('.dynamicForm');
 
 // Function to create a wrapper div with the added element
-function createWrapperDiv(element) {
+function createWrapperDiv(element, elementType) {
   const wrapperDiv = document.createElement('div');
   wrapperDiv.className = `elementWrapper ${elementType}`; // Set your desired class name for the wrapper
   wrapperDiv.appendChild(element);
@@ -72,7 +72,7 @@ function addElement(type, content) {
   } else {
     const element = document.createElement(type);
     element.textContent = content;
-    formElementsContainer.appendChild(createWrapperDiv(element));
+    formElementsContainer.appendChild(createWrapperDiv(element, type));
   }
 }
 
