@@ -46,6 +46,7 @@ function addVideoInputElement(placeholder) {
 
 // Get the container element that holds the buttons
 const buttonContainer = document.querySelector('.dynamicForm');
+const elementLabel = '';
 
 // Function to create a wrapper div with the added element
 function createWrapperDiv(element, elementType) {
@@ -61,14 +62,19 @@ function addElement(type, content) {
 
   if (type === 'title') {
     formElementsContainer.appendChild(createWrapperDiv(addInputElement('Typ hier de titel van jouw alinea...', true), type));
+    elementLabel = 'Titel';
   } else if (type === 'paragraph') {
     formElementsContainer.appendChild(createWrapperDiv(addTextareaElement('Typ hier de tekst van jouw alinea...', true), type));
+    elementLabel = 'Alinea';
   } else if (type === 'image') {
     formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('image/*', '+ Afbeelding'), type));
+    elementLabel = 'Afbeelding';
   } else if (type === 'video') {
     formElementsContainer.appendChild(createWrapperDiv(addVideoInputElement('Typ hierEmbed video code here...'), type));
+    elementLabel = 'Video';
   } else if (type === 'audio') {
     formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('audio/*', '+ Audio'), type));
+    elementLabel = 'Audio';
   } else {
     const element = document.createElement(type);
     element.textContent = content;
