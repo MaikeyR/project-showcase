@@ -50,25 +50,28 @@ const elementLabelText = '';
 
 // Function to create a wrapper div with the added element
 function createWrapperDiv(element, elementType, elementLabelText, formElementsContainer) {
+
+  const outerWrapperDiv = document.createElement('div');
+  wrapperDiv.className = `outerElementWrapper`;
+  
+  const labelElement = document.createElement('label');
+  labelElement.textContent = elementLabelText;
+  labelElement.className = 'labelStyles';
+  
   const wrapperDiv = document.createElement('div');
   wrapperDiv.className = `elementWrapper ${elementType}`;
   wrapperDiv.appendChild(element);
 
-  const labelElement = document.createElement('label');
-  labelElement.textContent = elementLabelText;
-  labelElement.className = 'labelStyles';
-
-  const outerWrapperDiv = document.createElement('div');
   outerWrapperDiv.appendChild(labelElement);
   outerWrapperDiv.appendChild(wrapperDiv);
 
   formElementsContainer.appendChild(outerWrapperDiv);
 
-  return wrapperDiv;
+  return outerWrapperDiv;
 }
 
 // Function to add a new element to the form
-function addElement(type, content) {
+function addElement(type) {
   const formElementsContainer = document.querySelector('.formElements');
 
   if (type === 'title') {
@@ -78,13 +81,9 @@ function addElement(type, content) {
   } else if (type === 'image') {
     formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('image/*', '+ Afbeelding'), type, 'Afbeelding', formElementsContainer));
   } else if (type === 'video') {
-    formElementsContainer.appendChild(createWrapperDiv(addVideoInputElement('Typ hierEmbed video code here...'), type, 'Video', formElementsContainer));
+    formElementsContainer.appendChild(createWrapperDiv(addVideoInputElement('Typ hier de youtube video code ...'), type, 'Video', formElementsContainer));
   } else if (type === 'audio') {
     formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('audio/*', '+ Audio'), type, 'Audio', formElementsContainer));
-  } else {
-    const element = document.createElement(type);
-    element.textContent = content;
-    formElementsContainer.appendChild(createWrapperDiv(element, type));
   }
 }
 
@@ -92,8 +91,7 @@ function addElement(type, content) {
 buttonContainer.addEventListener('click', (event) => {
   if (event.target.classList.contains('dynamicForm')) {
     const elementType = event.target.getAttribute('data-type');
-    const content = ''; // You can get user input for content if needed
-    addElement(elementType, content);
+    addElement(elementType);
   }
 });
 
