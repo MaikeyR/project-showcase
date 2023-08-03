@@ -195,7 +195,6 @@ input[type="file"] {
 
 
 .elementWrapper {
-  margin: 20px 0 5px;
   height: 35px;
   display: flex;
 }
@@ -222,7 +221,6 @@ input[type="file"] {
   width: 120px;
 }
 
-
 .selectBox.dynamicForm {
   border-radius: 0px 0 0 0px;
   margin-right: -2px;
@@ -240,4 +238,5 @@ input[type="file"] {
 
 .dynamicForm span{
   justify-content: flex-start !important;
+  margin-top: 10px;
 }
