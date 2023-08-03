@@ -50,17 +50,18 @@ const buttonContainer = document.querySelector('.dynamicForm');
 // Function to add a new element to the form
 function addElement(type, content) {
   const formElementsContainer = document.getElementById('formElements');
+  const addButtonContainer = formElementsContainer.querySelector('span');
 
   if (type === 'title') {
-    formElementsContainer.appendChild(addInputElement('Typ hier de titel van jouw alinea...', true));
+    formElementsContainer.insertBefore(addInputElement('Typ hier de titel van jouw alinea...', true), addButtonContainer);
   } else if (type === 'paragraph') {
-    formElementsContainer.appendChild(addTextareaElement('Typ hier de tekst van jouw alinea...', true));
+    formElementsContainer.insertBefore(addTextareaElement('Typ hier de tekst van jouw alinea...', true), addButtonContainer);
   } else if (type === 'image') {
-    formElementsContainer.appendChild(addUploadedElement('image/*', '+ Afbeelding'));
+    formElementsContainer.insertBefore(addUploadedElement('image/*', '+ Afbeelding'), addButtonContainer);
   } else if (type === 'video') {
-    formElementsContainer.appendChild(addVideoInputElement('Typ hierEmbed video code here...'));
+    formElementsContainer.insertBefore(addVideoInputElement('Typ hierEmbed video code here...'), addButtonContainer);
   } else if (type === 'audio') {
-    formElementsContainer.appendChild(addUploadedElement('audio/*', '+ Audio'));
+    formElementsContainer.insertBefore(addUploadedElement('audio/*', '+ Audio'), addButtonContainer);
   } else {
     const element = document.createElement(type);
     element.textContent = content;
