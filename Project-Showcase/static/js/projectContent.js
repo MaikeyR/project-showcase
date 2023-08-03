@@ -52,14 +52,16 @@ const elementLabelText = '';
 function createWrapperDiv(element, elementType, elementLabelText) {
   const wrapperDiv = document.createElement('div');
   wrapperDiv.className = `elementWrapper ${elementType}`;
+  wrapperDiv.appendChild(element);
 
   const labelElement = document.createElement('label');
   labelElement.textContent = elementLabelText;
   labelElement.className = 'labelStyles';
-  wrapperDiv.appendChild(labelElement);
-  wrapperDiv.appendChild(element);
+  formElementsContainer.insertBefore(labelElement, wrapperDiv);
+
   return wrapperDiv;
 }
+
 
 // Function to add a new element to the form
 function addElement(type, content) {
