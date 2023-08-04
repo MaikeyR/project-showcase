@@ -54,6 +54,10 @@ function addInputElement(placeholder, required) {
   
     const outerWrapperDiv = document.createElement('div');
     outerWrapperDiv.className = `outerElementWrapper`;
+      
+    const labelElement = document.createElement('label');
+    labelElement.textContent = elementLabelText;
+    labelElement.className = 'labelStyles';
     
     const closeButton = document.createElement('img');
     closeButton.src = 'img/AddProject/cross.svg';
@@ -61,17 +65,17 @@ function addInputElement(placeholder, required) {
     closeButton.addEventListener('click', () => {
       outerWrapperDiv.remove();
     });
-  
-    const labelElement = document.createElement('label');
-    labelElement.textContent = elementLabelText;
-    labelElement.className = 'labelStyles';
+
+    const labelAndCloseButtonSpan = document.createElement('span');
+    labelAndCloseButtonSpan.className = 'labelAndCloseButtonSpan';
+    labelAndCloseButtonSpan.appendChild(labelElement);
+    labelAndCloseButtonSpan.appendChild(closeButton);
     
     const wrapperDiv = document.createElement('div');
     wrapperDiv.className = `elementWrapper ${elementType}`;
     wrapperDiv.appendChild(element);
   
-    outerWrapperDiv.appendChild(labelElement);
-    outerWrapperDiv.appendChild(closeButton);
+    outerWrapperDiv.appendChild(labelAndCloseButtonSpan);
     outerWrapperDiv.appendChild(wrapperDiv);
     return outerWrapperDiv;
   }
