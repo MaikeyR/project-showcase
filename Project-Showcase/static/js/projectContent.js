@@ -58,9 +58,9 @@ function createWrapperDiv(element, elementType, elementLabelText) {
   closeButton.src = 'path/to/cross.svg';
   closeButton.className = 'closeButton';
   closeButton.addEventListener('click', () => {
-    outerWrapperDiv.remove(); // Remove the outer wrapper div when the close button is clicked
+    outerWrapperDiv.remove();
   });
-  
+
   const labelElement = document.createElement('label');
   labelElement.textContent = elementLabelText;
   labelElement.className = 'labelStyles';
