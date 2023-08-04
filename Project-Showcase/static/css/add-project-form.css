@@ -242,7 +242,7 @@ input[type="file"] {
 }
 
 .labelAndCloseButtonSpan {
-  align-items: flex-end;
+  align-items: flex-end !important;
 }
 
 .closeButton {
