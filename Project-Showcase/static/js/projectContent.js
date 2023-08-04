@@ -77,10 +77,14 @@ function createWrapperDiv(element, elementType, elementLabelText) {
     const wrapperDiv = document.createElement('div');
     wrapperDiv.className = `elementWrapper ${elementType}`;
     wrapperDiv.appendChild(element);
+
+    const handleWrapperDiv = document.createElement('div');
+    handleWrapperDiv.className = 'handle-wrapper';
+    handleWrapperDiv.appendChild(handle);
+    handleWrapperDiv.appendChild(wrapperDiv);
   
     outerWrapperDiv.appendChild(labelAndCloseButtonSpan);
-    outerWrapperDiv.appendChild(handle);
-    outerWrapperDiv.appendChild(wrapperDiv);
+    outerWrapperDiv.appendChild(handleWrapperDiv);
     return outerWrapperDiv;
     
 }

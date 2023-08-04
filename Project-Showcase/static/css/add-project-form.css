@@ -254,6 +254,12 @@ input[type="file"] {
   filter: brightness(70%) opacity(42%);
 }
 
+.handle-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: -15px;
+}
+
 .move-handle {
   cursor: grab;
   font-size: 16px;
