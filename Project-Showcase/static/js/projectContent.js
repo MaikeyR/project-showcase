@@ -56,7 +56,7 @@ function createWrapperDiv(element, elementType, elementLabelText) {
   outerWrapperDiv.className = `outerElementWrapper`;
 
   const closeButton = document.createElement('img');
-  closeButton.src = '/img/AddProject/cross.svg';
+  closeButton.src = 'img/AddProject/cross.svg';
   closeButton.className = 'closeButton';
   closeButton.addEventListener('click', () => {
     outerWrapperDiv.remove();
