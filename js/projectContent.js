@@ -26,6 +26,7 @@ function addUploadedElement(accept, text) {
   fileInput.id = 'fileUpload';
   fileInput.name = 'fileUpload';
   fileInput.accept = accept;
+  
   const label = document.createElement('label');
   label.htmlFor = 'fileUpload';
   label.className = 'imageUploadLabel';
