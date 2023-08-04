@@ -254,3 +254,15 @@ input[type="file"] {
   filter: brightness(70%) opacity(42%);
 }
 
+.move-handle {
+  cursor: grab;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.dragging {
+  opacity: 0.7;
+  border: 2px dashed #004274;
+  background-color: rgba(0, 66, 116, 0.1);
+}
+

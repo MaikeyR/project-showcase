@@ -6,19 +6,19 @@ function addInputElement(placeholder, required) {
     inputElement.placeholder = placeholder;
     inputElement.required = required;
     return inputElement;
-  }
+}
   
-  // Function to create and add a textarea element
-  function addTextareaElement(placeholder, required) {
+// Function to create and add a textarea element
+function addTextareaElement(placeholder, required) {
     const textareaElement = document.createElement('textarea');
     textareaElement.className = 'inputBox';
     textareaElement.placeholder = placeholder;
     textareaElement.required = required;
     return textareaElement;
-  }
+}
   
-  // Function to create and add an uploaded element (image or audio)
-  function addUploadedElement(accept, text) {
+// Function to create and add an uploaded element (image or audio)
+function addUploadedElement(accept, text) {
     const uploadedElement = document.createElement('div');
     uploadedElement.className = 'selectBox uploaded';
     const fileInput = document.createElement('input');
@@ -34,24 +34,23 @@ function addInputElement(placeholder, required) {
     uploadedElement.appendChild(fileInput);
     uploadedElement.appendChild(label);
     return uploadedElement;
-  }
+}
   
-  // Function to create and add an input text element for video embed
-  function addVideoInputElement(placeholder) {
+// Function to create and add an input text element for video embed
+function addVideoInputElement(placeholder) {
     const inputElement = document.createElement('input');
     inputElement.type = 'text';
     inputElement.className = 'inputBox';
     inputElement.placeholder = placeholder;
     return inputElement;
-  }
+}
   
-  // Get the container element that holds the buttons
-  const buttonContainer = document.querySelector('.dynamicForm');
-  const elementLabelText = '';
-  
-  // Function to create a wrapper div with the added element
-  function createWrapperDiv(element, elementType, elementLabelText) {
-  
+// Get the container element that holds the buttons
+const buttonContainer = document.querySelector('.dynamicForm');
+const elementLabelText = '';
+
+// Function to create a wrapper div with the added element
+function createWrapperDiv(element, elementType, elementLabelText) {
     const outerWrapperDiv = document.createElement('div');
     outerWrapperDiv.className = `outerElementWrapper`;
       
@@ -66,6 +65,10 @@ function addInputElement(placeholder, required) {
       outerWrapperDiv.remove();
     });
 
+    const handle = document.createElement('span');
+    handle.textContent = '☰';
+    handle.className = 'move-handle';
+
     const labelAndCloseButtonSpan = document.createElement('span');
     labelAndCloseButtonSpan.className = 'labelAndCloseButtonSpan';
     labelAndCloseButtonSpan.appendChild(labelElement);
@@ -76,12 +79,14 @@ function addInputElement(placeholder, required) {
     wrapperDiv.appendChild(element);
   
     outerWrapperDiv.appendChild(labelAndCloseButtonSpan);
+    outerWrapperDiv.appendChild(handle);
     outerWrapperDiv.appendChild(wrapperDiv);
     return outerWrapperDiv;
-  }
+    
+}
   
-  // Function to add a new element to the form
-  function addElement(type) {
+// Function to add a new element to the form
+function addElement(type) {
     const formElementsContainer = document.querySelector('.formElements');
   
     if (type === 'title') {
@@ -95,15 +100,32 @@ function addInputElement(placeholder, required) {
     } else if (type === 'audio') {
       formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('audio/*', '+ Audio'), type, 'Audio'));
     }
-  }
+    makeElementsDraggable();
+}
   
-  // Event listener for all buttons inside the container
-  buttonContainer.addEventListener('click', (event) => {
+// Event listener for all buttons inside the container
+buttonContainer.addEventListener('click', (event) => {
     if (event.target.classList.contains('dynamicForm')) {
       const elementType = event.target.getAttribute('data-type');
       addElement(elementType);
     }
-  });
+});
   
-  // Optional: Implement reordering and delete functionality using libraries like jQuery UI's Sortable or HTML5's Drag and Drop API.
+  // Function to make the added elements draggable
+function makeElementsDraggable() {
+    const elements = document.querySelectorAll('.outerElementWrapper');
   
+    elements.forEach((element) => {
+      element.setAttribute('draggable', 'true');
+  
+      element.addEventListener('dragstart', (e) => {
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', null);
+        e.target.classList.add('dragging');
+      });
+  
+      element.addEventListener('dragend', (e) => {
+        e.target.classList.remove('dragging');
+      });
+    });
+}
