@@ -71,6 +71,7 @@ function addInputElement(placeholder, required) {
     wrapperDiv.appendChild(element);
   
     outerWrapperDiv.appendChild(labelElement);
+    outerWrapperDiv.appendChild(closeButton);
     outerWrapperDiv.appendChild(wrapperDiv);
     return outerWrapperDiv;
   }
