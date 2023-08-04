@@ -54,6 +54,13 @@ function createWrapperDiv(element, elementType, elementLabelText) {
   const outerWrapperDiv = document.createElement('div');
   outerWrapperDiv.className = `outerElementWrapper`;
   
+  const closeButton = document.createElement('img');
+  closeButton.src = 'path/to/cross.svg';
+  closeButton.className = 'closeButton';
+  closeButton.addEventListener('click', () => {
+    outerWrapperDiv.remove();
+  });
+
   const labelElement = document.createElement('label');
   labelElement.textContent = elementLabelText;
   labelElement.className = 'labelStyles';
