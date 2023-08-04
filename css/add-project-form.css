@@ -240,3 +240,16 @@ input[type="file"] {
   justify-content: flex-start !important;
   margin-top: 10px;
 }
+
+.labelAndCloseButtonSpan {
+  display: flex;
+  align-items: center;
+}
+
+.closeButton {
+  width: 18px; /* Set the desired width for the close button */
+  height: 18px; /* Set the desired height for the close button */
+  cursor: pointer;
+  margin-left: 8px; /* Adjust the margin as needed for spacing between the label and the close button */
+}
+
