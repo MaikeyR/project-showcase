@@ -56,7 +56,7 @@ function addInputElement(placeholder, required) {
     outerWrapperDiv.className = `outerElementWrapper`;
     
     const closeButton = document.createElement('img');
-    closeButton.src = 'img/addProject/cross.svg';
+    closeButton.src = 'img/AddProject/cross.svg';
     closeButton.className = 'closeButton';
     closeButton.addEventListener('click', () => {
       outerWrapperDiv.remove();
