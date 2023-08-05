@@ -91,6 +91,7 @@ function createWrapperDiv(element, elementType, elementLabelText) {
 // Function to add a new element to the form
 function addElement(type) {
   const formElementsContainer = document.querySelector('.formElements');
+  form.setAttribute('disabled', 'true');
 
   if (type === 'title') {
     formElementsContainer.appendChild(createWrapperDiv(addInputElement('Typ hier de titel van jouw alinea...', true), type, 'Titel'));
@@ -104,8 +105,13 @@ function addElement(type) {
     formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('audio/*', '+ Audio'), type, 'Audio'));
   }
   makeElementsDraggable();
+
   const elements = document.querySelectorAll('.outerElementWrapper');
   elements[elements.length - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+  setTimeout(() => {
+    form.removeAttribute('disabled');
+  }, 100);
 }
   
 // Event listener for all buttons inside the container
