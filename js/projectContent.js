@@ -141,6 +141,7 @@ function makeElementsDraggable() {
     e.preventDefault();
     const afterElement = getDragAfterElement(formElementsContainer, e.clientY);
     const draggingElement = document.querySelector('.dragging');
+
     if (afterElement == null) {
       formElementsContainer.appendChild(draggingElement);
     } else {
@@ -148,6 +149,7 @@ function makeElementsDraggable() {
     }
   });
 }
+
 
 // Function to find the element after which the dragged element should be placed
 function getDragAfterElement(container, y) {
