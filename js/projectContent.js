@@ -104,6 +104,8 @@ function addElement(type) {
     formElementsContainer.appendChild(createWrapperDiv(addUploadedElement('audio/*', '+ Audio'), type, 'Audio'));
   }
   makeElementsDraggable();
+  const elements = document.querySelectorAll('.outerElementWrapper');
+  elements[elements.length - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
   
 // Event listener for all buttons inside the container
