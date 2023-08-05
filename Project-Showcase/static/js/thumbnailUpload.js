@@ -30,7 +30,6 @@ fileInput.addEventListener('change', (event) => {
   }
 });
 
-
 const imageUpload = document.getElementById('imageUpload');
 imageUpload.addEventListener('change', (event) => {
   const file = event.target.files[0];
