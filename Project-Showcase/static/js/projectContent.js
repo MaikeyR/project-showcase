@@ -165,3 +165,36 @@ function getDragAfterElement(container, y) {
     { offset: Number.NEGATIVE_INFINITY }
   ).element;
 }
+
+
+// Function to compile the content of dynamic elements into a single string
+function compileProjectContent() {
+  const formElementsContainer = document.querySelector('.formElements');
+  const elements = formElementsContainer.querySelectorAll('.outerElementWrapper');
+
+  let projectContent = '';
+
+  elements.forEach((element) => {
+    const elementType = element.classList[1]; // Get the type of dynamic element (e.g., title, paragraph, image, video, audio)
+    const inputElement = element.querySelector('.inputBox'); // Get the input element inside the dynamic element
+    let content;
+
+    // Get the content of the dynamic element based on its type
+    if (elementType === 'title' || elementType === 'paragraph' || elementType === 'video') {
+      content = inputElement.value; // For title, paragraph, and video, get the value of the input element
+    } else if (elementType === 'image' || elementType === 'audio') {
+      const fileInput = inputElement.querySelector('input[type="file"]');
+      if (fileInput.files.length > 0) {
+        const file = fileInput.files[0];
+        content = file.name; // For image and audio, get the name of the uploaded file
+      }
+    }
+
+    // Append the content to the projectContent string
+    if (content) {
+      projectContent += `{{${elementType}}}${content}{{/${elementType}}}\n`; // Use placeholders to mark the start and end of each dynamic element's content
+    }
+  });
+
+  return projectContent;
+}

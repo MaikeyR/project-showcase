@@ -1,12 +1,34 @@
-const studentAccountName = "Maikel Reijneke";
-const accessToken = "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"; // personal accesstoken from the owner of the repository (Default token from "MaikeyR" expires on Wed, Sep 6 2023)
+const studentAccountName = "Maikel Reijneke"; // This should eventually be linked to CHE account logins. For linking people to added projects and managing "Mijn Projecten"
 
+const accessToken = process.env.ACCESS_TOKEN; // personal accesstoken from the owner of the repository (Default token from "MaikeyR" expires on Wed, Sep 6 2023)
+
+// Event handler for form submission
+function handleFormSubmit(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  // Get form values
+  const projectTitle = document.getElementById('projectTitle').value;
+  const projectDescription = document.getElementById('projectDescription').value;
+  const authors = document.getElementById('authors').value;
+  const client = document.getElementById('client').value;
+  const theme = document.getElementById('theme').value;
+  const tags = document.getElementById('tags').value;
+  const thumbnail = document.getElementById('thumbnail').value;
+
+  // Call the generateProject function with form values
+  generateProject(projectTitle, projectDescription, authors, client, theme, tags, thumbnail);
+}
+
+// Add event listener to the form
+document.getElementById('myForm').addEventListener('submit', handleFormSubmit);
 
 async function generateProject(projectTitle, projectDescription, authors, client, theme, tags, thumbnail, projectContent) {
     try {
         const sanitizedTitle = projectTitle.replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-");
         const projectID = sanitizedTitle.toLowerCase();
         const allAuthors = studentAccountName + ", " + authors;
+
+        const projectContent = compileProjectContent();
 
         const markdownContent = generateMarkdownContent(projectTitle, projectDescription, allAuthors, client, theme, tags, thumbnail, projectContent, projectID);
         await createBranch(projectID, markdownContent);
@@ -16,7 +38,6 @@ async function generateProject(projectTitle, projectDescription, authors, client
       }
     }
 
-generateProject(projectTitle, projectDescription, authors, client, theme, tags, thumbnail, projectContent);
 
 
 function sanitizeTitle(projectTitle) {
