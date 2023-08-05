@@ -118,32 +118,37 @@ buttonContainer.addEventListener('click', (event) => {
 });
   
 // Function to make the added elements draggable
-// Function to make the added elements draggable
 function makeElementsDraggable() {
   const elements = document.querySelectorAll('.outerElementWrapper');
-
-  let yOffset = 0; // Variable to store the Y offset during dragging
 
   elements.forEach((element) => {
     element.setAttribute('draggable', 'true');
 
-    element.addEventListener('dragstart', (e) => {
-      e.dataTransfer.effectAllowed = 'move';
-      e.dataTransfer.setData('text/plain', null);
-      e.target.classList.add('dragging');
+    let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    
+    element.querySelector('.move-handle').addEventListener('mousedown', dragMouseDown);
 
-      yOffset = e.clientY - element.getBoundingClientRect().top;
-    });
+    function dragMouseDown(e) {
+      e.preventDefault();
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.addEventListener('mousemove', elementDrag);
+      document.addEventListener('mouseup', closeDragElement);
+    }
 
-    element.addEventListener('drag', (e) => {
-      const newY = e.clientY - yOffset;
-      element.style.transform = `translateY(${newY}px)`;
-      elements = document.querySelectorAll('.outerElementWrapper');
-    });
+    function elementDrag(e) {
+      e.preventDefault();
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      element.style.transform = `translate(${element.offsetLeft - pos1}px, ${element.offsetTop - pos2}px)`;
+    }
 
-    element.addEventListener('dragend', (e) => {
-      e.target.classList.remove('dragging');
-    });
+    function closeDragElement() {
+      document.removeEventListener('mousemove', elementDrag);
+      document.removeEventListener('mouseup', closeDragElement);
+    }
   });
 
   // Add the event listener to the formElementsContainer for handling the drop event
@@ -152,7 +157,6 @@ function makeElementsDraggable() {
     e.preventDefault();
     const afterElement = getDragAfterElement(formElementsContainer, e.clientY);
     const draggingElement = document.querySelector('.dragging');
-
     if (afterElement == null) {
       formElementsContainer.appendChild(draggingElement);
     } else {
@@ -160,6 +164,7 @@ function makeElementsDraggable() {
     }
   });
 }
+
 
 // Function to find the element after which the dragged element should be placed
 function getDragAfterElement(container, y) {
