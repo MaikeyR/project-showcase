@@ -124,31 +124,15 @@ function makeElementsDraggable() {
   elements.forEach((element) => {
     element.setAttribute('draggable', 'true');
 
-    let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    
-    element.querySelector('.move-handle').addEventListener('mousedown', dragMouseDown);
+    element.addEventListener('dragstart', (e) => {
+      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.setData('text/plain', null);
+      e.target.classList.add('dragging');
+    });
 
-    function dragMouseDown(e) {
-      e.preventDefault();
-      pos3 = e.clientX;
-      pos4 = e.clientY;
-      document.addEventListener('mousemove', elementDrag);
-      document.addEventListener('mouseup', closeDragElement);
-    }
-
-    function elementDrag(e) {
-      e.preventDefault();
-      pos1 = pos3 - e.clientX;
-      pos2 = pos4 - e.clientY;
-      pos3 = e.clientX;
-      pos4 = e.clientY;
-      element.style.transform = `translate(${element.offsetLeft - pos1}px, ${element.offsetTop - pos2}px)`;
-    }
-
-    function closeDragElement() {
-      document.removeEventListener('mousemove', elementDrag);
-      document.removeEventListener('mouseup', closeDragElement);
-    }
+    element.addEventListener('dragend', (e) => {
+      e.target.classList.remove('dragging');
+    });
   });
 
   // Add the event listener to the formElementsContainer for handling the drop event
@@ -164,7 +148,6 @@ function makeElementsDraggable() {
     }
   });
 }
-
 
 // Function to find the element after which the dragged element should be placed
 function getDragAfterElement(container, y) {
