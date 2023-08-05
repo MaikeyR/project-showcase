@@ -118,11 +118,8 @@ buttonContainer.addEventListener('click', (event) => {
 });
   
 // Function to make the added elements draggable
-// Function to make the added elements draggable
 function makeElementsDraggable() {
   const elements = document.querySelectorAll('.outerElementWrapper');
-
-  let yOffset = 0; // Variable to store the Y offset during dragging
 
   elements.forEach((element) => {
     element.setAttribute('draggable', 'true');
@@ -131,14 +128,6 @@ function makeElementsDraggable() {
       e.dataTransfer.effectAllowed = 'move';
       e.dataTransfer.setData('text/plain', null);
       e.target.classList.add('dragging');
-
-      yOffset = e.clientY - element.getBoundingClientRect().top;
-    });
-
-    element.addEventListener('drag', (e) => {
-      const newY = e.clientY - yOffset;
-      element.style.transform = `translateY(${newY}px)`;
-      elements = document.querySelectorAll('.outerElementWrapper');
     });
 
     element.addEventListener('dragend', (e) => {
@@ -160,6 +149,7 @@ function makeElementsDraggable() {
     }
   });
 }
+
 
 // Function to find the element after which the dragged element should be placed
 function getDragAfterElement(container, y) {
