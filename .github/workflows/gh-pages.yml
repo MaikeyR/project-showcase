@@ -14,7 +14,7 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          
+
       - name: Install dependencies
         run: |
           npm install postcss -D
@@ -26,21 +26,17 @@ jobs:
         with:
           hugo-version: 'latest'
           # extended: true
-      - name: Replace access token placeholder
-        run: sed -i "s/REPLACE_WITH_ACCESS_TOKEN/${{ secrets.ACCESS_TOKEN }}/g" ./Project-Showcase/static/js/addProject.js
-        
+
       - name: Build
         working-directory: ./Project-Showcase
         run: hugo --minify
-        
-      - name: Create CNAME file
-        run: echo project-showcase.che-ict.nl > ./Project-Showcase/public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Project-Showcase/public
+          
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
