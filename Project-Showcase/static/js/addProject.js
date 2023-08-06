@@ -9,11 +9,12 @@ function handleFormSubmit(event) {
   // Get form values
   const projectTitle = document.getElementById('projectTitle').value;
   const projectDescription = document.getElementById('projectDescription').value;
-  const authors = document.getElementById('authors').value;
+  const authors = document.getElementById('authors1').value;
   const client = document.getElementById('client').value;
-  const theme = document.getElementById('theme').value;
-  const tags = document.getElementById('tags').value;
-  const thumbnail = document.getElementById('thumbnail').value;
+  const theme = document.getElementById('thema').value;
+  const tags = "tag";
+  const thumbnail = "thumbnail";
+  const projectContent = 
 
   // Call the generateProject function with form values
   generateProject(projectTitle, projectDescription, authors, client, theme, tags, thumbnail);
@@ -22,7 +23,7 @@ function handleFormSubmit(event) {
 // Add event listener to the form
 document.getElementById('myForm').addEventListener('submit', handleFormSubmit);
 
-async function generateProject(projectTitle, projectDescription, authors, client, theme, tags, thumbnail, projectContent) {
+async function generateProject(projectTitle, projectDescription, authors, client, theme, tags, thumbnail) {
     try {
         const sanitizedTitle = projectTitle.replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-");
         const projectID = sanitizedTitle.toLowerCase();
