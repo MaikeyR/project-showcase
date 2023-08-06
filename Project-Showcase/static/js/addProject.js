@@ -31,7 +31,7 @@ async function generateProject(projectTitle, projectDescription, authors, client
         const projectContent = compileProjectContent();
 
         const markdownContent = generateMarkdownContent(projectTitle, projectDescription, allAuthors, client, theme, tags, thumbnail, projectContent, projectID);
-        await createBranch(projectID, markdownContent);
+        await createBranch(projectID, markdownContent, accessToken);
 
         await axios.post('/api/createProject', {
           projectID,
@@ -98,7 +98,7 @@ return formattedDate;
 
 
 // Function to create a branch
-async function createBranch(projectID, markdownContent) {
+async function createBranch(projectID, markdownContent, accessToken) {
   const branchName = projectID;
   const baseBranch = "main"; // Replace main with the name of the base branch if it's different
 
