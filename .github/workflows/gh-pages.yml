@@ -14,6 +14,21 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Create Branch
+        run: |
+          echo "Creating branch..."
+          echo "Branch Name: $BRANCH_NAME"
+          echo "Commit SHA: $COMMIT_SHA"
+          echo "GitHub Token: ${{ secrets.GITHUB_TOKEN }}"
+          echo "API URL: https://api.github.com/repos/MaikeyR/project-showcase/git/refs"
+      
+          RESPONSE=$(curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"ref": "refs/heads/'"$BRANCH_NAME"'", "sha": "'"$COMMIT_SHA"'"}' \
+            https://api.github.com/repos/MaikeyR/project-showcase/git/refs)
+      
+          echo "Response: $RESPONSE"
           
       - name: Install dependencies
         run: |
