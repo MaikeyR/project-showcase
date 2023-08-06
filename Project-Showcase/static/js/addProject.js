@@ -1,6 +1,6 @@
 const studentAccountName = "Maikel Reijneke"; // This should eventually be linked to CHE account logins. For linking people to added projects and managing "Mijn Projecten"
 
-const accessToken = "REPLACE_WITH_ACCESS_TOKEN"; // personal accesstoken from the owner of the repository (Default token from "MaikeyR" expires on Wed, Sep 6 2023)
+const accessToken = process.env.ACCESS_TOKEN; // personal accesstoken from the owner of the repository (Default token from "MaikeyR" expires on Wed, Sep 6 2023)
 
 // Event handler for form submission
 function handleFormSubmit(event) {
@@ -32,6 +32,19 @@ async function generateProject(projectTitle, projectDescription, authors, client
 
         const markdownContent = generateMarkdownContent(projectTitle, projectDescription, allAuthors, client, theme, tags, thumbnail, projectContent, projectID);
         await createBranch(projectID, markdownContent);
+
+        await axios.post('/api/createProject', {
+          projectID,
+          projectTitle,
+          projectDescription,
+          allAuthors,
+          client,
+          theme,
+          tags,
+          thumbnail,
+          projectContent
+        });
+
         console.log("Project created successfully!");
       } catch (error) {
         console.error("Failed to create project:", error);
