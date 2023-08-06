@@ -34,12 +34,12 @@ jobs:
       - name: Create CNAME file
         run: echo project-showcase.che-ict.nl > ./Project-Showcase/public/CNAME
 
-      - name: Set Access Token in addProject.js
-        run: sed -i "s|const accessToken = \"\";|const accessToken = \"${{ secrets.ACCESS_TOKEN }}\";|" ./Project-Showcase/addProject.js
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Project-Showcase/public
+        
+        env:
+          ACCESS_TOKEN: ${{ secrets.MY_ACCESS_TOKEN }}

@@ -1,6 +1,6 @@
 const studentAccountName = "Maikel Reijneke"; // This should eventually be linked to CHE account logins. For linking people to added projects and managing "Mijn Projecten"
 
-const accessToken = ""; // personal accesstoken from the owner of the repository (Default token from "MaikeyR" expires on Wed, Sep 6 2023)
+const accessToken = process.env.ACCESS_TOKEN; // personal accesstoken from the owner of the repository (Default token from "MaikeyR" expires on Wed, Sep 6 2023)
 
 // Event handler for form submission
 function handleFormSubmit(event) {
