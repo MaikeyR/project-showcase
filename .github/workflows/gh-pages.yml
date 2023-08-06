@@ -30,6 +30,9 @@ jobs:
       - name: Build
         working-directory: ./Project-Showcase
         run: hugo --minify
+        
+      - name: Create CNAME file
+        run: echo project-showcase.che-ict.nl > ./Project-Showcase/public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -37,5 +40,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Project-Showcase/public
+        
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
