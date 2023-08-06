@@ -37,25 +37,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Project-Showcase/public
-
-      - name: Setup Serverless Function
-        run: |
-          npm install axios
-          mkdir -p .github/workflows/serverless
-          echo 'name: serverless\n\non:\n  push:\n    branches:\n      - main\n\njobs:\n  deploy:\n    runs-on: ubuntu-22.04\n    steps:\n      - uses: actions/checkout@v3\n        with:\n          submodules: true\n          fetch-depth: 0\n\n      - name: Setup Node.js\n        uses: actions/setup-node@v2\n        with:\n          node-version: 14\n\n      - name: Install Dependencies\n        run: npm install\n\n      - name: Handle API Requests\n        run: npm start' > .github/workflows/serverless/serverless.yml
-        working-directory: ./Project-Showcase
-
-      - name: Commit and Push Serverless Function
-        run: |
-          git config --global user.name "MaikeyR"
-          git config --global user.email "maikel.reijneke@gmail.com"
-          git add .
-          git commit -m "Add serverless function"
-          git push
-
-      - name: Deploy Serverless Function
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .github/workflows/serverless
+          
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
