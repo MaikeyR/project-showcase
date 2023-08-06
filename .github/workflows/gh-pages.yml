@@ -42,4 +42,4 @@ jobs:
           publish_dir: ./Project-Showcase/public
         
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.MY_ACCESS_TOKEN }}
