@@ -107,7 +107,11 @@ async function createBranch(projectID, markdownContent) {
     const response = await fetch(`https://api.github.com/repos/MaikeyR/project-showcase/branches/${baseBranch}`);
     if (response.ok) {
       const data = await response.json();
+      console.log("Branch Data:", data); // test test
       const commitSHA = data.commit.sha;
+
+      console.log("Branch Name:", branchName); // test test
+      console.log("Commit SHA:", commitSHA); // test test
 
       // Use the GitHub API to create a branch
       const createBranchResponse = await fetch(`https://api.github.com/repos/MaikeyR/project-showcase/git/refs`, {
