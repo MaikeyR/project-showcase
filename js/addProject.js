@@ -14,7 +14,6 @@ function handleFormSubmit(event) {
   const theme = document.getElementById('thema').value;
   const tags = "tag";
   const thumbnail = "thumbnail";
-  const projectContent = 
 
   // Call the generateProject function with form values
   generateProject(projectTitle, projectDescription, authors, client, theme, tags, thumbnail);
