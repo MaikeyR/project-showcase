@@ -37,6 +37,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Project-Showcase/public
-        
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
