@@ -35,7 +35,7 @@ jobs:
         run: echo project-showcase.che-ict.nl > ./Project-Showcase/public/CNAME
 
       - name: Set Access Token in addProject.js
-        run: sed -i "s|const accessToken = \"\";|const accessToken = \"${{ secrets.ACCESS_TOKEN }}\";|" ./Project-Showcase/js/addProject.js
+        run: sed -i "s|const accessToken = \"\";|const accessToken = \"${{ secrets.ACCESS_TOKEN }}\";|" ./Project-Showcase/static/js/addProject.js
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
